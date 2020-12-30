@@ -1,0 +1,95 @@
+accessControl:
+    enabled: false
+api:
+    key: 8DE9B06CC21F400FAF1063B36AB74457
+appearance:
+    color: red
+    name: Voron 350
+controls:
+-   children:
+    -   command: LIGHT_ON
+        name: Lights On
+    -   command: LIGHT_OFF
+        name: Lights Off
+    layout: horizontal
+    name: Case Lights
+-   children:
+    -   command: SET_PIN PIN=caselight VALUE=%(brightness)s
+        input:
+        -   default: 10
+            name: Brightness control
+            parameter: brightness
+            slider:
+                max: 10
+                min: 0
+                step: 1
+        name: Set
+    layout: horizontal
+    name: Brightness
+plugins:
+    announcements:
+        _config_version: 1
+        channels:
+            _blog:
+                read_until: 1608041700
+            _important:
+                read_until: 1521111600
+            _octopi:
+                read_until: 1604571600
+            _plugins:
+                read_until: 1608876000
+            _releases:
+                read_until: 1607604000
+    cura:
+        cura_engine: /usr/local/bin/cura_engine
+    discovery:
+        publicPort: 80
+        upnpUuid: 7236c9f1-9e8d-490e-9daf-e0b7580d999c
+    errortracking:
+        unique_id: ca262022-9659-429b-ac70-bdf356d1a726
+    gcodeviewer:
+        _config_version: 1
+    softwareupdate:
+        _config_version: 8
+    tracking:
+        enabled: true
+        unique_id: a04f059f-f550-4d87-973e-dd195c9765c9
+    virtual_printer:
+        _config_version: 1
+printerProfiles:
+    default: _default
+serial:
+    additionalPorts:
+    - /tmp/printer
+    autoconnect: true
+    baudrate: 115200
+    disconnectOnErrors: false
+    port: /tmp/printer
+server:
+    commands:
+        serverRestartCommand: sudo service octoprint restart
+        systemRestartCommand: sudo shutdown -r now
+        systemShutdownCommand: sudo shutdown -h now
+    firstRun: false
+    onlineCheck:
+        enabled: true
+    pluginBlacklist:
+        enabled: true
+    secretKey: mvVUHprUDErXDGBAPqtWzAAsfHwruPzU
+    seenWizards:
+        corewizard: 3
+        tracking: null
+temperature:
+    profiles:
+    -   bed: 100
+        chamber: null
+        extruder: 210
+        name: ABS
+    -   bed: 60
+        chamber: null
+        extruder: 180
+        name: PLA
+webcam:
+    ffmpeg: /usr/bin/ffmpeg
+    snapshot: http://127.0.0.1:8080/?action=snapshot
+    stream: /webcam/?action=stream

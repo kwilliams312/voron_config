@@ -1,0 +1,192 @@
+2020-11-03 01:36:47,486   /home/pi/oprint/bin/python2 -m pip --disable-pip-version-check install https://github.com/foosel/OctoPrint/archive/1.4.2.zip --no-cache-dir
+2020-11-03 01:36:49,029 > Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+2020-11-03 01:36:49,030 > Collecting https://github.com/foosel/OctoPrint/archive/1.4.2.zip
+2020-11-03 01:36:50,031 > Downloading https://github.com/foosel/OctoPrint/archive/1.4.2.zip (5.4MB)
+2020-11-03 01:36:54,034 > Collecting OctoPrint-FirmwareCheck>=2020.06.22
+2020-11-03 01:36:55,757 > Downloading https://www.piwheels.org/simple/octoprint-firmwarecheck/OctoPrint_FirmwareCheck-2020.9.23-py2.py3-none-any.whl
+2020-11-03 01:36:57,017 > Collecting OctoPrint-FileCheck>=2020.07.06
+2020-11-03 01:36:57,018 > Downloading https://files.pythonhosted.org/packages/91/dd/ec5572fc0da4fd8c8cf64a6c9f03dc8f6711f5aa3bf990c5c29dc78b1039/OctoPrint_FileCheck-2020.8.7-py2.py3-none-any.whl
+2020-11-03 01:36:57,018 > Requirement already satisfied: markupsafe<2.0,>=1.1 in /home/pi/oprint/lib/python2.7/site-packages (from OctoPrint==1.4.2) (1.1.1)
+2020-11-03 01:36:58,020 > Collecting tornado==5.1.1
+2020-11-03 01:36:58,020 > Downloading https://files.pythonhosted.org/packages/e6/78/6e7b5af12c12bdf38ca9bfe863fcaf53dc10430a312d0324e76c1e5ca426/tornado-5.1.1.tar.gz (516kB)
+2020-11-03 01:37:01,858 > Collecting markdown<3.2,>=3.1
+2020-11-03 01:37:01,858 > Downloading https://www.piwheels.org/simple/markdown/Markdown-3.1.1-py2.py3-none-any.whl (87kB)
+2020-11-03 01:37:01,859 > Requirement already satisfied: rsa==4.0 in /home/pi/oprint/lib/python2.7/site-packages (from OctoPrint==1.4.2) (4.0)
+2020-11-03 01:37:01,859 > Requirement already satisfied: regex!=2018.11.6 in /home/pi/oprint/lib/python2.7/site-packages (from OctoPrint==1.4.2) (2019.8.19)
+2020-11-03 01:37:01,860 > Collecting flask<2,>=1.1.2
+2020-11-03 01:37:01,860 > Downloading https://files.pythonhosted.org/packages/f2/28/2a03252dfb9ebf377f40fba6a7841b47083260bf8bd8e737b0c6952df83f/Flask-1.1.2-py2.py3-none-any.whl (94kB)
+2020-11-03 01:37:01,860 > Collecting Jinja2<3,>=2.11.2
+2020-11-03 01:37:01,860 > Downloading https://files.pythonhosted.org/packages/30/9e/f663a2aa66a09d838042ae1a2c5659828bb9b41ea3a6efa20a20fd92b121/Jinja2-2.11.2-py2.py3-none-any.whl (125kB)
+2020-11-03 01:37:01,860 > Collecting Flask-Login<0.6,>=0.5
+2020-11-03 01:37:01,861 > Downloading https://files.pythonhosted.org/packages/2b/83/ac5bf3279f969704fc1e63f050c50e10985e50fd340e6069ec7e09df5442/Flask_Login-0.5.0-py2.py3-none-any.whl
+2020-11-03 01:37:01,861 > Collecting Flask-Babel<2,>=1.0
+2020-11-03 01:37:01,861 > Downloading https://files.pythonhosted.org/packages/7a/73/e4a9532ca11daeead1a99251f2ec1a5faf98117b83dbfe1b30535004cd98/Flask-Babel-1.0.0.tar.gz (49kB)
+2020-11-03 01:37:02,862 > Collecting Flask-Assets<3,>=2.0
+2020-11-03 01:37:02,863 > Downloading https://files.pythonhosted.org/packages/55/bb/c3f04674d54151875321a2aa55a82977b903d3cd6cc130ba04cbc67c6b06/Flask-Assets-2.0.tar.gz
+2020-11-03 01:37:04,471 > Collecting werkzeug<2,>=1.0.1
+2020-11-03 01:37:04,472 > Downloading https://files.pythonhosted.org/packages/cc/94/5f7079a0e00bd6863ef8f1da638721e9da21e5bacee597595b318f71d62e/Werkzeug-1.0.1-py2.py3-none-any.whl (298kB)
+2020-11-03 01:37:04,472 > Requirement already satisfied: itsdangerous<2,>=1.1.0 in /home/pi/oprint/lib/python2.7/site-packages (from OctoPrint==1.4.2) (1.1.0)
+2020-11-03 01:37:04,473 > Requirement already satisfied: cachelib<1,>=0.1 in /home/pi/oprint/lib/python2.7/site-packages (from OctoPrint==1.4.2) (0.1)
+2020-11-03 01:37:04,473 > Collecting PyYAML<6,>=5.3.1
+2020-11-03 01:37:04,473 > Downloading https://files.pythonhosted.org/packages/64/c2/b80047c7ac2478f9501676c988a5411ed5572f35d1beff9cae07d321512c/PyYAML-5.3.1.tar.gz (269kB)
+2020-11-03 01:37:05,747 > Requirement already satisfied: pyserial<4,>=3.4 in /home/pi/oprint/lib/python2.7/site-packages (from OctoPrint==1.4.2) (3.4)
+2020-11-03 01:37:05,747 > Requirement already satisfied: netaddr<1,>=0.7.19 in /home/pi/oprint/lib/python2.7/site-packages (from OctoPrint==1.4.2) (0.7.19)
+2020-11-03 01:37:05,748 > Collecting watchdog<1,>=0.10.2
+2020-11-03 01:37:05,748 > Downloading https://files.pythonhosted.org/packages/0e/06/121302598a4fc01aca942d937f4a2c33430b7181137b35758913a8db10ad/watchdog-0.10.3.tar.gz (94kB)
+2020-11-03 01:37:07,177 > Requirement already satisfied: sarge==0.1.5post0 in /home/pi/oprint/lib/python2.7/site-packages (from OctoPrint==1.4.2) (0.1.5.post0)
+2020-11-03 01:37:07,178 > Requirement already satisfied: netifaces<1,>=0.10.9 in /home/pi/oprint/lib/python2.7/site-packages (from OctoPrint==1.4.2) (0.10.9)
+2020-11-03 01:37:07,178 > Requirement already satisfied: pylru<2,>=1.2 in /home/pi/oprint/lib/python2.7/site-packages (from OctoPrint==1.4.2) (1.2.0)
+2020-11-03 01:37:07,178 > Requirement already satisfied: pkginfo<2,>=1.5.0.1 in /home/pi/oprint/lib/python2.7/site-packages (from OctoPrint==1.4.2) (1.5.0.1)
+2020-11-03 01:37:07,179 > Collecting requests<3,>=2.23.0
+2020-11-03 01:37:07,179 > Downloading https://www.piwheels.org/simple/requests/requests-2.24.0-py2.py3-none-any.whl (61kB)
+2020-11-03 01:37:08,180 > Collecting semantic_version<3,>=2.8.5
+2020-11-03 01:37:08,181 > Downloading https://www.piwheels.org/simple/semantic-version/semantic_version-2.8.5-py2.py3-none-any.whl
+2020-11-03 01:37:09,477 > Collecting psutil<6,>=5.7
+2020-11-03 01:37:09,478 > Downloading https://files.pythonhosted.org/packages/33/e0/82d459af36bda999f82c7ea86c67610591cf5556168f48fd6509e5fa154d/psutil-5.7.3.tar.gz (465kB)
+2020-11-03 01:37:11,481 > Collecting Click<8,>=7.1.2
+2020-11-03 01:37:11,481 > Downloading https://files.pythonhosted.org/packages/d2/3d/fa76db83bf75c4f8d338c2fd15c8d33fdd7ad23a9b5e57eb6c5de26b430e/click-7.1.2-py2.py3-none-any.whl (82kB)
+2020-11-03 01:37:11,481 > Requirement already satisfied: feedparser<6,>=5.2.1 in /home/pi/oprint/lib/python2.7/site-packages (from OctoPrint==1.4.2) (5.2.1)
+2020-11-03 01:37:12,483 > Collecting future<1,>=0.18.2
+2020-11-03 01:37:12,483 > Downloading https://files.pythonhosted.org/packages/45/0b/38b06fd9b92dc2b68d58b75f900e97884c45bedd2ff83203d933cf5851c9/future-0.18.2.tar.gz (829kB)
+2020-11-03 01:37:14,112 > Collecting websocket-client<1,>=0.57
+2020-11-03 01:37:14,113 > Downloading https://www.piwheels.org/simple/websocket-client/websocket_client-0.57.0-py2.py3-none-any.whl (200kB)
+2020-11-03 01:37:15,114 > Collecting wrapt<2,>=1.12.1
+2020-11-03 01:37:15,115 > Downloading https://files.pythonhosted.org/packages/82/f7/e43cefbe88c5fd371f4cf0cf5eb3feccd07515af9fd6cf7dbf1d1793a797/wrapt-1.12.1.tar.gz
+2020-11-03 01:37:16,494 > Requirement already satisfied: emoji<1,>=0.5.4 in /home/pi/oprint/lib/python2.7/site-packages (from OctoPrint==1.4.2) (0.5.4)
+2020-11-03 01:37:16,494 > Requirement already satisfied: frozendict<2,>=1.2 in /home/pi/oprint/lib/python2.7/site-packages (from OctoPrint==1.4.2) (1.2)
+2020-11-03 01:37:16,495 > Collecting sentry-sdk<1,>=0.15.1
+2020-11-03 01:37:16,495 > Downloading https://www.piwheels.org/simple/sentry-sdk/sentry_sdk-0.19.2-py2.py3-none-any.whl (127kB)
+2020-11-03 01:37:18,254 > Collecting filetype<2,>=1.0.7
+2020-11-03 01:37:18,255 > Downloading https://www.piwheels.org/simple/filetype/filetype-1.0.7-py2.py3-none-any.whl
+2020-11-03 01:37:18,255 > Requirement already satisfied: unidecode<0.05,>=0.04.14 in /home/pi/oprint/lib/python2.7/site-packages (from OctoPrint==1.4.2) (0.4.21)
+2020-11-03 01:37:18,256 > Requirement already satisfied: blinker<2,>=1.4 in /home/pi/oprint/lib/python2.7/site-packages (from OctoPrint==1.4.2) (1.4)
+2020-11-03 01:37:18,256 > Collecting futures<4,>=3.3
+2020-11-03 01:37:18,256 > Downloading https://files.pythonhosted.org/packages/d8/a6/f46ae3f1da0cd4361c344888f59ec2f5785e69c872e175a748ef6071cdb5/futures-3.3.0-py2-none-any.whl
+2020-11-03 01:37:18,256 > Requirement already satisfied: monotonic<2,>=1.5 in /home/pi/oprint/lib/python2.7/site-packages (from OctoPrint==1.4.2) (1.5)
+2020-11-03 01:37:18,257 > Requirement already satisfied: scandir<2,>=1.10 in /home/pi/oprint/lib/python2.7/site-packages (from OctoPrint==1.4.2) (1.10.0)
+2020-11-03 01:37:18,257 > Requirement already satisfied: chainmap<2,>=1.0.3 in /home/pi/oprint/lib/python2.7/site-packages (from OctoPrint==1.4.2) (1.0.3)
+2020-11-03 01:37:18,257 > Requirement already satisfied: typing<4,>=3.7.4.1 in /home/pi/oprint/lib/python2.7/site-packages (from OctoPrint==1.4.2) (3.7.4.1)
+2020-11-03 01:37:18,257 > Requirement already satisfied: singledispatch in /home/pi/oprint/lib/python2.7/site-packages (from tornado==5.1.1->OctoPrint==1.4.2) (3.4.0.3)
+2020-11-03 01:37:18,257 > Requirement already satisfied: backports_abc>=0.4 in /home/pi/oprint/lib/python2.7/site-packages (from tornado==5.1.1->OctoPrint==1.4.2) (0.5)
+2020-11-03 01:37:18,258 > Requirement already satisfied: setuptools>=36 in /home/pi/oprint/lib/python2.7/site-packages (from markdown<3.2,>=3.1->OctoPrint==1.4.2) (41.5.1)
+2020-11-03 01:37:18,258 > Requirement already satisfied: pyasn1>=0.1.3 in /home/pi/oprint/lib/python2.7/site-packages (from rsa==4.0->OctoPrint==1.4.2) (0.4.7)
+2020-11-03 01:37:18,258 > Requirement already satisfied: pytz in /home/pi/oprint/lib/python2.7/site-packages (from Flask-Babel<2,>=1.0->OctoPrint==1.4.2) (2019.3)
+2020-11-03 01:37:18,258 > Requirement already satisfied: Babel>=2.3 in /home/pi/oprint/lib/python2.7/site-packages (from Flask-Babel<2,>=1.0->OctoPrint==1.4.2) (2.7.0)
+2020-11-03 01:37:18,258 > Collecting webassets>=2.0
+2020-11-03 01:37:18,259 > Downloading https://files.pythonhosted.org/packages/c1/c4/2da869584205c064614535cc626defa493b98f0d114e8f4741c99800000e/webassets-2.0.tar.gz (288kB)
+2020-11-03 01:37:19,260 > Requirement already satisfied: pathtools>=0.1.1 in /home/pi/oprint/lib/python2.7/site-packages (from watchdog<1,>=0.10.2->OctoPrint==1.4.2) (0.1.2)
+2020-11-03 01:37:19,261 > Requirement already satisfied: idna<3,>=2.5 in /home/pi/oprint/lib/python2.7/site-packages (from requests<3,>=2.23.0->OctoPrint==1.4.2) (2.8)
+2020-11-03 01:37:19,261 > Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /home/pi/oprint/lib/python2.7/site-packages (from requests<3,>=2.23.0->OctoPrint==1.4.2) (1.25.6)
+2020-11-03 01:37:19,262 > Requirement already satisfied: certifi>=2017.4.17 in /home/pi/oprint/lib/python2.7/site-packages (from requests<3,>=2.23.0->OctoPrint==1.4.2) (2019.9.11)
+2020-11-03 01:37:19,262 > Requirement already satisfied: chardet<4,>=3.0.2 in /home/pi/oprint/lib/python2.7/site-packages (from requests<3,>=2.23.0->OctoPrint==1.4.2) (3.0.4)
+2020-11-03 01:37:19,262 > Requirement already satisfied: six in /home/pi/oprint/lib/python2.7/site-packages (from websocket-client<1,>=0.57->OctoPrint==1.4.2) (1.12.0)
+2020-11-03 01:37:19,262 > Building wheels for collected packages: OctoPrint, tornado, Flask-Babel, Flask-Assets, PyYAML, watchdog, psutil, future, wrapt, webassets
+2020-11-03 01:37:19,262 > Building wheel for OctoPrint (setup.py): started
+2020-11-03 01:37:22,610 > Building wheel for OctoPrint (setup.py): finished with status 'done'
+2020-11-03 01:37:22,611 > Created wheel for OctoPrint: filename=OctoPrint-1.4.2-py2.py3-none-any.whl size=2860983 sha256=49a18a5971e0642fa02c4803aad8fe1c2e42b857c4af6d0df47715e6b3c72d7f
+2020-11-03 01:37:22,611 > Stored in directory: /tmp/pip-ephem-wheel-cache-IRsLI1/wheels/c0/51/b4/26ea514d23bc75d53bd650f28a6d268d3b08ad0332eb6b49ab
+2020-11-03 01:37:23,613 > Building wheel for tornado (setup.py): started
+2020-11-03 01:37:24,992 > Building wheel for tornado (setup.py): finished with status 'done'
+2020-11-03 01:37:24,992 > Created wheel for tornado: filename=tornado-5.1.1-cp27-cp27mu-linux_armv7l.whl size=461232 sha256=65b853230ad558a96f9dfde50555d5b3d44204ea4e14fd38940e02f65251f3d9
+2020-11-03 01:37:24,994 > Stored in directory: /tmp/pip-ephem-wheel-cache-IRsLI1/wheels/6d/e1/ce/f4ee2fa420cc6b940123c64992b81047816d0a9fad6b879325
+2020-11-03 01:37:24,994 > Building wheel for Flask-Babel (setup.py): started
+2020-11-03 01:37:26,410 > Building wheel for Flask-Babel (setup.py): finished with status 'done'
+2020-11-03 01:37:26,411 > Created wheel for Flask-Babel: filename=Flask_Babel-1.0.0-cp27-none-any.whl size=9500 sha256=afabc440affb447f042634cd377334ccb1be6638d04c9ba7b4ea542ad74a532c
+2020-11-03 01:37:26,411 > Stored in directory: /tmp/pip-ephem-wheel-cache-IRsLI1/wheels/a6/99/39/d063449aca6cd73c59ec2954b92acc828882e8cd1ae27323b8
+2020-11-03 01:37:26,412 > Building wheel for Flask-Assets (setup.py): started
+2020-11-03 01:37:26,412 > Building wheel for Flask-Assets (setup.py): finished with status 'done'
+2020-11-03 01:37:26,412 > Created wheel for Flask-Assets: filename=Flask_Assets-2.0-cp27-none-any.whl size=8452 sha256=fb0bb8c5ece21b05450534eb5c1561ecd2d729d1d09505b20755fbd9ef17e31a
+2020-11-03 01:37:26,412 > Stored in directory: /tmp/pip-ephem-wheel-cache-IRsLI1/wheels/0e/8e/47/fea22d5806736350324c8ff8ab110e7ef476d93cbbfd78c6f4
+2020-11-03 01:37:26,412 > Building wheel for PyYAML (setup.py): started
+2020-11-03 01:37:27,414 > Building wheel for PyYAML (setup.py): finished with status 'done'
+2020-11-03 01:37:27,414 > Created wheel for PyYAML: filename=PyYAML-5.3.1-cp27-cp27mu-linux_armv7l.whl size=45645 sha256=3a2b74328725c142be0699f18dd138138fc38147f9dfe3e943e0da45bb2cbe96
+2020-11-03 01:37:27,415 > Stored in directory: /tmp/pip-ephem-wheel-cache-IRsLI1/wheels/a7/c1/ea/cf5bd31012e735dc1dfea3131a2d5eae7978b251083d6247bd
+2020-11-03 01:37:27,415 > Building wheel for watchdog (setup.py): started
+2020-11-03 01:37:28,416 > Building wheel for watchdog (setup.py): finished with status 'done'
+2020-11-03 01:37:28,417 > Created wheel for watchdog: filename=watchdog-0.10.3-cp27-none-any.whl size=73873 sha256=42627ea0f3bf5f2e8c4d9aaeb423ab7d1553a79a0aee79417e583340aa78e2bf
+2020-11-03 01:37:28,417 > Stored in directory: /tmp/pip-ephem-wheel-cache-IRsLI1/wheels/a8/1d/38/2c19bb311f67cc7b4d07a2ec5ea36ab1a0a0ea50db994a5bc7
+2020-11-03 01:37:28,417 > Building wheel for psutil (setup.py): started
+2020-11-03 01:37:37,423 > Building wheel for psutil (setup.py): finished with status 'done'
+2020-11-03 01:37:37,424 > Created wheel for psutil: filename=psutil-5.7.3-cp27-cp27mu-linux_armv7l.whl size=281513 sha256=cc9660fe122871e3e25e5d5f99c541bee1824d510fd16ddf719263aff798b1eb
+2020-11-03 01:37:37,425 > Stored in directory: /tmp/pip-ephem-wheel-cache-IRsLI1/wheels/42/32/da/8b12fd6b138c733efd03cfde6c6c8191a32842f9e82aa45fbf
+2020-11-03 01:37:38,427 > Building wheel for future (setup.py): started
+2020-11-03 01:37:39,428 > Building wheel for future (setup.py): finished with status 'done'
+2020-11-03 01:37:39,429 > Created wheel for future: filename=future-0.18.2-cp27-none-any.whl size=502568 sha256=e7e726fb181d4775c8d71262be5c9e65c44c575e92f522de7087866b05cabcde
+2020-11-03 01:37:39,429 > Stored in directory: /tmp/pip-ephem-wheel-cache-IRsLI1/wheels/8b/99/a0/81daf51dcd359a9377b110a8a886b3895921802d2fc1b2397e
+2020-11-03 01:37:40,430 > Building wheel for wrapt (setup.py): started
+2020-11-03 01:37:43,998 > Building wheel for wrapt (setup.py): finished with status 'done'
+2020-11-03 01:37:43,998 > Created wheel for wrapt: filename=wrapt-1.12.1-cp27-cp27mu-linux_armv7l.whl size=64179 sha256=767cf91efc4a217d38606ef1fc4b9cecf1822394b53a69867430739249d87c31
+2020-11-03 01:37:43,999 > Stored in directory: /tmp/pip-ephem-wheel-cache-IRsLI1/wheels/b1/c2/ed/d62208260edbd3fa7156545c00ef966f45f2063d0a84f8208a
+2020-11-03 01:37:43,999 > Building wheel for webassets (setup.py): started
+2020-11-03 01:37:43,999 > Building wheel for webassets (setup.py): finished with status 'done'
+2020-11-03 01:37:44,000 > Created wheel for webassets: filename=webassets-2.0-cp27-none-any.whl size=142872 sha256=7fcb7f4bd82413f45f971fc68d06ea26a19f9962f21243f36e9c9fe974dfac52
+2020-11-03 01:37:44,000 > Stored in directory: /tmp/pip-ephem-wheel-cache-IRsLI1/wheels/84/a2/d5/4dbffb49133706a3de7f1d9bb930a32e884898a5c7f3eb3357
+2020-11-03 01:37:44,000 > Successfully built OctoPrint tornado Flask-Babel Flask-Assets PyYAML watchdog psutil future wrapt webassets
+2020-11-03 01:37:47,823 > Installing collected packages: OctoPrint-FirmwareCheck, OctoPrint-FileCheck, futures, tornado, markdown, Jinja2, werkzeug, Click, flask, Flask-Login, Flask-Babel, webassets, Flask-Assets, PyYAML, watchdog, requests, semantic-version, psutil, future, websocket-client, wrapt, sentry-sdk, filetype, OctoPrint
+2020-11-03 01:37:48,309 > Found existing installation: futures 3.2.0
+2020-11-03 01:37:48,309 > Uninstalling futures-3.2.0:
+2020-11-03 01:37:48,309 > Successfully uninstalled futures-3.2.0
+2020-11-03 01:37:48,309 > Found existing installation: tornado 4.5.3
+2020-11-03 01:37:48,310 > Uninstalling tornado-4.5.3:
+2020-11-03 01:37:48,310 > Successfully uninstalled tornado-4.5.3
+2020-11-03 01:37:48,310 > Found existing installation: Markdown 3.0.1
+2020-11-03 01:37:48,310 > Uninstalling Markdown-3.0.1:
+2020-11-03 01:37:48,310 > Successfully uninstalled Markdown-3.0.1
+2020-11-03 01:37:48,311 > Found existing installation: Jinja2 2.8.1
+2020-11-03 01:37:48,311 > Uninstalling Jinja2-2.8.1:
+2020-11-03 01:37:48,311 > Successfully uninstalled Jinja2-2.8.1
+2020-11-03 01:37:48,311 > Found existing installation: Werkzeug 0.15.6
+2020-11-03 01:37:48,312 > Uninstalling Werkzeug-0.15.6:
+2020-11-03 01:37:48,312 > Successfully uninstalled Werkzeug-0.15.6
+2020-11-03 01:37:48,312 > Found existing installation: Click 7.0
+2020-11-03 01:37:48,312 > Uninstalling Click-7.0:
+2020-11-03 01:37:48,312 > Successfully uninstalled Click-7.0
+2020-11-03 01:37:48,313 > Found existing installation: Flask 0.10.1
+2020-11-03 01:37:48,313 > Uninstalling Flask-0.10.1:
+2020-11-03 01:37:48,313 > Successfully uninstalled Flask-0.10.1
+2020-11-03 01:37:48,313 > Found existing installation: Flask-Login 0.2.11
+2020-11-03 01:37:48,313 > Uninstalling Flask-Login-0.2.11:
+2020-11-03 01:37:48,313 > Successfully uninstalled Flask-Login-0.2.11
+2020-11-03 01:37:48,314 > Found existing installation: Flask-Babel 0.12.2
+2020-11-03 01:37:48,314 > Uninstalling Flask-Babel-0.12.2:
+2020-11-03 01:37:48,314 > Successfully uninstalled Flask-Babel-0.12.2
+2020-11-03 01:37:48,314 > Found existing installation: webassets 0.12.1
+2020-11-03 01:37:48,314 > Uninstalling webassets-0.12.1:
+2020-11-03 01:37:48,315 > Successfully uninstalled webassets-0.12.1
+2020-11-03 01:37:48,315 > Found existing installation: Flask-Assets 0.12
+2020-11-03 01:37:48,315 > Uninstalling Flask-Assets-0.12:
+2020-11-03 01:37:48,315 > Successfully uninstalled Flask-Assets-0.12
+2020-11-03 01:37:48,315 > Found existing installation: PyYAML 5.1.2
+2020-11-03 01:37:48,315 > Uninstalling PyYAML-5.1.2:
+2020-11-03 01:37:48,316 > Successfully uninstalled PyYAML-5.1.2
+2020-11-03 01:37:48,316 > Found existing installation: watchdog 0.9.0
+2020-11-03 01:37:48,316 > Uninstalling watchdog-0.9.0:
+2020-11-03 01:37:48,316 > Successfully uninstalled watchdog-0.9.0
+2020-11-03 01:37:48,316 > Found existing installation: requests 2.22.0
+2020-11-03 01:37:48,317 > Uninstalling requests-2.22.0:
+2020-11-03 01:37:48,317 > Successfully uninstalled requests-2.22.0
+2020-11-03 01:37:48,317 > Found existing installation: semantic-version 2.6.0
+2020-11-03 01:37:48,317 > Uninstalling semantic-version-2.6.0:
+2020-11-03 01:37:48,318 > Successfully uninstalled semantic-version-2.6.0
+2020-11-03 01:37:48,318 > Found existing installation: psutil 5.6.3
+2020-11-03 01:37:48,318 > Uninstalling psutil-5.6.3:
+2020-11-03 01:37:48,318 > Successfully uninstalled psutil-5.6.3
+2020-11-03 01:37:49,328 > Found existing installation: future 0.17.1
+2020-11-03 01:37:49,328 > Uninstalling future-0.17.1:
+2020-11-03 01:37:49,329 > Successfully uninstalled future-0.17.1
+2020-11-03 01:37:50,901 > Found existing installation: websocket-client 0.56.0
+2020-11-03 01:37:50,901 > Uninstalling websocket-client-0.56.0:
+2020-11-03 01:37:50,902 > Successfully uninstalled websocket-client-0.56.0
+2020-11-03 01:37:50,902 > Found existing installation: wrapt 1.11.2
+2020-11-03 01:37:50,902 > Uninstalling wrapt-1.11.2:
+2020-11-03 01:37:50,903 > Successfully uninstalled wrapt-1.11.2
+2020-11-03 01:37:50,903 > Found existing installation: sentry-sdk 0.7.7
+2020-11-03 01:37:50,903 > Uninstalling sentry-sdk-0.7.7:
+2020-11-03 01:37:50,903 > Successfully uninstalled sentry-sdk-0.7.7
+2020-11-03 01:37:50,904 > Found existing installation: filetype 1.0.5
+2020-11-03 01:37:50,904 > Uninstalling filetype-1.0.5:
+2020-11-03 01:37:50,904 > Successfully uninstalled filetype-1.0.5
+2020-11-03 01:37:50,904 > Found existing installation: OctoPrint 1.3.12
+2020-11-03 01:37:50,904 > Uninstalling OctoPrint-1.3.12:
+2020-11-03 01:37:50,905 > Successfully uninstalled OctoPrint-1.3.12
+2020-11-03 01:37:52,320 > Successfully installed Click-7.1.2 Flask-Assets-2.0 Flask-Babel-1.0.0 Flask-Login-0.5.0 Jinja2-2.11.2 OctoPrint-1.4.2 OctoPrint-FileCheck-2020.8.7 OctoPrint-FirmwareCheck-2020.9.23 PyYAML-5.3.1 filetype-1.0.7 flask-1.1.2 future-0.18.2 futures-3.3.0 markdown-3.1.1 psutil-5.7.3 requests-2.24.0 semantic-version-2.8.5 sentry-sdk-0.19.2 tornado-5.1.1 watchdog-0.10.3 webassets-2.0 websocket-client-0.57.0 werkzeug-1.0.1 wrapt-1.12.1

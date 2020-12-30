@@ -1,0 +1,692 @@
+2019-09-26 01:24:48,028 - octoprint.startup - INFO - ******************************************************************************
+2019-09-26 01:24:48,029 - octoprint.startup - INFO - Starting OctoPrint 1.3.12
+2019-09-26 01:24:48,029 - octoprint.startup - INFO - ******************************************************************************
+2019-09-26 01:24:48,085 - octoprint.plugin.core - INFO - Loading plugins from /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins, /home/pi/.octoprint/plugins and installed plugin packages...
+2019-09-26 01:24:49,223 - octoprint.plugin.core - INFO - Found 15 plugin(s) providing 15 mixin implementations, 23 hook handlers
+2019-09-26 01:24:49,391 - octoprint.server.heartbeat - INFO - Starting server heartbeat, 900.0s interval
+2019-09-26 01:24:49,475 - octoprint.server - INFO - Intermediary server started
+2019-09-26 01:24:49,475 - octoprint.plugin.core - INFO - Loading plugins from /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins, /home/pi/.octoprint/plugins and installed plugin packages...
+2019-09-26 01:24:49,630 - octoprint.plugin.core - INFO - Found 15 plugin(s) providing 15 mixin implementations, 23 hook handlers
+2019-09-26 01:24:49,632 - octoprint.printer.profile - ERROR - Profile _default does not exist, creating _default again and setting it as default
+2019-09-26 01:24:49,768 - octoprint.filemanager.storage - INFO - Initializing the file metadata for /home/pi/.octoprint/uploads...
+2019-09-26 01:24:49,771 - octoprint.filemanager.storage - INFO - ... file metadata for /home/pi/.octoprint/uploads initialized successfully.
+2019-09-26 01:24:51,373 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python2 -m pip" as command to invoke pip
+2019-09-26 01:24:52,570 - octoprint.util.pip - INFO - Version of pip is 19.3.1
+2019-09-26 01:24:52,574 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python2.7/site-packages (writable -> yes), --user flag needed -> no, virtual env -> yes
+2019-09-26 01:24:52,575 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2019-09-26 01:24:52,582 - octoprint.plugin.core - INFO - Initialized 15 plugin implementation(s)
+2019-09-26 01:24:52,706 - octoprint.plugin.core - INFO - 15 plugin(s) registered with the system:
+|  Action Command Prompt Support (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/action_command_prompt
+|  Announcement Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements
+|  Anonymous Usage Tracking (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/tracking
+|  Application Keys Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/appkeys
+|  Backup & Restore (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/backup
+|  Core Wizard (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/corewizard
+|  Discovery (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/discovery
+|  Error Tracking (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/errortracking
+|  Force Login (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/forcelogin
+|  Logging (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/logging
+|  Pi Support Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pi_support
+|  Plugin Manager (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pluginmanager
+|  Printer Safety Check (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/printer_safety_check
+|  Software Update (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/softwareupdate
+|  Virtual Printer (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/virtual_printer
+2019-09-26 01:24:52,728 - octoprint.environment - INFO - Detected environment is Python 2.7.16 under Linux (linux2). Details:
+|  hardware:
+|    cores: 4
+|    freq: 1500.0
+|    ram: 1979641856
+|  os:
+|    id: linux
+|    platform: linux2
+|  plugins:
+|    pi_support:
+|      model: Raspberry Pi 4 Model B Rev 1.1
+|      octopi_version: 0.17.0
+|  python:
+|    pip: 19.3.1
+|    version: 2.7.16
+|    virtualenv: /home/pi/oprint
+2019-09-26 01:24:52,739 - octoprint.server - INFO - Reset webasset folder /home/pi/.octoprint/generated/webassets...
+2019-09-26 01:24:52,740 - octoprint.server - INFO - Reset webasset folder /home/pi/.octoprint/generated/.webassets-cache...
+2019-09-26 01:24:53,759 - octoprint.server - INFO - Shutting down intermediary server...
+2019-09-26 01:24:54,082 - octoprint.server - INFO - Intermediary server shut down
+2019-09-26 01:24:54,086 - octoprint.events - INFO - Processing startup event, this is our first event
+2019-09-26 01:24:54,086 - octoprint.events - INFO - Adding 0 events to queue that were held back before startup event
+2019-09-26 01:24:54,089 - octoprint.filemanager - INFO - Adding backlog items from all storage types to analysis queue...
+2019-09-26 01:24:54,095 - octoprint.filemanager - INFO - Added 0 items from storage type "local" to analysis queue
+2019-09-26 01:24:54,096 - octoprint.server.util.watchdog - INFO - Running initial scan on watched folder...
+2019-09-26 01:24:54,100 - octoprint.server.util.watchdog - INFO - ... initial scan done.
+2019-09-26 01:24:54,118 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance on voron' for _http._tcp
+2019-09-26 01:24:54,135 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance on voron' for _octoprint._tcp
+2019-09-26 01:24:54,176 - octoprint.plugins.pi_support - WARNING - This Raspberry Pi is reporting problems that might lead to bad performance or errors caused by overheating or insufficient power.
+!!! UNDERVOLTAGE REPORTED !!! Make sure that the power supply and power cable are capable of supplying enough voltage and current to your Pi.
+2019-09-26 01:24:54,185 - octoprint.server - INFO - Listening on http://127.0.0.1:5000
+2019-09-26 01:24:54,248 - octoprint.plugins.announcements - ERROR - Could not fetch channel _important from https://octoprint.org/feeds/important.xml: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/important.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16e2810>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements/__init__.py", line 355, in _get_channel_data_from_network
+    r = requests.get(url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/important.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16e2810>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2019-09-26 01:24:54,253 - octoprint.plugins.pluginmanager - ERROR - Could not fetch plugins from repository at https://plugins.octoprint.org/plugins.json: HTTPSConnectionPool(host='plugins.octoprint.org', port=443): Max retries exceeded with url: /plugins.json (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16e2970>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pluginmanager/__init__.py", line 823, in _fetch_repository_from_url
+    r = requests.get(repository_url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='plugins.octoprint.org', port=443): Max retries exceeded with url: /plugins.json (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16e2970>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2019-09-26 01:24:54,279 - octoprint.plugins.pluginmanager - ERROR - Could not fetch notices from https://plugins.octoprint.org/notices.json: HTTPSConnectionPool(host='plugins.octoprint.org', port=443): Max retries exceeded with url: /notices.json (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16fda70>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pluginmanager/__init__.py", line 891, in _fetch_notices_from_url
+    r = requests.get(notices_url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='plugins.octoprint.org', port=443): Max retries exceeded with url: /notices.json (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16fda70>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2019-09-26 01:24:54,294 - octoprint.plugins.announcements - ERROR - Could not fetch channel _releases from https://octoprint.org/feeds/releases.xml: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/releases.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16fd770>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements/__init__.py", line 355, in _get_channel_data_from_network
+    r = requests.get(url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/releases.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16fd770>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2019-09-26 01:24:54,304 - octoprint.plugins.announcements - ERROR - Could not fetch channel _blog from https://octoprint.org/feeds/octoblog.xml: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/octoblog.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16fd490>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements/__init__.py", line 355, in _get_channel_data_from_network
+    r = requests.get(url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/octoblog.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16fd490>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2019-09-26 01:24:54,315 - octoprint.plugins.announcements - ERROR - Could not fetch channel _plugins from https://plugins.octoprint.org/feed.xml: HTTPSConnectionPool(host='plugins.octoprint.org', port=443): Max retries exceeded with url: /feed.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16e2930>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements/__init__.py", line 355, in _get_channel_data_from_network
+    r = requests.get(url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='plugins.octoprint.org', port=443): Max retries exceeded with url: /feed.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16e2930>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2019-09-26 01:24:54,325 - octoprint.plugins.announcements - ERROR - Could not fetch channel _octopi from https://octoprint.org/feeds/octopi.xml: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/octopi.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16e2f10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements/__init__.py", line 355, in _get_channel_data_from_network
+    r = requests.get(url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/octopi.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16e2f10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2019-09-26 01:24:55,624 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python2 -m pip" as command to invoke pip
+2019-09-26 01:24:55,626 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python2.7/site-packages (writable -> yes), --user flag needed -> no, virtual env -> yes
+2019-09-26 01:24:55,627 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2019-09-26 01:24:55,641 - octoprint.plugins.softwareupdate - WARNING - Could not check octoprint for updates due to a network error
+2019-09-26 01:24:55,663 - octoprint.plugins.softwareupdate - INFO - Saved version cache to disk
+2019-09-26 01:24:47,005 - octoprint.startup - INFO - ******************************************************************************
+2019-09-26 01:24:47,007 - octoprint.startup - INFO - Starting OctoPrint 1.3.12
+2019-09-26 01:24:47,008 - octoprint.startup - INFO - ******************************************************************************
+2019-09-26 01:24:48,421 - octoprint.plugin.core - INFO - Loading plugins from /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins, /home/pi/.octoprint/plugins and installed plugin packages...
+2019-09-26 01:24:50,486 - octoprint.plugin.core - INFO - Found 15 plugin(s) providing 15 mixin implementations, 23 hook handlers
+2019-09-26 01:24:50,697 - octoprint.server.heartbeat - INFO - Starting server heartbeat, 900.0s interval
+2019-09-26 01:24:50,742 - octoprint.server - INFO - Intermediary server started
+2019-09-26 01:24:50,743 - octoprint.plugin.core - INFO - Loading plugins from /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins, /home/pi/.octoprint/plugins and installed plugin packages...
+2019-09-26 01:24:50,903 - octoprint.plugin.core - INFO - Found 15 plugin(s) providing 15 mixin implementations, 23 hook handlers
+2019-09-26 01:24:50,950 - octoprint.filemanager.storage - INFO - Initializing the file metadata for /home/pi/.octoprint/uploads...
+2019-09-26 01:24:50,953 - octoprint.filemanager.storage - INFO - ... file metadata for /home/pi/.octoprint/uploads initialized successfully.
+2019-09-26 01:24:50,993 - octoprint.plugins.softwareupdate - INFO - Loaded version cache from disk
+2019-09-26 01:24:52,429 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python2 -m pip" as command to invoke pip
+2019-09-26 01:24:53,716 - octoprint.util.pip - INFO - Version of pip is 19.3.1
+2019-09-26 01:24:53,718 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python2.7/site-packages (writable -> yes), --user flag needed -> no, virtual env -> yes
+2019-09-26 01:24:53,719 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2019-09-26 01:24:53,726 - octoprint.plugin.core - INFO - Initialized 15 plugin implementation(s)
+2019-09-26 01:24:53,739 - octoprint.plugin.core - INFO - 15 plugin(s) registered with the system:
+|  Action Command Prompt Support (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/action_command_prompt
+|  Announcement Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements
+|  Anonymous Usage Tracking (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/tracking
+|  Application Keys Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/appkeys
+|  Backup & Restore (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/backup
+|  Core Wizard (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/corewizard
+|  Discovery (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/discovery
+|  Error Tracking (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/errortracking
+|  Force Login (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/forcelogin
+|  Logging (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/logging
+|  Pi Support Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pi_support
+|  Plugin Manager (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pluginmanager
+|  Printer Safety Check (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/printer_safety_check
+|  Software Update (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/softwareupdate
+|  Virtual Printer (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/virtual_printer
+2019-09-26 01:24:53,763 - octoprint.environment - INFO - Detected environment is Python 2.7.16 under Linux (linux2). Details:
+|  hardware:
+|    cores: 4
+|    freq: 1500.0
+|    ram: 1979641856
+|  os:
+|    id: linux
+|    platform: linux2
+|  plugins:
+|    pi_support:
+|      model: Raspberry Pi 4 Model B Rev 1.1
+|      octopi_version: 0.17.0
+|  python:
+|    pip: 19.3.1
+|    version: 2.7.16
+|    virtualenv: /home/pi/oprint
+2019-09-26 01:24:53,774 - octoprint.server - INFO - Reset webasset folder /home/pi/.octoprint/generated/webassets...
+2019-09-26 01:24:53,776 - octoprint.server - INFO - Reset webasset folder /home/pi/.octoprint/generated/.webassets-cache...
+2019-09-26 01:24:54,697 - octoprint.server - INFO - Shutting down intermediary server...
+2019-09-26 01:24:54,760 - octoprint.server - INFO - Intermediary server shut down
+2019-09-26 01:24:54,763 - octoprint.events - INFO - Processing startup event, this is our first event
+2019-09-26 01:24:54,764 - octoprint.events - INFO - Adding 0 events to queue that were held back before startup event
+2019-09-26 01:24:54,768 - octoprint.filemanager - INFO - Adding backlog items from all storage types to analysis queue...
+2019-09-26 01:24:54,772 - octoprint.filemanager - INFO - Added 0 items from storage type "local" to analysis queue
+2019-09-26 01:24:54,773 - octoprint.server.util.watchdog - INFO - Running initial scan on watched folder...
+2019-09-26 01:24:54,779 - octoprint.server.util.watchdog - INFO - ... initial scan done.
+2019-09-26 01:24:54,796 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance on voron' for _http._tcp
+2019-09-26 01:24:54,899 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance on voron' for _octoprint._tcp
+2019-09-26 01:24:54,939 - octoprint.plugins.pi_support - WARNING - This Raspberry Pi is reporting problems that might lead to bad performance or errors caused by overheating or insufficient power.
+!!! UNDERVOLTAGE REPORTED !!! Make sure that the power supply and power cable are capable of supplying enough voltage and current to your Pi.
+2019-09-26 01:24:54,947 - octoprint.server - INFO - Listening on http://127.0.0.1:5000
+2019-09-26 01:24:55,011 - octoprint.plugins.pluginmanager - ERROR - Could not fetch plugins from repository at https://plugins.octoprint.org/plugins.json: HTTPSConnectionPool(host='plugins.octoprint.org', port=443): Max retries exceeded with url: /plugins.json (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16d7a70>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pluginmanager/__init__.py", line 823, in _fetch_repository_from_url
+    r = requests.get(repository_url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='plugins.octoprint.org', port=443): Max retries exceeded with url: /plugins.json (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16d7a70>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2019-09-26 01:24:55,029 - octoprint.plugins.announcements - ERROR - Could not fetch channel _important from https://octoprint.org/feeds/important.xml: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/important.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16d77b0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements/__init__.py", line 355, in _get_channel_data_from_network
+    r = requests.get(url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/important.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16d77b0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2019-09-26 01:24:55,041 - octoprint.plugins.pluginmanager - ERROR - Could not fetch notices from https://plugins.octoprint.org/notices.json: HTTPSConnectionPool(host='plugins.octoprint.org', port=443): Max retries exceeded with url: /notices.json (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16ee2d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pluginmanager/__init__.py", line 891, in _fetch_notices_from_url
+    r = requests.get(notices_url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='plugins.octoprint.org', port=443): Max retries exceeded with url: /notices.json (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16ee2d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2019-09-26 01:24:55,056 - octoprint.plugins.announcements - ERROR - Could not fetch channel _releases from https://octoprint.org/feeds/releases.xml: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/releases.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16ee0d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements/__init__.py", line 355, in _get_channel_data_from_network
+    r = requests.get(url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/releases.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16ee0d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2019-09-26 01:24:55,068 - octoprint.plugins.announcements - ERROR - Could not fetch channel _blog from https://octoprint.org/feeds/octoblog.xml: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/octoblog.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16ee870>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements/__init__.py", line 355, in _get_channel_data_from_network
+    r = requests.get(url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/octoblog.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16ee870>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2019-09-26 01:24:55,079 - octoprint.plugins.announcements - ERROR - Could not fetch channel _plugins from https://plugins.octoprint.org/feed.xml: HTTPSConnectionPool(host='plugins.octoprint.org', port=443): Max retries exceeded with url: /feed.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16ee630>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements/__init__.py", line 355, in _get_channel_data_from_network
+    r = requests.get(url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='plugins.octoprint.org', port=443): Max retries exceeded with url: /feed.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16ee630>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2019-09-26 01:24:55,090 - octoprint.plugins.announcements - ERROR - Could not fetch channel _octopi from https://octoprint.org/feeds/octopi.xml: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/octopi.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16ee2d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements/__init__.py", line 355, in _get_channel_data_from_network
+    r = requests.get(url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/octopi.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16ee2d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2019-09-26 01:24:56,300 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python2 -m pip" as command to invoke pip
+2019-09-26 01:24:56,302 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python2.7/site-packages (writable -> yes), --user flag needed -> no, virtual env -> yes
+2019-09-26 01:24:56,304 - octoprint.util.pip - INFO - ==> pip ok -> yes
+                                                                                                                                          2019-09-26 01:24:50,216 - octoprint.startup - INFO - ******************************************************************************
+2019-09-26 01:24:50,221 - octoprint.startup - INFO - Starting OctoPrint 1.3.12
+2019-09-26 01:24:50,222 - octoprint.startup - INFO - Starting in SAFE MODE. Third party plugins will be disabled!
+2019-09-26 01:24:50,223 - octoprint.startup - INFO - Reason for safe mode: problem during last startup
+2019-09-26 01:24:50,228 - octoprint.startup - INFO - ******************************************************************************
+2019-09-26 01:24:51,541 - octoprint.plugin.core - INFO - Loading plugins from /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins, /home/pi/.octoprint/plugins and installed plugin packages...
+2019-09-26 01:24:54,449 - octoprint.plugin.core - INFO - Found 15 plugin(s) providing 15 mixin implementations, 23 hook handlers
+2019-09-26 01:24:54,642 - octoprint.server.heartbeat - INFO - Starting server heartbeat, 900.0s interval
+2019-09-26 01:24:54,706 - octoprint.server - INFO - Intermediary server started
+2019-09-26 01:24:54,708 - octoprint.plugin.core - INFO - Loading plugins from /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins, /home/pi/.octoprint/plugins and installed plugin packages...
+2019-09-26 01:24:54,926 - octoprint.plugin.core - INFO - Found 15 plugin(s) providing 15 mixin implementations, 23 hook handlers
+2019-09-26 01:24:54,988 - octoprint.filemanager.storage - INFO - Initializing the file metadata for /home/pi/.octoprint/uploads...
+2019-09-26 01:24:54,992 - octoprint.filemanager.storage - INFO - ... file metadata for /home/pi/.octoprint/uploads initialized successfully.
+2019-09-26 01:24:55,054 - octoprint.plugins.softwareupdate - INFO - Loaded version cache from disk
+2019-09-26 01:24:57,121 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python2 -m pip" as command to invoke pip
+2019-09-26 01:24:58,998 - octoprint.util.pip - INFO - Version of pip is 19.3.1
+2019-09-26 01:24:59,002 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python2.7/site-packages (writable -> yes), --user flag needed -> no, virtual env -> yes
+2019-09-26 01:24:59,002 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2019-09-26 01:24:59,011 - octoprint.plugin.core - INFO - Initialized 15 plugin implementation(s)
+2019-09-26 01:24:59,029 - octoprint.plugin.core - INFO - 15 plugin(s) registered with the system:
+|  Action Command Prompt Support (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/action_command_prompt
+|  Announcement Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements
+|  Anonymous Usage Tracking (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/tracking
+|  Application Keys Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/appkeys
+|  Backup & Restore (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/backup
+|  Core Wizard (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/corewizard
+|  Discovery (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/discovery
+|  Error Tracking (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/errortracking
+|  Force Login (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/forcelogin
+|  Logging (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/logging
+|  Pi Support Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pi_support
+|  Plugin Manager (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pluginmanager
+|  Printer Safety Check (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/printer_safety_check
+|  Software Update (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/softwareupdate
+|  Virtual Printer (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/virtual_printer
+2019-09-26 01:24:59,061 - octoprint.environment - INFO - Detected environment is Python 2.7.16 under Linux (linux2). Details:
+|  hardware:
+|    cores: 4
+|    freq: 900.0
+|    ram: 917020672
+|  os:
+|    id: linux
+|    platform: linux2
+|  plugins:
+|    pi_support:
+|      model: Raspberry Pi 2 Model B Rev 1.1
+|      octopi_version: 0.17.0
+|  python:
+|    pip: 19.3.1
+|    version: 2.7.16
+|    virtualenv: /home/pi/oprint
+2019-09-26 01:24:59,078 - octoprint.server - INFO - Reset webasset folder /home/pi/.octoprint/generated/webassets...
+2019-09-26 01:24:59,082 - octoprint.server - INFO - Reset webasset folder /home/pi/.octoprint/generated/.webassets-cache...
+2019-09-26 01:25:00,564 - octoprint.server - INFO - Shutting down intermediary server...
+2019-09-26 01:25:00,705 - octoprint.server - INFO - Intermediary server shut down
+2019-09-26 01:25:00,710 - octoprint.events - INFO - Processing startup event, this is our first event
+2019-09-26 01:25:00,713 - octoprint.events - INFO - Adding 0 events to queue that were held back before startup event
+2019-09-26 01:25:00,716 - octoprint.filemanager - INFO - Adding backlog items from all storage types to analysis queue...
+2019-09-26 01:25:00,723 - octoprint.server.util.watchdog - INFO - Running initial scan on watched folder...
+2019-09-26 01:25:00,865 - octoprint.filemanager - INFO - Added 0 items from storage type "local" to analysis queue
+2019-09-26 01:25:00,866 - octoprint.server.util.watchdog - INFO - ... initial scan done.
+2019-09-26 01:25:00,894 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance on voron' for _http._tcp
+2019-09-26 01:25:00,917 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance on voron' for _octoprint._tcp
+2019-09-26 01:25:00,972 - octoprint.server - INFO - Listening on http://127.0.0.1:5000
+2019-09-26 01:25:01,051 - octoprint.plugins.pluginmanager - ERROR - Could not fetch plugins from repository at https://plugins.octoprint.org/plugins.json: HTTPSConnectionPool(host='plugins.octoprint.org', port=443): Max retries exceeded with url: /plugins.json (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x763555d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pluginmanager/__init__.py", line 823, in _fetch_repository_from_url
+    r = requests.get(repository_url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='plugins.octoprint.org', port=443): Max retries exceeded with url: /plugins.json (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x763555d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2019-09-26 01:25:01,058 - octoprint.plugins.announcements - ERROR - Could not fetch channel _important from https://octoprint.org/feeds/important.xml: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/important.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x716ceb30>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements/__init__.py", line 355, in _get_channel_data_from_network
+    r = requests.get(url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/important.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x716ceb30>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2019-09-26 01:25:01,104 - octoprint.plugins.pluginmanager - ERROR - Could not fetch notices from https://plugins.octoprint.org/notices.json: HTTPSConnectionPool(host='plugins.octoprint.org', port=443): Max retries exceeded with url: /notices.json (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x716f2650>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pluginmanager/__init__.py", line 891, in _fetch_notices_from_url
+    r = requests.get(notices_url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='plugins.octoprint.org', port=443): Max retries exceeded with url: /notices.json (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x716f2650>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2019-09-26 01:25:01,106 - octoprint.plugins.announcements - ERROR - Could not fetch channel _releases from https://octoprint.org/feeds/releases.xml: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/releases.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x716cecb0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements/__init__.py", line 355, in _get_channel_data_from_network
+    r = requests.get(url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/releases.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x716cecb0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2019-09-26 01:25:01,131 - octoprint.plugins.announcements - ERROR - Could not fetch channel _blog from https://octoprint.org/feeds/octoblog.xml: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/octoblog.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x71688b30>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements/__init__.py", line 355, in _get_channel_data_from_network
+    r = requests.get(url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/octoblog.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x71688b30>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2019-09-26 01:25:01,155 - octoprint.plugins.announcements - ERROR - Could not fetch channel _plugins from https://plugins.octoprint.org/feed.xml: HTTPSConnectionPool(host='plugins.octoprint.org', port=443): Max retries exceeded with url: /feed.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x716f2630>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements/__init__.py", line 355, in _get_channel_data_from_network
+    r = requests.get(url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='plugins.octoprint.org', port=443): Max retries exceeded with url: /feed.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x716f2630>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2019-09-26 01:25:01,175 - octoprint.plugins.announcements - ERROR - Could not fetch channel _octopi from https://octoprint.org/feeds/octopi.xml: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/octopi.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x763555d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements/__init__.py", line 355, in _get_channel_data_from_network
+    r = requests.get(url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/octopi.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x763555d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2019-09-26 01:25:02,998 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python2 -m pip" as command to invoke pip
+2019-09-26 01:25:03,000 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python2.7/site-packages (writable -> yes), --user flag needed -> no, virtual env -> yes
+2019-09-26 01:25:03,002 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2019-09-26 01:25:49,573 - octoprint.server - INFO - Shutting down...
+2019-09-26 01:25:49,890 - octoprint.events - INFO - Processing shutdown event, this will be our last event
+2019-09-26 01:25:49,893 - octoprint.events - INFO - Event loop shut down
+2019-09-26 01:25:49,993 - octoprint.server - INFO - Goodbye!
+2019-09-26 01:25:57,109 - octoprint.startup - INFO - ******************************************************************************
+2019-09-26 01:25:57,110 - octoprint.startup - INFO - Starting OctoPrint 1.3.12
+2019-09-26 01:25:57,110 - octoprint.startup - INFO - ******************************************************************************
+2019-09-26 01:25:58,599 - octoprint.plugin.core - INFO - Loading plugins from /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins, /home/pi/.octoprint/plugins and installed plugin packages...
+2019-09-26 01:25:59,587 - octoprint.plugin.core - INFO - Found 15 plugin(s) providing 15 mixin implementations, 23 hook handlers
+2019-09-26 01:25:59,688 - octoprint.server.heartbeat - INFO - Starting server heartbeat, 900.0s interval
+2019-09-26 01:25:59,716 - octoprint.server - INFO - Intermediary server started
+2019-09-26 01:25:59,716 - octoprint.plugin.core - INFO - Loading plugins from /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins, /home/pi/.octoprint/plugins and installed plugin packages...
+2019-09-26 01:25:59,778 - octoprint.plugin.core - INFO - Found 15 plugin(s) providing 15 mixin implementations, 23 hook handlers
+2019-09-26 01:25:59,794 - octoprint.filemanager.storage - INFO - Initializing the file metadata for /home/pi/.octoprint/uploads...
+2019-09-26 01:25:59,795 - octoprint.filemanager.storage - INFO - ... file metadata for /home/pi/.octoprint/uploads initialized successfully.
+2019-09-26 01:25:59,814 - octoprint.plugins.softwareupdate - INFO - Loaded version cache from disk
+2019-09-26 01:26:00,459 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python2 -m pip" as command to invoke pip
+2019-09-26 01:26:01,007 - octoprint.util.pip - INFO - Version of pip is 19.3.1
+2019-09-26 01:26:01,008 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python2.7/site-packages (writable -> yes), --user flag needed -> no, virtual env -> yes
+2019-09-26 01:26:01,008 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2019-09-26 01:26:01,012 - octoprint.plugin.core - INFO - Initialized 15 plugin implementation(s)
+2019-09-26 01:26:01,017 - octoprint.plugin.core - INFO - 15 plugin(s) registered with the system:
+|  Action Command Prompt Support (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/action_command_prompt
+|  Announcement Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements
+|  Anonymous Usage Tracking (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/tracking
+|  Application Keys Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/appkeys
+|  Backup & Restore (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/backup
+|  Core Wizard (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/corewizard
+|  Discovery (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/discovery
+|  Error Tracking (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/errortracking
+|  Force Login (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/forcelogin
+|  Logging (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/logging
+|  Pi Support Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pi_support
+|  Plugin Manager (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pluginmanager
+|  Printer Safety Check (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/printer_safety_check
+|  Software Update (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/softwareupdate
+|  Virtual Printer (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/virtual_printer
+2019-09-26 01:26:01,027 - octoprint.environment - INFO - Detected environment is Python 2.7.16 under Linux (linux2). Details:
+|  hardware:
+|    cores: 4
+|    freq: 1500.0
+|    ram: 1979641856
+|  os:
+|    id: linux
+|    platform: linux2
+|  plugins:
+|    pi_support:
+|      model: Raspberry Pi 4 Model B Rev 1.1
+|      octopi_version: 0.17.0
+|  python:
+|    pip: 19.3.1
+|    version: 2.7.16
+|    virtualenv: /home/pi/oprint
+2019-09-26 01:26:01,033 - octoprint.server - INFO - Reset webasset folder /home/pi/.octoprint/generated/webassets...
+2019-09-26 01:26:01,034 - octoprint.server - INFO - Reset webasset folder /home/pi/.octoprint/generated/.webassets-cache...
+2019-09-26 01:26:01,507 - octoprint.server - INFO - Shutting down intermediary server...
+2019-09-26 01:26:01,721 - octoprint.server - INFO - Intermediary server shut down
+2019-09-26 01:26:01,724 - octoprint.events - INFO - Processing startup event, this is our first event
+2019-09-26 01:26:01,725 - octoprint.events - INFO - Adding 0 events to queue that were held back before startup event
+2019-09-26 01:26:01,728 - octoprint.filemanager - INFO - Adding backlog items from all storage types to analysis queue...
+2019-09-26 01:26:01,733 - octoprint.server.util.watchdog - INFO - Running initial scan on watched folder...
+2019-09-26 01:26:01,734 - octoprint.filemanager - INFO - Added 0 items from storage type "local" to analysis queue
+2019-09-26 01:26:01,736 - octoprint.server.util.watchdog - INFO - ... initial scan done.
+2019-09-26 01:26:01,746 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance on voron' for _http._tcp
+2019-09-26 01:26:01,806 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance on voron' for _octoprint._tcp
+2019-09-26 01:26:01,829 - octoprint.server - INFO - Listening on http://127.0.0.1:5000
+2019-09-26 01:26:01,869 - octoprint.plugins.pluginmanager - ERROR - Could not fetch plugins from repository at https://plugins.octoprint.org/plugins.json: HTTPSConnectionPool(host='plugins.octoprint.org', port=443): Max retries exceeded with url: /plugins.json (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16d3810>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pluginmanager/__init__.py", line 823, in _fetch_repository_from_url
+    r = requests.get(repository_url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='plugins.octoprint.org', port=443): Max retries exceeded with url: /plugins.json (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16d3810>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2019-09-26 01:26:01,884 - octoprint.plugins.pluginmanager - ERROR - Could not fetch notices from https://plugins.octoprint.org/notices.json: HTTPSConnectionPool(host='plugins.octoprint.org', port=443): Max retries exceeded with url: /notices.json (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16ef3f0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pluginmanager/__init__.py", line 891, in _fetch_notices_from_url
+    r = requests.get(notices_url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='plugins.octoprint.org', port=443): Max retries exceeded with url: /notices.json (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16ef3f0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2019-09-26 01:26:01,891 - octoprint.plugins.announcements - ERROR - Could not fetch channel _important from https://octoprint.org/feeds/important.xml: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/important.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16ef170>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements/__init__.py", line 355, in _get_channel_data_from_network
+    r = requests.get(url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/important.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16ef170>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2019-09-26 01:26:01,906 - octoprint.plugins.announcements - ERROR - Could not fetch channel _releases from https://octoprint.org/feeds/releases.xml: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/releases.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb5ff42b0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements/__init__.py", line 355, in _get_channel_data_from_network
+    r = requests.get(url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/releases.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb5ff42b0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2019-09-26 01:26:01,911 - octoprint.plugins.announcements - ERROR - Could not fetch channel _blog from https://octoprint.org/feeds/octoblog.xml: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/octoblog.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16d3050>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements/__init__.py", line 355, in _get_channel_data_from_network
+    r = requests.get(url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/octoblog.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16d3050>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2019-09-26 01:26:01,916 - octoprint.plugins.announcements - ERROR - Could not fetch channel _plugins from https://plugins.octoprint.org/feed.xml: HTTPSConnectionPool(host='plugins.octoprint.org', port=443): Max retries exceeded with url: /feed.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16d37b0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements/__init__.py", line 355, in _get_channel_data_from_network
+    r = requests.get(url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='plugins.octoprint.org', port=443): Max retries exceeded with url: /feed.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16d37b0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2019-09-26 01:26:01,921 - octoprint.plugins.announcements - ERROR - Could not fetch channel _octopi from https://octoprint.org/feeds/octopi.xml: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/octopi.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16d3a70>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements/__init__.py", line 355, in _get_channel_data_from_network
+    r = requests.get(url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/octopi.xml (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb16d3a70>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2019-09-26 01:26:02,435 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python2 -m pip" as command to invoke pip
+2019-09-26 01:26:02,437 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python2.7/site-packages (writable -> yes), --user flag needed -> no, virtual env -> yes
+2019-09-26 01:26:02,437 - octoprint.util.pip - INFO - ==> pip ok -> yes

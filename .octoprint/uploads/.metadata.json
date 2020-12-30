@@ -1,0 +1,38 @@
+{
+    "V350_3DBenchy.gcode": {
+        "statistics": {
+            "averagePrintTime": {},
+            "lastPrintTime": {}
+        },
+        "hash": "fd6a70d51b453be6ab828a25b1373e54ad31134b",
+        "analysis": {
+            "estimatedPrintTime": 4680.321420943391,
+            "printingArea": {
+                "maxZ": 47.9,
+                "minX": 144.102,
+                "maxX": 204.8,
+                "maxY": 190.302,
+                "minY": 159.698,
+                "minZ": 0.2
+            },
+            "dimensions": {
+                "width": 60.69800000000001,
+                "depth": 30.603999999999985,
+                "height": 47.699999999999996
+            },
+            "filament": {
+                "tool0": {
+                    "volume": 0.0,
+                    "length": 4305.220350000034
+                }
+            }
+        },
+        "history": [
+            {
+                "timestamp": 1609288167.531435,
+                "printerProfile": "_default",
+                "success": false
+            }
+        ]
+    }
+}

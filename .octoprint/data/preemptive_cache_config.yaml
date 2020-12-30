@@ -1,0 +1,16 @@
+/:
+-   _count: 38
+    _timestamp: 1609288869.303091
+    base_url: http://voron.local/
+    path: /
+    query_string: l10n=en
+-   _count: 7
+    _timestamp: 1609283707.81722
+    base_url: http://192.168.2.59/
+    path: /
+    query_string: l10n=en
+-   _count: 2
+    _timestamp: 1609144561.231808
+    base_url: http://voron/
+    path: /
+    query_string: l10n=en

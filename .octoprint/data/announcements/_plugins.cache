@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OctoPrint Plugin Repository</title>
+    <description>The official OctoPrint Plugin Repository</description>
+    <link>https://plugins.octoprint.org/</link>
+    <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 29 Dec 2020 06:18:05 -0600</pubDate>
+    <lastBuildDate>Tue, 29 Dec 2020 06:18:05 -0600</lastBuildDate>
+    <generator>Jekyll v3.9.0</generator>
+    
+    
+      <item>
+        <title>OctoPrint Nanny</title>
+        <description>
+          <![CDATA[
+            Get notified of print defects and safety hazards
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/octoprint_nanny/screenshot_2.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Fri, 25 Dec 2020 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/octoprint_nanny/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/octoprint_nanny/</guid>
+        
+        <category>ai</category>
+        
+        <category>automation</category>
+        
+        <category>quality control</category>
+        
+        <category>remote</category>
+        
+        <category>monitor</category>
+        
+        <category>monitoring</category>
+        
+        <category>alert</category>
+        
+        <category>alerting</category>
+        
+        <category>workflow</category>
+        
+        <category>automation</category>
+        
+      </item>
+    
+      <item>
+        <title>OctoPrint Display Panel</title>
+        <description>
+          <![CDATA[
+            Simple control and status paired with a physical button panel and OLED display
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/display_panel/in-situ.jpeg"></p>
+          ]]>
+        </description>
+        <pubDate>
+Wed, 16 Dec 2020 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/display_panel/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/display_panel/</guid>
+        
+        <category>monitoring</category>
+        
+        <category>hardware</category>
+        
+        <category>physical hardware</category>
+        
+        <category>oled</category>
+        
+      </item>
+    
+      <item>
+        <title>OctoPrint-CustomCSS</title>
+        <description>
+          <![CDATA[
+            Quickly add custom CSS to modify your OctoPrint UI.
+            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
+            
+          ]]>
+        </description>
+        <pubDate>
+Thu, 10 Dec 2020 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/customcss/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/customcss/</guid>
+        
+        <category>css</category>
+        
+        <category>settings</category>
+        
+      </item>
+    
+      <item>
+        <title>UI Customizer</title>
+        <description>
+          <![CDATA[
+            Customize the layout of OctoPrint userinterface, add webcam widget and more. Make the UI mobile responsive, add a floating webcam overlay.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/uicustomizer/responsive.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Mon, 30 Nov 2020 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/uicustomizer/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/uicustomizer/</guid>
+        
+        <category>responsive</category>
+        
+        <category>mobile</category>
+        
+        <category>webcam</category>
+        
+        <category>zoom</category>
+        
+        <category>fixed</category>
+        
+        <category>settings</category>
+        
+      </item>
+    
+      <item>
+        <title>OctoPrint-GcodeLeveling</title>
+        <description>
+          <![CDATA[
+            Leveling of Z values in Gcode using manually measured positions
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/gcodeleveling/point-entry.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sun, 29 Nov 2020 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/gcodeleveling/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/gcodeleveling/</guid>
+        
+        <category>leveling</category>
+        
+        <category>gcode</category>
+        
+        <category>manual bed leveling</category>
+        
+        <category>grbl</category>
+        
+        <category>cnc</category>
+        
+      </item>
+    
+      <item>
+        <title>OctoPrint-AutoLoginConfig</title>
+        <description>
+          <![CDATA[
+            Configure AutoLoginLocal from the UI with ease.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/autologin_config/config.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sun, 15 Nov 2020 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/autologin_config/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/autologin_config/</guid>
+        
+        <category>settings</category>
+        
+        <category>configuration</category>
+        
+        <category>autologin</category>
+        
+        <category>autologinlocal</category>
+        
+        <category>accesscontrol</category>
+        
+      </item>
+    
+      <item>
+        <title>OctoPrint-LightsOut</title>
+        <description>
+          <![CDATA[
+            Automatically shuts off lights after some delay when printing completes
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/lightsout/settings_screenshot.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sun, 08 Nov 2020 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/lightsout/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/lightsout/</guid>
+        
+        <category>lights</category>
+        
+        <category>timer</category>
+        
+        <category>LED</category>
+        
+        <category>M150</category>
+        
+      </item>
+    
+      <item>
+        <title>OctoEverywhere!</title>
+        <description>
+          <![CDATA[
+            Free remote access to your full OctoPrint setup anywhere in the world! Your plugins, your camera, your controls, your favorite 3rd party apps. Safe, simple, and secure.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/octoeverywhere/homepage.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sat, 07 Nov 2020 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/octoeverywhere/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/octoeverywhere/</guid>
+        
+        <category>remote access</category>
+        
+        <category>remote monitor</category>
+        
+        <category>remote camera</category>
+        
+        <category>remote app</category>
+        
+        <category>remote printing</category>
+        
+        <category>remote</category>
+        
+        <category>3rd party app support</category>
+        
+        <category>phone</category>
+        
+        <category>plugin support</category>
+        
+        <category>webcam</category>
+        
+        <category>free</category>
+        
+        <category>secure</category>
+        
+        <category>safe</category>
+        
+        <category>cloud printing</category>
+        
+        <category>internet</category>
+        
+        <category>port forwarding</category>
+        
+      </item>
+    
+      <item>
+        <title>Arc Welder</title>
+        <description>
+          <![CDATA[
+            Anti-Stutter and GCode Compression.  Replaces G0/G1 with G2/G3 where possible.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/arc_welder/tab_full.jpg"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sat, 24 Oct 2020 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/arc_welder/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/arc_welder/</guid>
+        
+        <category>gcode</category>
+        
+        <category>compression</category>
+        
+        <category>arc</category>
+        
+        <category>preprocessing</category>
+        
+        <category>g2</category>
+        
+        <category>g3</category>
+        
+        <category>stutter</category>
+        
+      </item>
+    
+      <item>
+        <title>Mattacloud Beta</title>
+        <description>
+          <![CDATA[
+            Making 3D printers intelligent. Remote 3D printer control and management from anywhere with advanced AI error detection and informative notifications.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/mattacloud/mattacloud.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sat, 17 Oct 2020 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/mattacloud/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/mattacloud/</guid>
+        
+        <category>remote monitoring</category>
+        
+        <category>cloud printing</category>
+        
+        <category>webcam</category>
+        
+        <category>print queue</category>
+        
+        <category>remote control</category>
+        
+        <category>ai</category>
+        
+        <category>machine learning</category>
+        
+        <category>error detection</category>
+        
+        <category>beta</category>
+        
+      </item>
+    
+  </channel>
+</rss>

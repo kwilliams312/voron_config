@@ -1,0 +1,865 @@
+2020-12-26 06:20:18,528 - octoprint.plugins.tracking - INFO - Sent tracking event system_unthrottled, payload: {'throttled_mask': 327680, 'throttled_voltage_now': False, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': False, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-26 06:20:18,530 - octoprint.server - INFO - --- Log roll over detected ---------------------------------------------------
+2020-12-26 06:20:18,530 - octoprint.server - INFO - OctoPrint 1.4.2
+2020-12-26 06:20:18,532 - octoprint.plugin.core - INFO - 18 plugin(s) registered with the system:
+|  Action Command Notification Support (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/action_command_notification
+|  Action Command Prompt Support (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/action_command_prompt
+|  Announcement Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements
+|  Anonymous Usage Tracking (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/tracking
+|  Application Keys Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/appkeys
+|  Backup & Restore (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/backup
+|  Core Wizard (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/corewizard
+|  Discovery (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/discovery
+|  Error Tracking (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/errortracking
+|  File Check (2020.8.7) (bundled) = /home/pi/oprint/local/lib/python2.7/site-packages/octoprint_file_check
+|  Firmware Check (2020.9.23) (bundled) = /home/pi/oprint/local/lib/python2.7/site-packages/octoprint_firmware_check
+|  GCode Viewer (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/gcodeviewer
+|  Logging (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/logging
+|  Login UI (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/loginui
+|  Pi Support Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pi_support
+|  Plugin Manager (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pluginmanager
+|  Software Update (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/softwareupdate
+|  Virtual Printer (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/virtual_printer
+Prefix legend: ! = disabled, # = blacklisted, * = incompatible
+2020-12-26 06:20:18,537 - octoprint.environment - INFO - Detected environment is Python 2.7.16 under Linux (linux2). Details:
+|  hardware:
+|      cores: 4
+|      freq: 1500.0
+|      ram: 1903980544
+|  os:
+|      id: linux
+|      platform: linux2
+|  plugins:
+|      pi_support:
+|          model: Raspberry Pi 4 Model B Rev 1.1
+|          octopi_version: 0.17.0
+|  python:
+|      pip: 19.3.1
+|      version: 2.7.16
+|      virtualenv: /home/pi/oprint
+2020-12-26 06:20:18,537 - octoprint.server - INFO - ------------------------------------------------------------------------------
+2020-12-26 06:24:08,069 - octoprint.plugins.tracking - INFO - Sent tracking event pong, payload: {'python': '2.7.16', 'ram': 1903980544, u'octopi_version': u'0.17.0', 'version': u'1.4.2', u'plugins': u'', 'pip': '19.3.1', 'cores': 4, 'freq': 1500.0, u'pi_model': u'Raspberry Pi 4 Model B Rev 1.1', 'os': 'linux'}
+2020-12-26 06:27:43,815 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-26 06:27:44,404 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 21623}
+2020-12-26 06:28:06,271 - octoprint.util.comm - INFO - Changing monitoring state from "Printing" to "Cancelling"
+2020-12-26 06:28:06,281 - octoprint.filemanager.analysis - INFO - Starting analysis of local:V350_Voron_Design_Cube_v7.gcode
+2020-12-26 06:28:06,284 - octoprint.filemanager.analysis - INFO - Invoking analysis command: /home/pi/oprint/bin/python2 -m octoprint analysis gcode --speed-x=6000 --speed-y=6000 --max-t=10 --throttle=0.0 --throttle-lines=100 /home/pi/.octoprint/uploads/V350_Voron_Design_Cube_v7.gcode
+2020-12-26 06:28:06,319 - octoprint.printer.standard.job - INFO - Print job cancelled - origin: local, path: V350_Voron_Design_Cube_v7.gcode, owner: _admin, user: _admin
+2020-12-26 06:28:07,019 - octoprint.plugins.tracking - INFO - Sent tracking event print_cancelled, payload: {'origin': u'local', u'throttled_mask': 327680, u'elapsed': 611, 'file': 'cc8fc99b93706b6b5f38e11c9ba79842bbfd2544', u'throttled_now': False, u'throttled_past': True}
+2020-12-26 06:28:07,059 - octoprint.util.comm - INFO - Changing monitoring state from "Cancelling" to "Operational"
+2020-12-26 06:28:07,650 - octoprint.plugins.tracking - INFO - Sent tracking event print_failed, payload: {'origin': u'local', u'throttled_mask': 327680, u'elapsed': 611, u'reason': u'cancelled', 'file': 'cc8fc99b93706b6b5f38e11c9ba79842bbfd2544', u'throttled_now': False, u'throttled_past': True}
+2020-12-26 06:28:29,127 - octoprint.filemanager.analysis - INFO - Analysis of entry local:V350_Voron_Design_Cube_v7.gcode finished, needed 22.85s
+2020-12-26 06:17:08,766 - octoprint.startup - INFO - ******************************************************************************
+2020-12-26 06:17:08,770 - octoprint.startup - INFO - Starting OctoPrint 1.4.2
+2020-12-26 06:17:08,771 - octoprint.startup - INFO - ******************************************************************************
+2020-12-26 06:17:09,660 - octoprint.util.connectivity.connectivity_checker - INFO - Connectivity state is currently: offline
+2020-12-26 06:17:09,663 - octoprint.util.connectivity.connectivity_checker - INFO - Connecting to 8.8.8.8:53 is not working
+2020-12-26 06:17:09,664 - octoprint.util.connectivity.connectivity_checker - INFO - Resolving octoprint.org is not working
+2020-12-26 06:17:09,672 - octoprint.startup - INFO - We don't appear to be online, not fetching plugin blacklist
+2020-12-26 06:17:09,758 - octoprint.plugin.core - INFO - Loading plugins from /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins, /home/pi/.octoprint/plugins and installed plugin packages...
+2020-12-26 06:17:11,857 - octoprint.plugin.core - INFO - Found 18 plugin(s) providing 18 mixin implementations, 32 hook handlers
+2020-12-26 06:17:12,155 - octoprint.server.heartbeat - INFO - Starting server heartbeat, 900.0s interval
+2020-12-26 06:17:12,213 - octoprint.server - INFO - Intermediary server started
+2020-12-26 06:17:12,214 - octoprint.plugin.core - INFO - Loading plugins from /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins, /home/pi/.octoprint/plugins and installed plugin packages...
+2020-12-26 06:17:12,461 - octoprint.plugin.core - INFO - Found 18 plugin(s) providing 18 mixin implementations, 32 hook handlers
+2020-12-26 06:17:12,502 - octoprint.filemanager.storage - INFO - Initializing the file metadata for /home/pi/.octoprint/uploads...
+2020-12-26 06:17:12,974 - octoprint.filemanager.storage - INFO - ... file metadata for /home/pi/.octoprint/uploads initialized successfully.
+2020-12-26 06:17:12,980 - octoprint.server - INFO - Added new permission from plugin action_command_notification: PLUGIN_ACTION_COMMAND_NOTIFICATION_SHOW (needs: u"Need(method='role', value=u'plugin_action_command_notification_show')")
+2020-12-26 06:17:12,981 - octoprint.server - INFO - Added new permission from plugin action_command_notification: PLUGIN_ACTION_COMMAND_NOTIFICATION_CLEAR (needs: u"Need(method='role', value=u'plugin_action_command_notification_clear')")
+2020-12-26 06:17:12,983 - octoprint.server - INFO - Added new permission from plugin action_command_prompt: PLUGIN_ACTION_COMMAND_PROMPT_INTERACT (needs: u"Need(method='role', value=u'plugin_action_command_prompt_interact')")
+2020-12-26 06:17:12,986 - octoprint.server - INFO - Added new permission from plugin announcements: PLUGIN_ANNOUNCEMENTS_READ (needs: u"Need(method='role', value=u'plugin_announcements_read')")
+2020-12-26 06:17:12,987 - octoprint.server - INFO - Added new permission from plugin announcements: PLUGIN_ANNOUNCEMENTS_MANAGE (needs: u"Need(method='role', value=u'plugin_announcements_manage'), Need(method='role', value=u'plugin_announcements_read')")
+2020-12-26 06:17:12,990 - octoprint.server - INFO - Added new permission from plugin appkeys: PLUGIN_APPKEYS_ADMIN (needs: u"Need(method='role', value=u'plugin_appkeys_admin')")
+2020-12-26 06:17:12,993 - octoprint.server - INFO - Added new permission from plugin backup: PLUGIN_BACKUP_ACCESS (needs: u"Need(method='role', value=u'plugin_backup_access')")
+2020-12-26 06:17:12,995 - octoprint.server - INFO - Added new permission from plugin firmware_check: PLUGIN_FIRMWARE_CHECK_DISPLAY (needs: u"Need(method='role', value=u'plugin_firmware_check_display')")
+2020-12-26 06:17:12,996 - octoprint.server - INFO - Added new permission from plugin logging: PLUGIN_LOGGING_MANAGE (needs: u"Need(method='role', value=u'plugin_logging_manage')")
+2020-12-26 06:17:12,998 - octoprint.server - INFO - Added new permission from plugin pi_support: PLUGIN_PI_SUPPORT_STATUS (needs: u"Need(method='role', value=u'plugin_pi_support_check')")
+2020-12-26 06:17:13,001 - octoprint.server - INFO - Added new permission from plugin pluginmanager: PLUGIN_PLUGINMANAGER_MANAGE (needs: u"Need(method='role', value=u'plugin_pluginmanager_manage')")
+2020-12-26 06:17:13,003 - octoprint.server - INFO - Added new permission from plugin pluginmanager: PLUGIN_PLUGINMANAGER_INSTALL (needs: u"Need(method='role', value=u'plugin_pluginmanager_install'), Need(method='role', value=u'plugin_pluginmanager_manage')")
+2020-12-26 06:17:13,006 - octoprint.server - INFO - Added new permission from plugin softwareupdate: PLUGIN_SOFTWAREUPDATE_CHECK (needs: u"Need(method='role', value=u'plugin_softwareupdate_check')")
+2020-12-26 06:17:13,008 - octoprint.server - INFO - Added new permission from plugin softwareupdate: PLUGIN_SOFTWAREUPDATE_UPDATE (needs: u"Need(method='role', value=u'plugin_softwareupdate_update')")
+2020-12-26 06:17:13,106 - octoprint.plugins.softwareupdate - INFO - Loaded version cache from disk
+2020-12-26 06:17:14,533 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python2 -m pip" as command to invoke pip
+2020-12-26 06:17:15,104 - octoprint.util.pip - INFO - Version of pip is 19.3.1
+2020-12-26 06:17:15,106 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python2.7/site-packages (writable -> yes), --user flag needed -> no, virtual env -> yes
+2020-12-26 06:17:15,106 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2020-12-26 06:17:15,111 - octoprint.plugin.core - INFO - Initialized 18 plugin implementation(s)
+2020-12-26 06:17:15,119 - octoprint.plugin.core - INFO - 18 plugin(s) registered with the system:
+|  Action Command Notification Support (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/action_command_notification
+|  Action Command Prompt Support (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/action_command_prompt
+|  Announcement Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements
+|  Anonymous Usage Tracking (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/tracking
+|  Application Keys Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/appkeys
+|  Backup & Restore (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/backup
+|  Core Wizard (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/corewizard
+|  Discovery (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/discovery
+|  Error Tracking (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/errortracking
+|  File Check (2020.8.7) (bundled) = /home/pi/oprint/local/lib/python2.7/site-packages/octoprint_file_check
+|  Firmware Check (2020.9.23) (bundled) = /home/pi/oprint/local/lib/python2.7/site-packages/octoprint_firmware_check
+|  GCode Viewer (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/gcodeviewer
+|  Logging (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/logging
+|  Login UI (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/loginui
+|  Pi Support Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pi_support
+|  Plugin Manager (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pluginmanager
+|  Software Update (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/softwareupdate
+|  Virtual Printer (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/virtual_printer
+Prefix legend: ! = disabled, # = blacklisted, * = incompatible
+2020-12-26 06:17:15,129 - octoprint.environment - INFO - Detected environment is Python 2.7.16 under Linux (linux2). Details:
+|  hardware:
+|      cores: 4
+|      freq: 1500.0
+|      ram: 1903980544
+|  os:
+|      id: linux
+|      platform: linux2
+|  plugins:
+|      pi_support:
+|          model: Raspberry Pi 4 Model B Rev 1.1
+|          octopi_version: 0.17.0
+|  python:
+|      pip: 19.3.1
+|      version: 2.7.16
+|      virtualenv: /home/pi/oprint
+2020-12-26 06:17:15,137 - octoprint.server - INFO - Reset webasset folder /home/pi/.octoprint/generated/webassets...
+2020-12-26 06:17:15,155 - octoprint.server - INFO - Reset webasset folder /home/pi/.octoprint/generated/.webassets-cache...
+2020-12-26 06:17:15,698 - octoprint.server - INFO - Shutting down intermediary server...
+2020-12-26 06:17:15,740 - octoprint.server - INFO - Intermediary server shut down
+2020-12-26 06:17:15,742 - octoprint.events - INFO - Processing startup event, this is our first event
+2020-12-26 06:17:15,742 - octoprint.events - INFO - Adding 0 events to queue that were held back before startup event
+2020-12-26 06:17:15,745 - octoprint.server - INFO - Autoconnect on startup is configured, trying to connect to the printer...
+2020-12-26 06:17:15,745 - octoprint.filemanager - INFO - Adding backlog items from all storage types to analysis queue...
+2020-12-26 06:17:15,753 - octoprint.filemanager - INFO - Added 0 items from storage type "local" to analysis queue
+2020-12-26 06:17:15,775 - octoprint.server - INFO - Trying to connect to configured serial port /tmp/printer
+2020-12-26 06:17:15,799 - octoprint.util.comm - INFO - Changing monitoring state from "Offline" to "Opening serial connection"
+2020-12-26 06:17:15,802 - octoprint.server.util.watchdog - INFO - Running initial scan on watched folder...
+2020-12-26 06:17:15,807 - octoprint.util.comm - INFO - Connecting to port /tmp/printer, baudrate 115200
+2020-12-26 06:17:15,812 - octoprint.server.util.watchdog - INFO - ... initial scan done.
+2020-12-26 06:17:15,816 - octoprint.util.comm - INFO - Changing monitoring state from "Opening serial connection" to "Connecting"
+2020-12-26 06:17:15,823 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance on voron' for _http._tcp
+2020-12-26 06:17:15,829 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-26 06:17:15,831 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance on voron' for _octoprint._tcp
+2020-12-26 06:17:15,849 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-26 06:17:15,855 - octoprint.util.comm - INFO - Changing monitoring state from "Connecting" to "Operational"
+2020-12-26 06:17:15,864 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-26 06:17:15,868 - octoprint.plugins.pi_support - WARNING - This Raspberry Pi is reporting problems that might lead to bad performance or errors caused by overheating or insufficient power.
+!!! UNDERVOLTAGE REPORTED !!! Make sure that the power supply and power cable are capable of supplying enough voltage and current to your Pi.
+2020-12-26 06:17:15,871 - octoprint.util.comm - INFO - Printer reports firmware name "Klipper"
+2020-12-26 06:17:15,874 - octoprint.util.comm - INFO - Detected Klipper firmware, enabling relevant features for issue free communication
+2020-12-26 06:17:15,876 - octoprint.server - INFO - Listening on http://127.0.0.1:5000
+2020-12-26 06:17:15,951 - octoprint.plugins.pluginmanager - INFO - Loaded plugin repository data from disk, was still valid
+2020-12-26 06:17:17,591 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python2 -m pip" as command to invoke pip
+2020-12-26 06:17:17,643 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python2.7/site-packages (writable -> yes), --user flag needed -> no, virtual env -> yes
+2020-12-26 06:17:17,745 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2020-12-26 06:17:17,842 - octoprint.plugins.softwareupdate - INFO - Minimum free storage across all update relevant locations is 24.2GB. That is considered sufficient for updating.
+2020-12-26 06:17:18,226 - octoprint.util.connectivity.connectivity_checker - INFO - Connectivity changed from offline to online
+2020-12-26 06:17:18,582 - octoprint.plugins.pluginmanager - INFO - Loaded plugin repository data from disk, was still valid
+2020-12-26 06:17:19,443 - octoprint.plugins.pluginmanager - INFO - Loaded notice data from disk, was still valid
+2020-12-26 06:17:19,759 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 7}
+2020-12-26 06:17:20,786 - octoprint.plugins.tracking - INFO - Sent tracking event startup, payload: {'python': '2.7.16', 'ram': 1903980544, u'octopi_version': u'0.17.0', 'version': u'1.4.2', 'pip': '19.3.1', 'cores': 4, 'freq': 1500.0, u'pi_model': u'Raspberry Pi 4 Model B Rev 1.1', 'os': 'linux'}
+2020-12-26 06:17:21,736 - octoprint.plugins.tracking - INFO - Sent tracking event pong, payload: {'python': '2.7.16', 'ram': 1903980544, u'octopi_version': u'0.17.0', 'version': u'1.4.2', u'plugins': u'', 'pip': '19.3.1', 'cores': 4, 'freq': 1500.0, u'pi_model': u'Raspberry Pi 4 Model B Rev 1.1', 'os': 'linux'}
+2020-12-26 06:17:21,740 - octoprint.plugins.pluginmanager - INFO - Loaded notice data from disk, was still valid
+2020-12-26 06:17:21,950 - octoprint.server.preemptive_cache - INFO - Preemptively caching / (ui _default) for {'query_string': 'l10n=en', 'path': '/', 'base_url': 'http://voron.local/'}
+2020-12-26 06:17:22,439 - octoprint.server.util.flask - INFO - Passively logging in user _admin from ::ffff:192.168.2.66
+2020-12-26 06:17:22,446 - octoprint.access.users - INFO - Logged in user: _admin
+2020-12-26 06:17:33,543 - octoprint.server.preemptive_cache - INFO - ... done in 11.59s
+2020-12-26 06:17:33,545 - octoprint.server.preemptive_cache - INFO - Preemptively caching / (ui _default) for {'query_string': 'l10n=en', 'path': '/', 'base_url': 'http://voron/'}
+2020-12-26 06:17:33,858 - octoprint.server.preemptive_cache - INFO - ... done in 0.31s
+2020-12-26 06:17:33,859 - octoprint.server.preemptive_cache - INFO - Preemptively caching / (ui _default) for {'query_string': 'l10n=en', 'path': '/', 'base_url': 'http://192.168.2.59/'}
+2020-12-26 06:17:34,066 - octoprint.server.preemptive_cache - INFO - ... done in 0.21s
+2020-12-26 19:08:56,509 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-26 19:08:57,186 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 23}
+2020-12-26 19:08:57,795 - octoprint.plugins.tracking - INFO - Sent tracking event system_throttled, payload: {'throttled_mask': 327685, 'throttled_voltage_now': True, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': True, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-26 19:09:27,219 - octoprint.plugins.tracking - INFO - Sent tracking event system_unthrottled, payload: {'throttled_mask': 327680, 'throttled_voltage_now': False, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': False, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-26 19:10:18,223 - octoprint.server.util.sockjs - INFO - New connection from client: ::ffff:192.168.2.66
+2020-12-26 19:10:18,313 - octoprint.server.util.flask - INFO - Passively logging in user _admin from ::ffff:192.168.2.66
+2020-12-26 19:10:18,316 - octoprint.access.users - INFO - Logged in user: _admin
+2020-12-26 19:10:19,875 - octoprint.plugins.announcements - INFO - Loaded channel _important from https://octoprint.org/feeds/important.xml in 0.61s
+2020-12-26 19:10:20,726 - octoprint.plugins.announcements - INFO - Loaded channel _releases from https://octoprint.org/feeds/releases.xml in 0.61s
+2020-12-26 19:10:21,423 - octoprint.plugins.announcements - INFO - Loaded channel _blog from https://octoprint.org/feeds/octoblog.xml in 0.62s
+2020-12-26 19:10:22,099 - octoprint.plugins.announcements - INFO - Loaded channel _plugins from https://plugins.octoprint.org/feed.xml in 0.59s
+2020-12-26 19:10:22,841 - octoprint.plugins.announcements - INFO - Loaded channel _octopi from https://octoprint.org/feeds/octopi.xml in 0.6s
+2020-12-26 19:10:23,817 - octoprint.plugins.pluginmanager - INFO - Loaded plugin notices data from https://plugins.octoprint.org/notices.json
+2020-12-26 19:10:24,413 - octoprint.server.util.sockjs - INFO - User _admin logged in on the socket from client ::ffff:192.168.2.66
+2020-12-26 19:10:37,338 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Must home axis first: 0.000 0.000 10.000 [0.000]
+| Last lines in terminal:
+| Recv: ok B:30.0 /65.0 T0:151.7 /200.0
+| Send: M105
+| Recv: ok B:30.6 /65.0 T0:159.4 /200.0
+| Send: M105
+| Recv: ok B:31.2 /65.0 T0:166.9 /200.0
+| Send: M105
+| Recv: ok B:31.7 /65.0 T0:173.2 /200.0
+| Send: QUAD_GANTRY_PROBE
+| Recv: // Unknown command:"QUAD_GANTRY_PROBE"
+| Recv: ok
+| Send: M105
+| Recv: ok B:32.3 /65.0 T0:180.6 /200.0
+| Send: M105
+| Recv: ok B:32.9 /65.0 T0:187.5 /200.0
+| Send: M105
+| Recv: ok B:33.5 /65.0 T0:192.5 /200.0
+| Send: M105
+| Recv: ok B:34.0 /65.0 T0:196.5 /200.0
+| Send: QUAD_GANTRY_LEVEL
+| Recv: !! Must home axis first: 0.000 0.000 10.000 [0.000]
+2020-12-26 19:11:08,162 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Failed to home y: Timeout during homing
+| Last lines in terminal:
+| Send: M105
+| Recv: ok B:32.3 /65.0 T0:180.6 /200.0
+| Send: M105
+| Recv: ok B:32.9 /65.0 T0:187.5 /200.0
+| Send: M105
+| Recv: ok B:33.5 /65.0 T0:192.5 /200.0
+| Send: M105
+| Recv: ok B:34.0 /65.0 T0:196.5 /200.0
+| Send: QUAD_GANTRY_LEVEL
+| Recv: !! Must home axis first: 0.000 0.000 10.000 [0.000]
+| Recv: ok
+| Send: M105
+| Recv: ok B:34.6 /65.0 T0:198.8 /200.0
+| Send: G28\
+| Recv: // Unknown command:"G28\"
+| Recv: ok
+| Send: M105
+| Recv: ok B:35.0 /65.0 T0:199.8 /200.0
+| Send: G28
+| Recv: !! Failed to home y: Timeout during homing
+2020-12-26 19:11:08,172 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Failed to home y: Timeout during homing
+| Last lines in terminal:
+| Recv: ok B:32.3 /65.0 T0:180.6 /200.0
+| Send: M105
+| Recv: ok B:32.9 /65.0 T0:187.5 /200.0
+| Send: M105
+| Recv: ok B:33.5 /65.0 T0:192.5 /200.0
+| Send: M105
+| Recv: ok B:34.0 /65.0 T0:196.5 /200.0
+| Send: QUAD_GANTRY_LEVEL
+| Recv: !! Must home axis first: 0.000 0.000 10.000 [0.000]
+| Recv: ok
+| Send: M105
+| Recv: ok B:34.6 /65.0 T0:198.8 /200.0
+| Send: G28\
+| Recv: // Unknown command:"G28\"
+| Recv: ok
+| Send: M105
+| Recv: ok B:35.0 /65.0 T0:199.8 /200.0
+| Send: G28
+| Recv: !! Failed to home y: Timeout during homing
+| Recv: !! Failed to home y: Timeout during homing
+2020-12-26 19:12:21,902 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Failed to home probe: Timeout during homing
+| Last lines in terminal:
+| Send: M105
+| Recv: ok B:46.7 /65.0 T0:199.6 /200.0
+| Send: M105
+| Recv: ok B:47.1 /65.0 T0:199.4 /200.0
+| Send: M105
+| Recv: ok B:47.5 /65.0 T0:199.6 /200.0
+| Send: G28
+| Recv: ok
+| Send: M105
+| Recv: ok B:52.1 /65.0 T0:199.7 /200.0
+| Send: M105
+| Recv: ok B:52.4 /65.0 T0:199.4 /200.0
+| Send: M105
+| Recv: ok B:52.6 /65.0 T0:199.5 /200.0
+| Send: M105
+| Recv: ok B:53.0 /65.0 T0:200.0 /200.0
+| Send: M105
+| Recv: ok B:53.3 /65.0 T0:200.5 /200.0
+| Send: QUAD_GANTRY_LEVEL
+| Recv: !! Failed to home probe: Timeout during homing
+2020-12-26 19:12:34,042 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Failed to home probe: Timeout during homing
+| Last lines in terminal:
+| Recv: ok B:52.6 /65.0 T0:199.5 /200.0
+| Send: M105
+| Recv: ok B:53.0 /65.0 T0:200.0 /200.0
+| Send: M105
+| Recv: ok B:53.3 /65.0 T0:200.5 /200.0
+| Send: QUAD_GANTRY_LEVEL
+| Recv: !! Failed to home probe: Timeout during homing
+| Recv: ok
+| Send: M105
+| Recv: ok B:54.5 /65.0 T0:200.0 /200.0
+| Send: M105
+| Recv: ok B:54.7 /65.0 T0:199.9 /200.0
+| Send: M105
+| Recv: ok B:55.0 /65.0 T0:199.5 /200.0
+| Send: M105
+| Recv: ok B:55.3 /65.0 T0:199.4 /200.0
+| Send: M105
+| Recv: ok B:55.5 /65.0 T0:199.6 /200.0
+| Send: QUAD_GANTRY_LEVEL
+| Recv: !! Failed to home probe: Timeout during homing
+2020-12-26 19:12:50,154 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Failed to home probe: Timeout during homing
+| Last lines in terminal:
+| Recv: ok B:55.5 /65.0 T0:199.6 /200.0
+| Send: QUAD_GANTRY_LEVEL
+| Recv: !! Failed to home probe: Timeout during homing
+| Recv: ok
+| Send: M105
+| Recv: ok B:56.2 /65.0 T0:200.6 /200.0
+| Send: M105
+| Recv: ok B:56.3 /65.0 T0:200.6 /200.0
+| Send: M105
+| Recv: ok B:56.6 /65.0 T0:200.5 /200.0
+| Send: M105
+| Recv: ok B:56.8 /65.0 T0:200.1 /200.0
+| Send: M105
+| Recv: ok B:57.1 /65.0 T0:199.6 /200.0
+| Send: M105
+| Recv: ok B:57.3 /65.0 T0:199.3 /200.0
+| Send: M105
+| Recv: ok B:57.6 /65.0 T0:199.4 /200.0
+| Send: QUAD_GANTRY_LEVEL
+| Recv: !! Failed to home probe: Timeout during homing
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             2020-12-26 19:12:45,728 - octoprint.startup - INFO - ******************************************************************************
+2020-12-26 19:12:45,733 - octoprint.startup - INFO - Starting OctoPrint 1.4.2
+2020-12-26 19:12:45,734 - octoprint.startup - INFO - ******************************************************************************
+2020-12-26 19:12:46,615 - octoprint.util.connectivity.connectivity_checker - INFO - Connectivity state is currently: offline
+2020-12-26 19:12:46,618 - octoprint.util.connectivity.connectivity_checker - INFO - Connecting to 8.8.8.8:53 is not working
+2020-12-26 19:12:46,620 - octoprint.util.connectivity.connectivity_checker - INFO - Resolving octoprint.org is not working
+2020-12-26 19:12:46,627 - octoprint.startup - INFO - We don't appear to be online, not fetching plugin blacklist
+2020-12-26 19:12:46,724 - octoprint.plugin.core - INFO - Loading plugins from /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins, /home/pi/.octoprint/plugins and installed plugin packages...
+2020-12-26 19:12:48,886 - octoprint.plugin.core - INFO - Found 18 plugin(s) providing 18 mixin implementations, 32 hook handlers
+2020-12-26 19:12:49,173 - octoprint.server.heartbeat - INFO - Starting server heartbeat, 900.0s interval
+2020-12-26 19:12:49,236 - octoprint.server - INFO - Intermediary server started
+2020-12-26 19:12:49,238 - octoprint.plugin.core - INFO - Loading plugins from /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins, /home/pi/.octoprint/plugins and installed plugin packages...
+2020-12-26 19:12:49,482 - octoprint.plugin.core - INFO - Found 18 plugin(s) providing 18 mixin implementations, 32 hook handlers
+2020-12-26 19:12:49,522 - octoprint.filemanager.storage - INFO - Initializing the file metadata for /home/pi/.octoprint/uploads...
+2020-12-26 19:12:50,026 - octoprint.filemanager.storage - INFO - ... file metadata for /home/pi/.octoprint/uploads initialized successfully.
+2020-12-26 19:12:50,032 - octoprint.server - INFO - Added new permission from plugin action_command_notification: PLUGIN_ACTION_COMMAND_NOTIFICATION_SHOW (needs: u"Need(method='role', value=u'plugin_action_command_notification_show')")
+2020-12-26 19:12:50,034 - octoprint.server - INFO - Added new permission from plugin action_command_notification: PLUGIN_ACTION_COMMAND_NOTIFICATION_CLEAR (needs: u"Need(method='role', value=u'plugin_action_command_notification_clear')")
+2020-12-26 19:12:50,036 - octoprint.server - INFO - Added new permission from plugin action_command_prompt: PLUGIN_ACTION_COMMAND_PROMPT_INTERACT (needs: u"Need(method='role', value=u'plugin_action_command_prompt_interact')")
+2020-12-26 19:12:50,038 - octoprint.server - INFO - Added new permission from plugin announcements: PLUGIN_ANNOUNCEMENTS_READ (needs: u"Need(method='role', value=u'plugin_announcements_read')")
+2020-12-26 19:12:50,040 - octoprint.server - INFO - Added new permission from plugin announcements: PLUGIN_ANNOUNCEMENTS_MANAGE (needs: u"Need(method='role', value=u'plugin_announcements_manage'), Need(method='role', value=u'plugin_announcements_read')")
+2020-12-26 19:12:50,043 - octoprint.server - INFO - Added new permission from plugin appkeys: PLUGIN_APPKEYS_ADMIN (needs: u"Need(method='role', value=u'plugin_appkeys_admin')")
+2020-12-26 19:12:50,045 - octoprint.server - INFO - Added new permission from plugin backup: PLUGIN_BACKUP_ACCESS (needs: u"Need(method='role', value=u'plugin_backup_access')")
+2020-12-26 19:12:50,047 - octoprint.server - INFO - Added new permission from plugin firmware_check: PLUGIN_FIRMWARE_CHECK_DISPLAY (needs: u"Need(method='role', value=u'plugin_firmware_check_display')")
+2020-12-26 19:12:50,049 - octoprint.server - INFO - Added new permission from plugin logging: PLUGIN_LOGGING_MANAGE (needs: u"Need(method='role', value=u'plugin_logging_manage')")
+2020-12-26 19:12:50,051 - octoprint.server - INFO - Added new permission from plugin pi_support: PLUGIN_PI_SUPPORT_STATUS (needs: u"Need(method='role', value=u'plugin_pi_support_check')")
+2020-12-26 19:12:50,053 - octoprint.server - INFO - Added new permission from plugin pluginmanager: PLUGIN_PLUGINMANAGER_MANAGE (needs: u"Need(method='role', value=u'plugin_pluginmanager_manage')")
+2020-12-26 19:12:50,055 - octoprint.server - INFO - Added new permission from plugin pluginmanager: PLUGIN_PLUGINMANAGER_INSTALL (needs: u"Need(method='role', value=u'plugin_pluginmanager_install'), Need(method='role', value=u'plugin_pluginmanager_manage')")
+2020-12-26 19:12:50,057 - octoprint.server - INFO - Added new permission from plugin softwareupdate: PLUGIN_SOFTWAREUPDATE_CHECK (needs: u"Need(method='role', value=u'plugin_softwareupdate_check')")
+2020-12-26 19:12:50,060 - octoprint.server - INFO - Added new permission from plugin softwareupdate: PLUGIN_SOFTWAREUPDATE_UPDATE (needs: u"Need(method='role', value=u'plugin_softwareupdate_update')")
+2020-12-26 19:12:50,158 - octoprint.plugins.softwareupdate - INFO - Loaded version cache from disk
+2020-12-26 19:12:51,529 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python2 -m pip" as command to invoke pip
+2020-12-26 19:12:52,102 - octoprint.util.pip - INFO - Version of pip is 19.3.1
+2020-12-26 19:12:52,104 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python2.7/site-packages (writable -> yes), --user flag needed -> no, virtual env -> yes
+2020-12-26 19:12:52,105 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2020-12-26 19:12:52,109 - octoprint.plugin.core - INFO - Initialized 18 plugin implementation(s)
+2020-12-26 19:12:52,117 - octoprint.plugin.core - INFO - 18 plugin(s) registered with the system:
+|  Action Command Notification Support (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/action_command_notification
+|  Action Command Prompt Support (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/action_command_prompt
+|  Announcement Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements
+|  Anonymous Usage Tracking (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/tracking
+|  Application Keys Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/appkeys
+|  Backup & Restore (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/backup
+|  Core Wizard (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/corewizard
+|  Discovery (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/discovery
+|  Error Tracking (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/errortracking
+|  File Check (2020.8.7) (bundled) = /home/pi/oprint/local/lib/python2.7/site-packages/octoprint_file_check
+|  Firmware Check (2020.9.23) (bundled) = /home/pi/oprint/local/lib/python2.7/site-packages/octoprint_firmware_check
+|  GCode Viewer (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/gcodeviewer
+|  Logging (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/logging
+|  Login UI (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/loginui
+|  Pi Support Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pi_support
+|  Plugin Manager (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pluginmanager
+|  Software Update (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/softwareupdate
+|  Virtual Printer (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/virtual_printer
+Prefix legend: ! = disabled, # = blacklisted, * = incompatible
+2020-12-26 19:12:52,128 - octoprint.environment - INFO - Detected environment is Python 2.7.16 under Linux (linux2). Details:
+|  hardware:
+|      cores: 4
+|      freq: 1500.0
+|      ram: 1903980544
+|  os:
+|      id: linux
+|      platform: linux2
+|  plugins:
+|      pi_support:
+|          model: Raspberry Pi 4 Model B Rev 1.1
+|          octopi_version: 0.17.0
+|  python:
+|      pip: 19.3.1
+|      version: 2.7.16
+|      virtualenv: /home/pi/oprint
+2020-12-26 19:12:52,134 - octoprint.server - INFO - Reset webasset folder /home/pi/.octoprint/generated/webassets...
+2020-12-26 19:12:52,151 - octoprint.server - INFO - Reset webasset folder /home/pi/.octoprint/generated/.webassets-cache...
+2020-12-26 19:12:52,699 - octoprint.server - INFO - Shutting down intermediary server...
+2020-12-26 19:12:52,766 - octoprint.server - INFO - Intermediary server shut down
+2020-12-26 19:12:52,768 - octoprint.events - INFO - Processing startup event, this is our first event
+2020-12-26 19:12:52,769 - octoprint.events - INFO - Adding 0 events to queue that were held back before startup event
+2020-12-26 19:12:52,772 - octoprint.server - INFO - Autoconnect on startup is configured, trying to connect to the printer...
+2020-12-26 19:12:52,772 - octoprint.filemanager - INFO - Adding backlog items from all storage types to analysis queue...
+2020-12-26 19:12:52,799 - octoprint.filemanager - INFO - Added 0 items from storage type "local" to analysis queue
+2020-12-26 19:12:52,821 - octoprint.server - INFO - Trying to connect to configured serial port /tmp/printer
+2020-12-26 19:12:52,863 - octoprint.util.comm - INFO - Changing monitoring state from "Offline" to "Opening serial connection"
+2020-12-26 19:12:52,868 - octoprint.util.comm - INFO - Connecting to port /tmp/printer, baudrate 115200
+2020-12-26 19:12:52,871 - octoprint.server.util.watchdog - INFO - Running initial scan on watched folder...
+2020-12-26 19:12:52,877 - octoprint.server.util.watchdog - INFO - ... initial scan done.
+2020-12-26 19:12:52,879 - octoprint.util.comm - INFO - Changing monitoring state from "Opening serial connection" to "Connecting"
+2020-12-26 19:12:52,886 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-26 19:12:52,888 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance on voron' for _http._tcp
+2020-12-26 19:12:52,895 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-26 19:12:52,896 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance on voron' for _octoprint._tcp
+2020-12-26 19:12:52,908 - octoprint.util.comm - INFO - Changing monitoring state from "Connecting" to "Operational"
+2020-12-26 19:12:52,924 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-26 19:12:52,925 - octoprint.plugins.pi_support - WARNING - This Raspberry Pi is reporting problems that might lead to bad performance or errors caused by overheating or insufficient power.
+!!! UNDERVOLTAGE REPORTED !!! Make sure that the power supply and power cable are capable of supplying enough voltage and current to your Pi.
+2020-12-26 19:12:52,934 - octoprint.server - INFO - Listening on http://127.0.0.1:5000
+2020-12-26 19:12:52,936 - octoprint.util.comm - INFO - Printer reports firmware name "Klipper"
+2020-12-26 19:12:52,943 - octoprint.util.comm - INFO - Detected Klipper firmware, enabling relevant features for issue free communication
+2020-12-26 19:12:53,206 - octoprint.plugins.pluginmanager - INFO - Loaded plugin repository data from disk, was still valid
+2020-12-26 19:12:54,834 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python2 -m pip" as command to invoke pip
+2020-12-26 19:12:54,838 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python2.7/site-packages (writable -> yes), --user flag needed -> no, virtual env -> yes
+2020-12-26 19:12:54,876 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2020-12-26 19:12:55,003 - octoprint.plugins.softwareupdate - INFO - Minimum free storage across all update relevant locations is 24.2GB. That is considered sufficient for updating.
+2020-12-26 19:12:55,199 - octoprint.util.connectivity.connectivity_checker - INFO - Connectivity changed from offline to online
+2020-12-26 19:12:55,449 - octoprint.plugins.pluginmanager - INFO - Loaded plugin repository data from disk, was still valid
+2020-12-26 19:12:56,807 - octoprint.plugins.tracking - INFO - Sent tracking event startup, payload: {'python': '2.7.16', 'ram': 1903980544, u'octopi_version': u'0.17.0', 'version': u'1.4.2', 'pip': '19.3.1', 'cores': 4, 'freq': 1500.0, u'pi_model': u'Raspberry Pi 4 Model B Rev 1.1', 'os': 'linux'}
+2020-12-26 19:12:57,487 - octoprint.plugins.pluginmanager - INFO - Loaded notice data from disk, was still valid
+2020-12-26 19:12:57,785 - octoprint.plugins.tracking - INFO - Sent tracking event pong, payload: {'python': '2.7.16', 'ram': 1903980544, u'octopi_version': u'0.17.0', 'version': u'1.4.2', u'plugins': u'', 'pip': '19.3.1', 'cores': 4, 'freq': 1500.0, u'pi_model': u'Raspberry Pi 4 Model B Rev 1.1', 'os': 'linux'}
+2020-12-26 19:12:58,911 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 7}
+2020-12-26 19:12:58,986 - octoprint.plugins.pluginmanager - INFO - Loaded notice data from disk, was still valid
+2020-12-26 19:12:59,091 - octoprint.server.preemptive_cache - INFO - Preemptively caching / (ui _default) for {'query_string': 'l10n=en', 'path': '/', 'base_url': 'http://voron.local/'}
+2020-12-26 19:13:07,224 - octoprint.server.preemptive_cache - INFO - ... done in 8.13s
+2020-12-26 19:13:07,236 - octoprint.server.preemptive_cache - INFO - Preemptively caching / (ui _default) for {'query_string': 'l10n=en', 'path': '/', 'base_url': 'http://192.168.2.59/'}
+2020-12-26 19:13:07,821 - octoprint.server.preemptive_cache - INFO - ... done in 0.59s
+2020-12-26 19:13:07,823 - octoprint.server.preemptive_cache - INFO - Preemptively caching / (ui _default) for {'query_string': 'l10n=en', 'path': '/', 'base_url': 'http://voron/'}
+2020-12-26 19:13:08,330 - octoprint.server.preemptive_cache - INFO - ... done in 0.51s
+2020-12-26 19:15:19,195 - octoprint.server.util.sockjs - INFO - New connection from client: ::ffff:192.168.2.66
+2020-12-26 19:15:19,249 - octoprint.server.util.flask - INFO - Passively logging in user _admin from ::ffff:192.168.2.66
+2020-12-26 19:15:19,250 - octoprint.access.users - INFO - Logged in user: _admin
+2020-12-26 19:15:19,273 - octoprint.server.util.sockjs - INFO - User _admin logged in on the socket from client ::ffff:192.168.2.66
+2020-12-26 19:24:42,383 - octoprint.printer.standard.job - INFO - Print job selected - origin: local, path: V350_Voron_Design_Cube_v7.gcode, owner: _admin, user: _admin
+2020-12-26 19:27:49,176 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-26 19:27:56,377 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 789}
+2020-12-26 19:42:49,177 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-26 19:42:56,403 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 1689}
+2020-12-26 19:57:49,180 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-26 19:57:56,451 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 2589}
+2020-12-26 19:58:37,036 - octoprint.util.comm - INFO - Changing monitoring state from "Operational" to "Starting"
+2020-12-26 19:58:37,047 - octoprint.printer.standard.job - INFO - Print job started - origin: local, path: V350_Voron_Design_Cube_v7.gcode, owner: _admin, user: _admin
+2020-12-26 19:58:37,055 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-26 19:58:37,099 - octoprint.util.comm - INFO - Changing monitoring state from "Starting" to "Printing"
+2020-12-26 19:58:37,732 - octoprint.plugins.tracking - INFO - Sent tracking event print_started, payload: {'origin': u'local', u'throttled_now': False, u'throttled_mask': 327680, 'file': 'cc8fc99b93706b6b5f38e11c9ba79842bbfd2544', u'throttled_past': True}
+2020-12-26 20:03:18,034 - octoprint.util.comm - INFO - Changing monitoring state from "Printing" to "Cancelling"
+2020-12-26 20:03:18,056 - octoprint.printer.standard.job - INFO - Print job cancelled - origin: local, path: V350_Voron_Design_Cube_v7.gcode, owner: _admin, user: _admin
+2020-12-26 20:03:18,707 - octoprint.plugins.tracking - INFO - Sent tracking event print_cancelled, payload: {'origin': u'local', u'throttled_mask': 327680, u'elapsed': 281, 'file': 'cc8fc99b93706b6b5f38e11c9ba79842bbfd2544', u'throttled_now': False, u'throttled_past': True}
+2020-12-26 20:03:19,178 - octoprint.util.comm - INFO - Changing monitoring state from "Cancelling" to "Operational"
+2020-12-26 20:03:19,307 - octoprint.plugins.tracking - INFO - Sent tracking event print_failed, payload: {'origin': u'local', u'throttled_mask': 327680, u'elapsed': 281, u'reason': u'cancelled', 'file': 'cc8fc99b93706b6b5f38e11c9ba79842bbfd2544', u'throttled_now': False, u'throttled_past': True}
+2020-12-26 20:03:25,456 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Must home axis first: 179.578 167.526 10.000 [333.539]
+| Last lines in terminal:
+| Send: N812 M108*33
+| Recv: // Unknown command:"M108"
+| Recv: ok
+| Send: N813 M105*45
+| Recv: ok B:60.1 /60.0 T0:200.3 /200.0
+| Send: N814 M84*18
+| Recv: ok
+| Send: N815 M104 T0 S0*45
+| Recv: ok
+| Send: N816 M140 S0*106
+| Recv: ok
+| Send: N817 M106 S0*105
+| Recv: ok
+| Changing monitoring state from "Cancelling" to "Operational"
+| Send: M105
+| Recv: ok B:59.9 /0.0 T0:200.4 /0.0
+| Send: G91
+| Recv: ok
+| Send: G1 Z10 F200
+| Recv: !! Must home axis first: 179.578 167.526 10.000 [333.539]
+2020-12-26 20:03:25,832 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Must home axis first: 179.578 167.526 10.000 [333.539]
+| Last lines in terminal:
+| Send: N815 M104 T0 S0*45
+| Recv: ok
+| Send: N816 M140 S0*106
+| Recv: ok
+| Send: N817 M106 S0*105
+| Recv: ok
+| Changing monitoring state from "Cancelling" to "Operational"
+| Send: M105
+| Recv: ok B:59.9 /0.0 T0:200.4 /0.0
+| Send: G91
+| Recv: ok
+| Send: G1 Z10 F200
+| Recv: !! Must home axis first: 179.578 167.526 10.000 [333.539]
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z10 F200
+| Recv: !! Must home axis first: 179.578 167.526 10.000 [333.539]
+2020-12-26 20:03:26,211 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Must home axis first: 179.578 167.526 10.000 [333.539]
+| Last lines in terminal:
+| Send: M105
+| Recv: ok B:59.9 /0.0 T0:200.4 /0.0
+| Send: G91
+| Recv: ok
+| Send: G1 Z10 F200
+| Recv: !! Must home axis first: 179.578 167.526 10.000 [333.539]
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z10 F200
+| Recv: !! Must home axis first: 179.578 167.526 10.000 [333.539]
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z10 F200
+| Recv: !! Must home axis first: 179.578 167.526 10.000 [333.539]
+2020-12-26 20:05:31,050 - octoprint.util.comm - INFO - Changing monitoring state from "Operational" to "Starting"
+2020-12-26 20:05:31,059 - octoprint.printer.standard.job - INFO - Print job started - origin: local, path: V350_Voron_Design_Cube_v7.gcode, owner: _admin, user: _admin
+2020-12-26 20:05:31,089 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-26 20:05:31,125 - octoprint.util.comm - INFO - Changing monitoring state from "Starting" to "Printing"
+2020-12-26 20:05:31,748 - octoprint.plugins.tracking - INFO - Sent tracking event print_started, payload: {'origin': u'local', u'throttled_now': False, u'throttled_mask': 327680, 'file': 'cc8fc99b93706b6b5f38e11c9ba79842bbfd2544', u'throttled_past': True}
+2020-12-26 20:12:49,183 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-26 20:12:56,443 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 3489}
+2020-12-26 20:15:51,459 - octoprint.util.comm - INFO - Changing monitoring state from "Printing" to "Cancelling"
+2020-12-26 20:15:51,477 - octoprint.printer.standard.job - INFO - Print job cancelled - origin: local, path: V350_Voron_Design_Cube_v7.gcode, owner: _admin, user: _admin
+2020-12-26 20:15:52,076 - octoprint.util.comm - INFO - Changing monitoring state from "Cancelling" to "Operational"
+2020-12-26 20:15:52,162 - octoprint.plugins.tracking - INFO - Sent tracking event print_cancelled, payload: {'origin': u'local', u'throttled_mask': 327680, u'elapsed': 620, 'file': 'cc8fc99b93706b6b5f38e11c9ba79842bbfd2544', u'throttled_now': False, u'throttled_past': True}
+2020-12-26 20:15:52,792 - octoprint.plugins.tracking - INFO - Sent tracking event print_failed, payload: {'origin': u'local', u'throttled_mask': 327680, u'elapsed': 620, u'reason': u'cancelled', 'file': 'cc8fc99b93706b6b5f38e11c9ba79842bbfd2544', u'throttled_now': False, u'throttled_past': True}
+2020-12-26 20:15:56,937 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Must home axis first: 160.981 176.891 11.900 [666.136]
+| Last lines in terminal:
+| Changing monitoring state from "Printing" to "Cancelling"
+| Recv: ok
+| Send: N4978 M108*24
+| Recv: // Unknown command:"M108"
+| Recv: ok
+| Send: N4979 M84*44
+| Recv: ok
+| Send: N4980 M104 T0 S0*20
+| Recv: ok
+| Send: N4981 M140 S0*81
+| Recv: ok
+| Send: N4982 M106 S0*80
+| Recv: ok
+| Changing monitoring state from "Cancelling" to "Operational"
+| Send: M105
+| Recv: ok B:60.0 /0.0 T0:204.7 /0.0
+| Send: G91
+| Recv: ok
+| Send: G1 Z10 F200
+| Recv: !! Must home axis first: 160.981 176.891 11.900 [666.136]
+2020-12-26 20:15:58,792 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Must home axis first: 160.981 176.891 11.900 [666.136]
+| Last lines in terminal:
+| Send: N4981 M140 S0*81
+| Recv: ok
+| Send: N4982 M106 S0*80
+| Recv: ok
+| Changing monitoring state from "Cancelling" to "Operational"
+| Send: M105
+| Recv: ok B:60.0 /0.0 T0:204.7 /0.0
+| Send: G91
+| Recv: ok
+| Send: G1 Z10 F200
+| Recv: !! Must home axis first: 160.981 176.891 11.900 [666.136]
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: M105
+| Recv: ok B:59.8 /0.0 T0:206.6 /0.0
+| Send: G91
+| Recv: ok
+| Send: G1 Z10 F200
+| Recv: !! Must home axis first: 160.981 176.891 11.900 [666.136]
+2020-12-26 20:16:09,828 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Must home axis first: 160.981 176.891 10.500 [666.136]
+| Last lines in terminal:
+| Send: G1 Z10 F200
+| Recv: !! Must home axis first: 160.981 176.891 11.900 [666.136]
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: M105
+| Recv: ok B:59.8 /0.0 T0:206.6 /0.0
+| Send: G91
+| Recv: ok
+| Send: G1 Z10 F200
+| Recv: !! Must home axis first: 160.981 176.891 11.900 [666.136]
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: M105
+| Recv: ok B:59.4 /0.0 T0:207.3 /0.0
+| Send: M105
+| Recv: ok B:58.9 /0.0 T0:205.4 /0.0
+| Send: G1 Z+10
+| Recv: !! Must home axis first: 160.981 176.891 10.500 [666.136]
+2020-12-26 20:17:22,150 - octoprint.filemanager.analysis - INFO - Starting analysis of local:V350_Voron_Design_Cube_v7.gcode
+2020-12-26 20:17:22,153 - octoprint.filemanager.analysis - INFO - Invoking analysis command: /home/pi/oprint/bin/python2 -m octoprint analysis gcode --speed-x=6000 --speed-y=6000 --max-t=10 --throttle=0.0 --throttle-lines=100 /home/pi/.octoprint/uploads/V350_Voron_Design_Cube_v7.gcode
+2020-12-26 20:17:22,264 - octoprint.printer.standard.job - INFO - Print job selected - origin: local, path: V350_Voron_Design_Cube_v7.gcode, owner: _admin, user: _admin
+2020-12-26 20:17:22,317 - octoprint.util.comm - INFO - Changing monitoring state from "Operational" to "Starting"
+2020-12-26 20:17:22,328 - octoprint.printer.standard.job - INFO - Print job started - origin: local, path: V350_Voron_Design_Cube_v7.gcode, owner: _admin, user: _admin
+2020-12-26 20:17:22,383 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-26 20:17:22,424 - octoprint.util.comm - INFO - Changing monitoring state from "Starting" to "Printing"
+2020-12-26 20:17:22,510 - octoprint.util.comm - INFO - Externally triggered heatup detected
+2020-12-26 20:17:23,091 - octoprint.plugins.tracking - INFO - Sent tracking event print_started, payload: {'origin': u'local', u'throttled_now': True, u'throttled_mask': 327685, 'file': 'cc8fc99b93706b6b5f38e11c9ba79842bbfd2544', u'throttled_past': True}
+2020-12-26 20:17:23,705 - octoprint.plugins.tracking - INFO - Sent tracking event system_throttled, payload: {'throttled_mask': 327685, 'throttled_voltage_now': True, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': True, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-26 20:17:54,208 - octoprint.plugins.tracking - INFO - Sent tracking event system_unthrottled, payload: {'throttled_mask': 327680, 'throttled_voltage_now': False, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': False, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-26 20:27:49,184 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-26 20:27:56,463 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 4389}
+2020-12-26 20:31:51,004 - octoprint.util.comm - INFO - Changing monitoring state from "Printing" to "Cancelling"
+2020-12-26 20:31:51,007 - octoprint.filemanager.analysis - INFO - Starting analysis of local:V350_Voron_Design_Cube_v7.gcode
+2020-12-26 20:31:51,014 - octoprint.filemanager.analysis - INFO - Invoking analysis command: /home/pi/oprint/bin/python2 -m octoprint analysis gcode --speed-x=6000 --speed-y=6000 --max-t=10 --throttle=0.0 --throttle-lines=100 /home/pi/.octoprint/uploads/V350_Voron_Design_Cube_v7.gcode
+2020-12-26 20:31:51,062 - octoprint.printer.standard.job - INFO - Print job cancelled - origin: local, path: V350_Voron_Design_Cube_v7.gcode, owner: _admin, user: _admin
+2020-12-26 20:31:51,852 - octoprint.plugins.tracking - INFO - Sent tracking event print_cancelled, payload: {'origin': u'local', u'throttled_mask': 327685, u'elapsed': 868, 'file': 'cc8fc99b93706b6b5f38e11c9ba79842bbfd2544', u'throttled_now': True, u'throttled_past': True}
+2020-12-26 20:31:51,950 - octoprint.util.comm - INFO - Changing monitoring state from "Cancelling" to "Operational"
+2020-12-26 20:31:52,464 - octoprint.plugins.tracking - INFO - Sent tracking event system_throttled, payload: {'throttled_mask': 327685, 'throttled_voltage_now': True, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': True, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-26 20:31:53,111 - octoprint.plugins.tracking - INFO - Sent tracking event print_failed, payload: {'origin': u'local', u'throttled_mask': 327685, u'elapsed': 868, u'reason': u'cancelled', 'file': 'cc8fc99b93706b6b5f38e11c9ba79842bbfd2544', u'throttled_now': True, u'throttled_past': True}
+2020-12-26 20:32:13,632 - octoprint.filemanager.analysis - INFO - Analysis of entry local:V350_Voron_Design_Cube_v7.gcode finished, needed 22.63s
+2020-12-26 20:32:54,334 - octoprint.plugins.tracking - INFO - Sent tracking event system_unthrottled, payload: {'throttled_mask': 327680, 'throttled_voltage_now': False, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': False, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-26 20:36:39,671 - octoprint.filemanager.analysis - INFO - Starting analysis of local:V350_Voron_Design_Cube_v7.gcode
+2020-12-26 20:36:39,680 - octoprint.filemanager.analysis - INFO - Invoking analysis command: /home/pi/oprint/bin/python2 -m octoprint analysis gcode --speed-x=6000 --speed-y=6000 --max-t=10 --throttle=0.0 --throttle-lines=100 /home/pi/.octoprint/uploads/V350_Voron_Design_Cube_v7.gcode
+2020-12-26 20:36:39,779 - octoprint.printer.standard.job - INFO - Print job selected - origin: local, path: V350_Voron_Design_Cube_v7.gcode, owner: _admin, user: _admin
+2020-12-26 20:36:39,813 - octoprint.util.comm - INFO - Changing monitoring state from "Operational" to "Starting"
+2020-12-26 20:36:39,824 - octoprint.printer.standard.job - INFO - Print job started - origin: local, path: V350_Voron_Design_Cube_v7.gcode, owner: _admin, user: _admin
+2020-12-26 20:36:39,840 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-26 20:36:39,890 - octoprint.util.comm - INFO - Changing monitoring state from "Starting" to "Printing"
+2020-12-26 20:36:40,600 - octoprint.plugins.tracking - INFO - Sent tracking event print_started, payload: {'origin': u'local', u'throttled_now': True, u'throttled_mask': 327685, 'file': 'cc8fc99b93706b6b5f38e11c9ba79842bbfd2544', u'throttled_past': True}
+2020-12-26 20:36:41,208 - octoprint.plugins.tracking - INFO - Sent tracking event system_throttled, payload: {'throttled_mask': 327685, 'throttled_voltage_now': True, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': True, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-26 20:37:54,383 - octoprint.plugins.tracking - INFO - Sent tracking event system_unthrottled, payload: {'throttled_mask': 327680, 'throttled_voltage_now': False, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': False, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-26 20:42:49,185 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-26 20:42:56,467 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 5289}
+2020-12-26 20:45:28,467 - octoprint.util.comm - INFO - Changing monitoring state from "Printing" to "Cancelling"
+2020-12-26 20:45:28,470 - octoprint.filemanager.analysis - INFO - Starting analysis of local:V350_Voron_Design_Cube_v7.gcode
+2020-12-26 20:45:28,477 - octoprint.filemanager.analysis - INFO - Invoking analysis command: /home/pi/oprint/bin/python2 -m octoprint analysis gcode --speed-x=6000 --speed-y=6000 --max-t=10 --throttle=0.0 --throttle-lines=100 /home/pi/.octoprint/uploads/V350_Voron_Design_Cube_v7.gcode
+2020-12-26 20:45:28,521 - octoprint.printer.standard.job - INFO - Print job cancelled - origin: local, path: V350_Voron_Design_Cube_v7.gcode, owner: _admin, user: _admin
+2020-12-26 20:45:29,103 - octoprint.util.comm - INFO - Changing monitoring state from "Cancelling" to "Operational"
+2020-12-26 20:45:29,200 - octoprint.plugins.tracking - INFO - Sent tracking event print_cancelled, payload: {'origin': u'local', u'throttled_mask': 327680, u'elapsed': 528, 'file': 'cc8fc99b93706b6b5f38e11c9ba79842bbfd2544', u'throttled_now': False, u'throttled_past': True}
+2020-12-26 20:45:29,832 - octoprint.plugins.tracking - INFO - Sent tracking event print_failed, payload: {'origin': u'local', u'throttled_mask': 327685, u'elapsed': 528, u'reason': u'cancelled', 'file': 'cc8fc99b93706b6b5f38e11c9ba79842bbfd2544', u'throttled_now': True, u'throttled_past': True}
+2020-12-26 20:45:30,453 - octoprint.plugins.tracking - INFO - Sent tracking event system_throttled, payload: {'throttled_mask': 327685, 'throttled_voltage_now': True, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': True, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-26 20:45:49,944 - octoprint.filemanager.analysis - INFO - Analysis of entry local:V350_Voron_Design_Cube_v7.gcode finished, needed 21.47s
+2020-12-26 20:47:54,481 - octoprint.plugins.tracking - INFO - Sent tracking event system_unthrottled, payload: {'throttled_mask': 327680, 'throttled_voltage_now': False, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': False, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-26 20:57:49,204 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-26 20:57:56,455 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 6189}
+2020-12-26 21:12:49,206 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-26 21:12:56,497 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 7089}
+2020-12-26 21:27:49,208 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-26 21:27:56,444 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 7989}
+2020-12-26 21:42:49,210 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-26 21:42:56,517 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 8889}
+2020-12-26 21:57:49,212 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-26 21:57:56,501 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 9789}
+2020-12-26 22:12:49,213 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-26 22:12:56,495 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 10689}
+2020-12-26 22:27:49,215 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-26 22:27:56,494 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 11589}
+2020-12-26 22:42:49,217 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-26 22:42:56,506 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 12489}
+2020-12-26 22:48:13,940 - octoprint.server.util.sockjs - INFO - Client connection closed: ::ffff:192.168.2.66
+2020-12-26 22:57:49,218 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-26 22:57:56,534 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 13389}
+2020-12-26 23:12:49,220 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-26 23:12:56,526 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 14289}
+2020-12-26 23:27:49,230 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-26 23:27:56,541 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 15189}
+2020-12-26 23:30:10,055 - octoprint.server.util.sockjs - INFO - New connection from client: ::ffff:192.168.2.66
+2020-12-26 23:30:10,171 - octoprint.server.util.flask - INFO - Passively logging in user _admin from ::ffff:192.168.2.66
+2020-12-26 23:30:10,173 - octoprint.access.users - INFO - Logged in user: _admin
+2020-12-26 23:30:12,758 - octoprint.server.util.sockjs - INFO - User _admin logged in on the socket from client ::ffff:192.168.2.66
+2020-12-26 23:42:49,232 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-26 23:42:56,482 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 16089}
+2020-12-26 23:57:49,234 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-26 23:57:56,530 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 16989}
+2020-12-27 00:12:49,237 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 00:12:56,566 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 17889}
+2020-12-27 00:27:49,239 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 00:27:56,562 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 18789}
+2020-12-27 00:42:49,240 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 00:42:56,556 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 19689}
+2020-12-27 00:57:49,241 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 00:57:56,553 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 20589}
+2020-12-27 01:12:49,243 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 01:12:56,626 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 21490}
+2020-12-27 01:27:49,245 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 01:27:56,597 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 22390}
+2020-12-27 01:42:49,248 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 01:42:56,588 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 23290}
+2020-12-27 01:57:49,250 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 01:57:56,609 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 24190}
+2020-12-27 02:12:49,251 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 02:12:56,594 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 25090}
+2020-12-27 02:27:49,254 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 02:27:56,596 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 25990}
+2020-12-27 02:42:49,263 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 02:42:56,585 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 26890}
+2020-12-27 02:57:49,265 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 02:57:56,587 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 27790}
+2020-12-27 03:12:49,267 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 03:12:56,631 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 28690}
+2020-12-27 03:27:49,269 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 03:27:56,645 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 29590}
+2020-12-27 03:42:49,271 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 03:42:56,598 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 30490}
+2020-12-27 03:57:49,274 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 03:57:56,627 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 31390}
+2020-12-27 04:12:49,276 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 04:12:56,629 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 32290}
+2020-12-27 04:27:49,277 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 04:27:56,615 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 33190}
+2020-12-27 04:42:49,278 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 04:42:56,573 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 34090}
+2020-12-27 04:57:49,280 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 04:57:56,629 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 34990}
+2020-12-27 05:12:49,281 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 05:12:56,654 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 35890}
+2020-12-27 05:27:49,282 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 05:27:56,645 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 36790}
+2020-12-27 05:42:49,284 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 05:42:56,586 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 37690}
+2020-12-27 05:57:49,285 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 05:57:56,690 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 38590}
+2020-12-27 06:12:49,287 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 06:12:56,643 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 39490}
+2020-12-27 06:12:59,815 - octoprint.plugins.tracking - INFO - Sent tracking event system_throttled, payload: {'throttled_mask': 327685, 'throttled_voltage_now': True, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': True, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 06:13:29,802 - octoprint.plugins.tracking - INFO - Sent tracking event system_unthrottled, payload: {'throttled_mask': 327680, 'throttled_voltage_now': False, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': False, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 06:27:49,289 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 06:27:56,645 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 40390}
+2020-12-27 06:33:30,051 - octoprint.plugins.tracking - INFO - Sent tracking event system_throttled, payload: {'throttled_mask': 327685, 'throttled_voltage_now': True, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': True, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 06:34:00,043 - octoprint.plugins.tracking - INFO - Sent tracking event system_unthrottled, payload: {'throttled_mask': 327680, 'throttled_voltage_now': False, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': False, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 06:42:49,290 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 06:42:56,604 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 41290}
+2020-12-27 06:57:49,292 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 06:57:56,675 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 42190}
+2020-12-27 07:12:49,293 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 07:12:56,689 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 43090}
+2020-12-27 07:24:00,622 - octoprint.plugins.tracking - INFO - Sent tracking event system_throttled, payload: {'throttled_mask': 327685, 'throttled_voltage_now': True, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': True, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 07:24:30,644 - octoprint.plugins.tracking - INFO - Sent tracking event system_unthrottled, payload: {'throttled_mask': 327680, 'throttled_voltage_now': False, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': False, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 07:27:49,295 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 07:27:56,648 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 43990}
+2020-12-27 07:42:49,297 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 07:42:56,610 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 44890}
+2020-12-27 07:57:49,299 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 07:57:56,665 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 45790}
+2020-12-27 08:12:49,300 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 08:12:56,676 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 46690}
+2020-12-27 08:27:49,302 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 08:27:56,661 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 47590}
+2020-12-27 08:42:49,303 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 08:42:56,616 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 48490}
+2020-12-27 08:57:49,305 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 08:57:56,694 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 49390}
+2020-12-27 09:12:49,308 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 09:12:56,693 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 50290}
+2020-12-27 09:27:49,310 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 09:27:56,687 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 51190}
+2020-12-27 09:42:49,312 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 09:42:56,680 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 52090}
+2020-12-27 09:44:32,244 - octoprint.plugins.tracking - INFO - Sent tracking event system_throttled, payload: {'throttled_mask': 327685, 'throttled_voltage_now': True, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': True, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 09:45:02,260 - octoprint.plugins.tracking - INFO - Sent tracking event system_unthrottled, payload: {'throttled_mask': 327680, 'throttled_voltage_now': False, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': False, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 09:57:49,313 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 09:57:56,699 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 52990}
+2020-12-27 10:12:49,315 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 10:12:56,732 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 53890}
+2020-12-27 10:27:49,318 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 10:27:56,702 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 54790}
+2020-12-27 10:42:49,318 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 10:42:56,713 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 55690}
+2020-12-27 10:57:49,321 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 10:57:56,718 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 56590}
+2020-12-27 11:12:49,323 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 11:12:56,734 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 57490}
+2020-12-27 11:27:49,326 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 11:27:56,719 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 58390}
+2020-12-27 11:42:49,327 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 11:42:56,760 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 59290}
+2020-12-27 11:57:49,328 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 11:57:56,750 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 60190}
+2020-12-27 12:12:49,329 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 12:12:56,759 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 61090}
+2020-12-27 12:27:49,330 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 12:27:56,746 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 61990}
+2020-12-27 12:30:03,866 - octoprint.plugins.tracking - INFO - Sent tracking event system_throttled, payload: {'throttled_mask': 327685, 'throttled_voltage_now': True, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': True, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 12:31:03,938 - octoprint.plugins.tracking - INFO - Sent tracking event system_unthrottled, payload: {'throttled_mask': 327680, 'throttled_voltage_now': False, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': False, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 12:42:49,332 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 12:42:56,761 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 62890}
+2020-12-27 12:57:49,335 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 12:57:56,740 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 63790}
+2020-12-27 13:11:04,347 - octoprint.plugins.tracking - INFO - Sent tracking event system_throttled, payload: {'throttled_mask': 327685, 'throttled_voltage_now': True, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': True, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 13:11:34,375 - octoprint.plugins.tracking - INFO - Sent tracking event system_unthrottled, payload: {'throttled_mask': 327680, 'throttled_voltage_now': False, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': False, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 13:12:49,337 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 13:12:56,758 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 64690}
+2020-12-27 13:21:34,516 - octoprint.plugins.tracking - INFO - Sent tracking event system_throttled, payload: {'throttled_mask': 327685, 'throttled_voltage_now': True, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': True, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 13:22:34,590 - octoprint.plugins.tracking - INFO - Sent tracking event system_unthrottled, payload: {'throttled_mask': 327680, 'throttled_voltage_now': False, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': False, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 13:27:49,337 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 13:27:56,774 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 65590}
+2020-12-27 13:37:34,801 - octoprint.plugins.tracking - INFO - Sent tracking event system_throttled, payload: {'throttled_mask': 327685, 'throttled_voltage_now': True, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': True, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 13:38:34,851 - octoprint.plugins.tracking - INFO - Sent tracking event system_unthrottled, payload: {'throttled_mask': 327680, 'throttled_voltage_now': False, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': False, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 13:42:49,338 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 13:42:56,804 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 66490}
+2020-12-27 13:48:34,974 - octoprint.plugins.tracking - INFO - Sent tracking event system_throttled, payload: {'throttled_mask': 327685, 'throttled_voltage_now': True, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': True, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 13:49:35,097 - octoprint.plugins.tracking - INFO - Sent tracking event system_unthrottled, payload: {'throttled_mask': 327680, 'throttled_voltage_now': False, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': False, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 13:57:49,339 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 13:57:56,779 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 67390}
+2020-12-27 13:59:35,213 - octoprint.plugins.tracking - INFO - Sent tracking event system_throttled, payload: {'throttled_mask': 327685, 'throttled_voltage_now': True, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': True, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 14:02:35,531 - octoprint.plugins.tracking - INFO - Sent tracking event system_unthrottled, payload: {'throttled_mask': 327680, 'throttled_voltage_now': False, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': False, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 14:12:49,340 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 14:12:56,720 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 68290}
+2020-12-27 14:27:35,805 - octoprint.plugins.tracking - INFO - Sent tracking event system_throttled, payload: {'throttled_mask': 327685, 'throttled_voltage_now': True, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': True, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 14:27:49,342 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 14:27:56,778 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 69190}
+2020-12-27 14:28:05,842 - octoprint.plugins.tracking - INFO - Sent tracking event system_unthrottled, payload: {'throttled_mask': 327680, 'throttled_voltage_now': False, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': False, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 14:33:05,932 - octoprint.plugins.tracking - INFO - Sent tracking event system_throttled, payload: {'throttled_mask': 327685, 'throttled_voltage_now': True, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': True, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 14:34:06,020 - octoprint.plugins.tracking - INFO - Sent tracking event system_unthrottled, payload: {'throttled_mask': 327680, 'throttled_voltage_now': False, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': False, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 14:39:06,109 - octoprint.plugins.tracking - INFO - Sent tracking event system_throttled, payload: {'throttled_mask': 327685, 'throttled_voltage_now': True, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': True, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 14:39:36,139 - octoprint.plugins.tracking - INFO - Sent tracking event system_unthrottled, payload: {'throttled_mask': 327680, 'throttled_voltage_now': False, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': False, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 14:42:49,343 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 14:42:56,775 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 70090}
+2020-12-27 14:49:36,261 - octoprint.plugins.tracking - INFO - Sent tracking event system_throttled, payload: {'throttled_mask': 327685, 'throttled_voltage_now': True, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': True, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 14:50:06,308 - octoprint.plugins.tracking - INFO - Sent tracking event system_unthrottled, payload: {'throttled_mask': 327680, 'throttled_voltage_now': False, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': False, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 14:57:49,345 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 14:57:56,780 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 70990}
+2020-12-27 15:05:06,489 - octoprint.plugins.tracking - INFO - Sent tracking event system_throttled, payload: {'throttled_mask': 327685, 'throttled_voltage_now': True, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': True, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 15:05:36,498 - octoprint.plugins.tracking - INFO - Sent tracking event system_unthrottled, payload: {'throttled_mask': 327680, 'throttled_voltage_now': False, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': False, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 15:12:49,348 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 15:12:56,796 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 71890}
+2020-12-27 15:15:36,667 - octoprint.plugins.tracking - INFO - Sent tracking event system_throttled, payload: {'throttled_mask': 327685, 'throttled_voltage_now': True, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': True, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 15:16:06,699 - octoprint.plugins.tracking - INFO - Sent tracking event system_unthrottled, payload: {'throttled_mask': 327680, 'throttled_voltage_now': False, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': False, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 15:26:06,834 - octoprint.plugins.tracking - INFO - Sent tracking event system_throttled, payload: {'throttled_mask': 327685, 'throttled_voltage_now': True, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': True, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 15:26:36,867 - octoprint.plugins.tracking - INFO - Sent tracking event system_unthrottled, payload: {'throttled_mask': 327680, 'throttled_voltage_now': False, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': False, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 15:27:49,350 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 15:27:56,799 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 72790}
+2020-12-27 15:31:36,947 - octoprint.plugins.tracking - INFO - Sent tracking event system_throttled, payload: {'throttled_mask': 327685, 'throttled_voltage_now': True, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': True, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 15:32:37,051 - octoprint.plugins.tracking - INFO - Sent tracking event system_unthrottled, payload: {'throttled_mask': 327680, 'throttled_voltage_now': False, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': False, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 15:42:49,352 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 15:42:57,675 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 73690}
+2020-12-27 15:47:37,884 - octoprint.plugins.tracking - INFO - Sent tracking event system_throttled, payload: {'throttled_mask': 327685, 'throttled_voltage_now': True, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': True, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 15:48:07,269 - octoprint.plugins.tracking - INFO - Sent tracking event system_unthrottled, payload: {'throttled_mask': 327680, 'throttled_voltage_now': False, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': False, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 15:57:49,356 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 15:57:56,799 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 74590}
+2020-12-27 16:12:49,388 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 16:12:56,812 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 75490}
+2020-12-27 16:27:49,389 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 16:27:56,784 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 76390}
+2020-12-27 16:42:49,392 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 16:42:56,812 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 77290}
+2020-12-27 16:57:49,395 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 16:57:56,794 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 78190}
+2020-12-27 17:12:49,396 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 17:12:56,817 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 79090}
+2020-12-27 17:27:49,397 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 17:27:56,827 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 79990}
+2020-12-27 17:42:49,399 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 17:42:56,841 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 80890}
+2020-12-27 17:57:49,400 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 17:57:56,815 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 81790}
+2020-12-27 18:12:49,413 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 18:12:56,823 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 82690}
+2020-12-27 18:27:49,421 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 18:27:56,842 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 83590}
+2020-12-27 18:42:49,422 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 18:42:56,823 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 84490}
+2020-12-27 18:57:49,424 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 18:57:56,851 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 85390}
+2020-12-27 18:58:09,137 - octoprint.plugins.tracking - INFO - Sent tracking event system_throttled, payload: {'throttled_mask': 327685, 'throttled_voltage_now': True, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': True, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 18:58:39,154 - octoprint.plugins.tracking - INFO - Sent tracking event system_unthrottled, payload: {'throttled_mask': 327680, 'throttled_voltage_now': False, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': False, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-27 19:12:49,426 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-27 19:12:56,434 - octoprint.plugins.tracking - INFO - Sent tracking event pong, payload: {'python': '2.7.16', 'ram': 1903980544, u'octopi_version': u'0.17.0', 'version': u'1.4.2', u'plugins': u'', 'pip': '19.3.1', 'cores': 4, 'freq': 1500.0, u'pi_model': u'Raspberry Pi 4 Model B Rev 1.1', 'os': 'linux'}
+2020-12-27 19:12:57,032 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 86290}

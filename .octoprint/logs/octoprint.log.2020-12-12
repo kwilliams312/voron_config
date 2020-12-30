@@ -1,0 +1,2175 @@
+2020-12-12 02:11:13,738 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-12 02:11:13,753 - octoprint.server - INFO - --- Log roll over detected ---------------------------------------------------
+2020-12-12 02:11:13,753 - octoprint.server - INFO - OctoPrint 1.4.2
+2020-12-12 02:11:13,798 - octoprint.plugin.core - INFO - 18 plugin(s) registered with the system:
+|  Action Command Notification Support (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/action_command_notification
+|  Action Command Prompt Support (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/action_command_prompt
+|  Announcement Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements
+|  Anonymous Usage Tracking (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/tracking
+|  Application Keys Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/appkeys
+|  Backup & Restore (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/backup
+|  Core Wizard (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/corewizard
+|  Discovery (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/discovery
+|  Error Tracking (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/errortracking
+|  File Check (2020.8.7) (bundled) = /home/pi/oprint/local/lib/python2.7/site-packages/octoprint_file_check
+|  Firmware Check (2020.9.23) (bundled) = /home/pi/oprint/local/lib/python2.7/site-packages/octoprint_firmware_check
+|  GCode Viewer (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/gcodeviewer
+|  Logging (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/logging
+|  Login UI (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/loginui
+|  Pi Support Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pi_support
+|  Plugin Manager (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pluginmanager
+|  Software Update (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/softwareupdate
+|  Virtual Printer (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/virtual_printer
+Prefix legend: ! = disabled, # = blacklisted, * = incompatible
+2020-12-12 02:11:13,817 - octoprint.environment - INFO - Detected environment is Python 2.7.16 under Linux (linux2). Details:
+|  hardware:
+|      cores: 4
+|      freq: 1500.0
+|      ram: 1903980544
+|  os:
+|      id: linux
+|      platform: linux2
+|  plugins:
+|      pi_support:
+|          model: Raspberry Pi 4 Model B Rev 1.1
+|          octopi_version: 0.17.0
+|  python:
+|      pip: 19.3.1
+|      version: 2.7.16
+|      virtualenv: /home/pi/oprint
+2020-12-12 02:11:13,818 - octoprint.server - INFO - ------------------------------------------------------------------------------
+2020-12-12 02:11:14,517 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 24}
+2020-12-12 02:11:15,172 - octoprint.plugins.tracking - INFO - Sent tracking event pong, payload: {'python': '2.7.16', 'ram': 1903980544, u'octopi_version': u'0.17.0', 'version': u'1.4.2', u'plugins': u'', 'pip': '19.3.1', 'cores': 4, 'freq': 1500.0, u'pi_model': u'Raspberry Pi 4 Model B Rev 1.1', 'os': 'linux'}
+2020-12-12 02:11:15,903 - octoprint.plugins.tracking - INFO - Sent tracking event system_unthrottled, payload: {'throttled_mask': 327680, 'throttled_voltage_now': False, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': False, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-12 02:12:22,856 - octoprint.startup - INFO - ******************************************************************************
+2020-12-12 02:12:22,859 - octoprint.startup - INFO - Starting OctoPrint 1.4.2
+2020-12-12 02:12:22,860 - octoprint.startup - INFO - ******************************************************************************
+2020-12-12 02:12:23,575 - octoprint.util.connectivity.connectivity_checker - INFO - Connectivity state is currently: offline
+2020-12-12 02:12:23,580 - octoprint.util.connectivity.connectivity_checker - INFO - Connecting to 8.8.8.8:53 is not working
+2020-12-12 02:12:23,580 - octoprint.util.connectivity.connectivity_checker - INFO - Resolving octoprint.org is not working
+2020-12-12 02:12:23,584 - octoprint.startup - INFO - We don't appear to be online, not fetching plugin blacklist
+2020-12-12 02:12:23,634 - octoprint.plugin.core - INFO - Loading plugins from /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins, /home/pi/.octoprint/plugins and installed plugin packages...
+2020-12-12 02:12:25,596 - octoprint.plugin.core - INFO - Found 18 plugin(s) providing 18 mixin implementations, 32 hook handlers
+2020-12-12 02:12:25,921 - octoprint.server.heartbeat - INFO - Starting server heartbeat, 900.0s interval
+2020-12-12 02:12:25,980 - octoprint.server - INFO - Intermediary server started
+2020-12-12 02:12:25,982 - octoprint.plugin.core - INFO - Loading plugins from /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins, /home/pi/.octoprint/plugins and installed plugin packages...
+2020-12-12 02:12:26,248 - octoprint.plugin.core - INFO - Found 18 plugin(s) providing 18 mixin implementations, 32 hook handlers
+2020-12-12 02:12:26,289 - octoprint.filemanager.storage - INFO - Initializing the file metadata for /home/pi/.octoprint/uploads...
+2020-12-12 02:12:26,292 - octoprint.filemanager.storage - INFO - ... file metadata for /home/pi/.octoprint/uploads initialized successfully.
+2020-12-12 02:12:26,299 - octoprint.server - INFO - Added new permission from plugin action_command_notification: PLUGIN_ACTION_COMMAND_NOTIFICATION_SHOW (needs: u"Need(method='role', value=u'plugin_action_command_notification_show')")
+2020-12-12 02:12:26,300 - octoprint.server - INFO - Added new permission from plugin action_command_notification: PLUGIN_ACTION_COMMAND_NOTIFICATION_CLEAR (needs: u"Need(method='role', value=u'plugin_action_command_notification_clear')")
+2020-12-12 02:12:26,302 - octoprint.server - INFO - Added new permission from plugin action_command_prompt: PLUGIN_ACTION_COMMAND_PROMPT_INTERACT (needs: u"Need(method='role', value=u'plugin_action_command_prompt_interact')")
+2020-12-12 02:12:26,305 - octoprint.server - INFO - Added new permission from plugin announcements: PLUGIN_ANNOUNCEMENTS_READ (needs: u"Need(method='role', value=u'plugin_announcements_read')")
+2020-12-12 02:12:26,312 - octoprint.server - INFO - Added new permission from plugin announcements: PLUGIN_ANNOUNCEMENTS_MANAGE (needs: u"Need(method='role', value=u'plugin_announcements_manage'), Need(method='role', value=u'plugin_announcements_read')")
+2020-12-12 02:12:26,314 - octoprint.server - INFO - Added new permission from plugin appkeys: PLUGIN_APPKEYS_ADMIN (needs: u"Need(method='role', value=u'plugin_appkeys_admin')")
+2020-12-12 02:12:26,317 - octoprint.server - INFO - Added new permission from plugin backup: PLUGIN_BACKUP_ACCESS (needs: u"Need(method='role', value=u'plugin_backup_access')")
+2020-12-12 02:12:26,320 - octoprint.server - INFO - Added new permission from plugin firmware_check: PLUGIN_FIRMWARE_CHECK_DISPLAY (needs: u"Need(method='role', value=u'plugin_firmware_check_display')")
+2020-12-12 02:12:26,324 - octoprint.server - INFO - Added new permission from plugin logging: PLUGIN_LOGGING_MANAGE (needs: u"Need(method='role', value=u'plugin_logging_manage')")
+2020-12-12 02:12:26,327 - octoprint.server - INFO - Added new permission from plugin pi_support: PLUGIN_PI_SUPPORT_STATUS (needs: u"Need(method='role', value=u'plugin_pi_support_check')")
+2020-12-12 02:12:26,329 - octoprint.server - INFO - Added new permission from plugin pluginmanager: PLUGIN_PLUGINMANAGER_MANAGE (needs: u"Need(method='role', value=u'plugin_pluginmanager_manage')")
+2020-12-12 02:12:26,330 - octoprint.server - INFO - Added new permission from plugin pluginmanager: PLUGIN_PLUGINMANAGER_INSTALL (needs: u"Need(method='role', value=u'plugin_pluginmanager_install'), Need(method='role', value=u'plugin_pluginmanager_manage')")
+2020-12-12 02:12:26,333 - octoprint.server - INFO - Added new permission from plugin softwareupdate: PLUGIN_SOFTWAREUPDATE_CHECK (needs: u"Need(method='role', value=u'plugin_softwareupdate_check')")
+2020-12-12 02:12:26,335 - octoprint.server - INFO - Added new permission from plugin softwareupdate: PLUGIN_SOFTWAREUPDATE_UPDATE (needs: u"Need(method='role', value=u'plugin_softwareupdate_update')")
+2020-12-12 02:12:26,431 - octoprint.plugins.softwareupdate - INFO - Loaded version cache from disk
+2020-12-12 02:12:27,967 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python2 -m pip" as command to invoke pip
+2020-12-12 02:12:28,913 - octoprint.util.pip - INFO - Version of pip is 19.3.1
+2020-12-12 02:12:28,914 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python2.7/site-packages (writable -> yes), --user flag needed -> no, virtual env -> yes
+2020-12-12 02:12:28,915 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2020-12-12 02:12:28,919 - octoprint.plugin.core - INFO - Initialized 18 plugin implementation(s)
+2020-12-12 02:12:28,928 - octoprint.plugin.core - INFO - 18 plugin(s) registered with the system:
+|  Action Command Notification Support (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/action_command_notification
+|  Action Command Prompt Support (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/action_command_prompt
+|  Announcement Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements
+|  Anonymous Usage Tracking (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/tracking
+|  Application Keys Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/appkeys
+|  Backup & Restore (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/backup
+|  Core Wizard (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/corewizard
+|  Discovery (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/discovery
+|  Error Tracking (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/errortracking
+|  File Check (2020.8.7) (bundled) = /home/pi/oprint/local/lib/python2.7/site-packages/octoprint_file_check
+|  Firmware Check (2020.9.23) (bundled) = /home/pi/oprint/local/lib/python2.7/site-packages/octoprint_firmware_check
+|  GCode Viewer (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/gcodeviewer
+|  Logging (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/logging
+|  Login UI (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/loginui
+|  Pi Support Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pi_support
+|  Plugin Manager (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pluginmanager
+|  Software Update (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/softwareupdate
+|  Virtual Printer (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/virtual_printer
+Prefix legend: ! = disabled, # = blacklisted, * = incompatible
+2020-12-12 02:12:28,938 - octoprint.environment - INFO - Detected environment is Python 2.7.16 under Linux (linux2). Details:
+|  hardware:
+|      cores: 4
+|      freq: 1500.0
+|      ram: 1903980544
+|  os:
+|      id: linux
+|      platform: linux2
+|  plugins:
+|      pi_support:
+|          model: Raspberry Pi 4 Model B Rev 1.1
+|          octopi_version: 0.17.0
+|  python:
+|      pip: 19.3.1
+|      version: 2.7.16
+|      virtualenv: /home/pi/oprint
+2020-12-12 02:12:28,945 - octoprint.server - INFO - Reset webasset folder /home/pi/.octoprint/generated/webassets...
+2020-12-12 02:12:28,962 - octoprint.server - INFO - Reset webasset folder /home/pi/.octoprint/generated/.webassets-cache...
+2020-12-12 02:12:29,513 - octoprint.server - INFO - Shutting down intermediary server...
+2020-12-12 02:12:29,987 - octoprint.server - INFO - Intermediary server shut down
+2020-12-12 02:12:29,991 - octoprint.events - INFO - Processing startup event, this is our first event
+2020-12-12 02:12:29,992 - octoprint.events - INFO - Adding 0 events to queue that were held back before startup event
+2020-12-12 02:12:29,996 - octoprint.filemanager - INFO - Adding backlog items from all storage types to analysis queue...
+2020-12-12 02:12:29,997 - octoprint.server - INFO - Autoconnect on startup is configured, trying to connect to the printer...
+2020-12-12 02:12:30,004 - octoprint.filemanager - INFO - Added 0 items from storage type "local" to analysis queue
+2020-12-12 02:12:30,057 - octoprint.server - INFO - Trying to connect to configured serial port None
+2020-12-12 02:12:30,105 - octoprint.util.comm - INFO - Changing monitoring state from "Offline" to "Detecting serial connection"
+2020-12-12 02:12:30,110 - octoprint.server.util.watchdog - INFO - Running initial scan on watched folder...
+2020-12-12 02:12:30,112 - octoprint.server.util.watchdog - INFO - ... initial scan done.
+2020-12-12 02:12:30,120 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance on voron' for _http._tcp
+2020-12-12 02:12:30,127 - octoprint.util.comm - INFO - Serial detection: Performing autodetection with 6 port/baudrate candidates: /dev/ttyACM2@115200, /dev/ttyACM2@250000, /dev/ttyACM0@115200, /dev/ttyACM0@250000, /tmp/printer@115200, /tmp/printer@250000
+2020-12-12 02:12:30,128 - octoprint.util.comm - INFO - Serial detection: Trying port /dev/ttyACM2, baudrate 115200
+2020-12-12 02:12:30,128 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance on voron' for _octoprint._tcp
+2020-12-12 02:12:30,130 - octoprint.util.comm - INFO - Connecting to port /dev/ttyACM2, baudrate 115200
+2020-12-12 02:12:30,153 - octoprint.util.comm - INFO - Serial detection: Handshake attempt #1 with timeout 2.0s
+2020-12-12 02:12:30,156 - octoprint.plugins.pi_support - WARNING - This Raspberry Pi is reporting problems that might lead to bad performance or errors caused by overheating or insufficient power.
+!!! UNDERVOLTAGE REPORTED !!! Make sure that the power supply and power cable are capable of supplying enough voltage and current to your Pi.
+2020-12-12 02:12:30,160 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 02:12:30,163 - octoprint.server - INFO - Listening on http://127.0.0.1:5000
+2020-12-12 02:12:30,173 - octoprint.plugins.pluginmanager - INFO - Looks like we are offline, can't fetch repository from network
+2020-12-12 02:12:30,174 - octoprint.plugins.pluginmanager - INFO - Looks like we are offline, can't fetch notices from network
+2020-12-12 02:12:30,177 - octoprint.plugins.announcements - INFO - Looks like we are offline, can't fetch announcements for channel _important from network
+2020-12-12 02:12:30,178 - octoprint.plugins.announcements - INFO - Looks like we are offline, can't fetch announcements for channel _releases from network
+2020-12-12 02:12:30,179 - octoprint.plugins.announcements - INFO - Looks like we are offline, can't fetch announcements for channel _blog from network
+2020-12-12 02:12:30,181 - octoprint.plugins.announcements - INFO - Looks like we are offline, can't fetch announcements for channel _plugins from network
+2020-12-12 02:12:30,182 - octoprint.plugins.announcements - INFO - Looks like we are offline, can't fetch announcements for channel _octopi from network
+2020-12-12 02:12:30,782 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python2 -m pip" as command to invoke pip
+2020-12-12 02:12:30,784 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python2.7/site-packages (writable -> yes), --user flag needed -> no, virtual env -> yes
+2020-12-12 02:12:30,784 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2020-12-12 02:12:30,790 - octoprint.plugins.softwareupdate - INFO - Minimum free storage across all update relevant locations is 24.2GB. That is considered sufficient for updating.
+2020-12-12 02:12:32,177 - octoprint.util.comm - INFO - Serial detection: Handshake attempt #2 with timeout 2.0s
+2020-12-12 02:12:32,183 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 02:12:32,501 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python2 -m pip" as command to invoke pip
+2020-12-12 02:12:32,584 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python2 -m pip" as command to invoke pip
+2020-12-12 02:12:32,607 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python2 -m pip" as command to invoke pip
+2020-12-12 02:12:35,779 - octoprint.util.comm - INFO - Serial detection: Handshake attempt #3 with timeout 2.0s
+2020-12-12 02:12:35,784 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 02:12:37,786 - octoprint.util.comm - INFO - Serial detection: Trying port /dev/ttyACM2, baudrate 250000
+2020-12-12 02:12:37,789 - octoprint.util.comm - INFO - Serial detection: Handshake attempt #1 with timeout 2.0s
+2020-12-12 02:12:37,791 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 02:12:37,941 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python2.7/site-packages/ (writable -> yes), --user flag needed -> no, virtual env -> yes
+2020-12-12 02:12:37,941 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2020-12-12 02:12:37,960 - octoprint.plugins.softwareupdate - INFO - Saved version cache to disk
+2020-12-12 02:12:40,777 - octoprint.util.comm - INFO - Serial detection: Handshake attempt #2 with timeout 2.0s
+2020-12-12 02:12:40,781 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 02:12:42,784 - octoprint.util.comm - INFO - Serial detection: Handshake attempt #3 with timeout 2.0s
+2020-12-12 02:12:42,788 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 02:12:45,777 - octoprint.util.comm - INFO - Serial detection: Trying port /dev/ttyACM0, baudrate 115200
+2020-12-12 02:12:45,779 - octoprint.util.comm - INFO - Connecting to port /dev/ttyACM0, baudrate 115200
+2020-12-12 02:12:45,798 - octoprint.util.comm - ERROR - Unexpected error while connecting to serial port /dev/ttyACM0, baudrate 115200 from hook default: SerialException: '[Errno 11] Could not exclusively lock port /dev/ttyACM0: [Errno 11] Resource temporarily unavailable' @ comm.py:_open_serial:2784
+Traceback (most recent call last):
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/octoprint/util/comm.py", line 2784, in _open_serial
+    settings().getFloat(["serial", "timeout", "connection"]))
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/octoprint/util/comm.py", line 2761, in default
+    serial_obj.open()
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/serial/serialposix.py", line 272, in open
+    self._reconfigure_port(force_update=True)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/serial/serialposix.py", line 312, in _reconfigure_port
+    raise SerialException(msg.errno, "Could not exclusively lock port {}: {}".format(self._port, msg))
+SerialException: [Errno 11] Could not exclusively lock port /dev/ttyACM0: [Errno 11] Resource temporarily unavailable
+2020-12-12 02:12:45,799 - octoprint.util.comm - INFO - Serial detection: Could not open port /dev/ttyACM0, baudrate 115200, skipping
+2020-12-12 02:12:45,801 - octoprint.util.comm - INFO - Serial detection: Trying port /dev/ttyACM0, baudrate 250000
+2020-12-12 02:12:45,804 - octoprint.util.comm - INFO - Connecting to port /dev/ttyACM0, baudrate 250000
+2020-12-12 02:12:45,810 - octoprint.util.comm - ERROR - Unexpected error while connecting to serial port /dev/ttyACM0, baudrate 250000 from hook default: SerialException: '[Errno 11] Could not exclusively lock port /dev/ttyACM0: [Errno 11] Resource temporarily unavailable' @ comm.py:_open_serial:2784
+Traceback (most recent call last):
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/octoprint/util/comm.py", line 2784, in _open_serial
+    settings().getFloat(["serial", "timeout", "connection"]))
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/octoprint/util/comm.py", line 2761, in default
+    serial_obj.open()
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/serial/serialposix.py", line 272, in open
+    self._reconfigure_port(force_update=True)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/serial/serialposix.py", line 312, in _reconfigure_port
+    raise SerialException(msg.errno, "Could not exclusively lock port {}: {}".format(self._port, msg))
+SerialException: [Errno 11] Could not exclusively lock port /dev/ttyACM0: [Errno 11] Resource temporarily unavailable
+2020-12-12 02:12:45,811 - octoprint.util.comm - INFO - Serial detection: Could not open port /dev/ttyACM0, baudrate 250000, skipping
+2020-12-12 02:12:45,812 - octoprint.util.comm - INFO - Serial detection: Trying port /tmp/printer, baudrate 115200
+2020-12-12 02:12:45,815 - octoprint.util.comm - INFO - Connecting to port /tmp/printer, baudrate 115200
+2020-12-12 02:12:45,823 - octoprint.util.comm - INFO - Serial detection: Handshake attempt #1 with timeout 2.0s
+2020-12-12 02:12:45,826 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 02:12:45,835 - octoprint.util.comm - INFO - Changing monitoring state from "Detecting serial connection" to "Operational"
+2020-12-12 02:12:45,846 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 02:12:45,849 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Lost communication with MCU 'mcu'
+| Last lines in terminal:
+| Trying port /dev/ttyACM0, baudrate 115200
+| Connecting to port /dev/ttyACM0, baudrate 115200
+| Unexpected error while connecting to serial port /dev/ttyACM0, baudrate 115200 from hook default: SerialException: '[Errno 11] Could not exclusively lock port /dev/ttyACM0: [Errno 11] Resource temporarily unavailable' @ comm.py:_open_serial:2784
+| Could not open port /dev/ttyACM0, baudrate 115200, skipping
+| Trying port /dev/ttyACM0, baudrate 250000
+| Connecting to port /dev/ttyACM0, baudrate 250000
+| Unexpected error while connecting to serial port /dev/ttyACM0, baudrate 250000 from hook default: SerialException: '[Errno 11] Could not exclusively lock port /dev/ttyACM0: [Errno 11] Resource temporarily unavailable' @ comm.py:_open_serial:2784
+| Could not open port /dev/ttyACM0, baudrate 250000, skipping
+| Trying port /tmp/printer, baudrate 115200
+| Connecting to port /tmp/printer, baudrate 115200
+| Handshake attempt #1 with timeout 2.0s
+| Recv: // Lost communication with MCU 'mcu'
+| Recv: // Once the underlying issue is corrected, use the
+| Send: N0 M110 N0*125
+| Recv: // "FIRMWARE_RESTART" command to reset the firmware, reload the
+| Recv: // config, and restart the host software.
+| Changing monitoring state from "Detecting serial connection" to "Operational"
+| Recv: // Printer is shutdown
+| Recv: !! Lost communication with MCU 'mcu'
+| Send: N0 M110 N0*125
+2020-12-12 02:12:45,860 - octoprint.util.comm - INFO - Printer reports firmware name "Klipper"
+2020-12-12 02:12:45,863 - octoprint.util.comm - INFO - Detected Klipper firmware, enabling relevant features for issue free communication
+2020-12-12 02:16:14,779 - octoprint.server.util.flask.PreemptiveCache - INFO - Adding entry for / and {'query_string': u'l10n=en', 'path': u'/', u'_count': 1, u'_timestamp': 1607739374.779051, 'base_url': u'http://voron.local/'}
+2020-12-12 02:16:19,771 - octoprint.server.util.sockjs - INFO - New connection from client: 2601:644:877f:f0f1:6079:73f9:134d:f320
+2020-12-12 02:16:19,872 - octoprint.server.util.flask - INFO - Passively logging in user _admin from 2601:644:877f:f0f1:6079:73f9:134d:f320
+2020-12-12 02:16:19,875 - octoprint.access.users - INFO - Logged in user: _admin
+2020-12-12 02:16:20,773 - octoprint.plugins.announcements - INFO - Looks like we are offline, can't fetch announcements for channel _important from network
+2020-12-12 02:16:20,776 - octoprint.plugins.announcements - INFO - Looks like we are offline, can't fetch announcements for channel _releases from network
+2020-12-12 02:16:20,780 - octoprint.plugins.announcements - INFO - Looks like we are offline, can't fetch announcements for channel _blog from network
+2020-12-12 02:16:20,782 - octoprint.plugins.announcements - INFO - Looks like we are offline, can't fetch announcements for channel _plugins from network
+2020-12-12 02:16:20,785 - octoprint.plugins.announcements - INFO - Looks like we are offline, can't fetch announcements for channel _octopi from network
+2020-12-12 02:16:20,983 - octoprint.plugins.pluginmanager - INFO - Looks like we are offline, can't fetch repository from network
+2020-12-12 02:16:20,985 - octoprint.plugins.pluginmanager - INFO - Looks like we are offline, can't fetch notices from network
+2020-12-12 02:16:21,114 - octoprint.util.connectivity.connectivity_checker - INFO - Connectivity changed from offline to online
+2020-12-12 02:16:21,800 - octoprint.plugins.softwareupdate - INFO - Saved version cache to disk
+2020-12-12 02:16:21,954 - octoprint.plugins.announcements - INFO - Loaded channel _important from https://octoprint.org/feeds/important.xml in 0.8s
+2020-12-12 02:16:22,041 - octoprint.server.util.sockjs - INFO - User _admin logged in on the socket from client 2601:644:877f:f0f1:6079:73f9:134d:f320
+2020-12-12 02:16:22,333 - octoprint.plugins.pluginmanager - INFO - Loaded plugin repository data from https://plugins.octoprint.org/plugins.json
+2020-12-12 02:16:23,279 - octoprint.plugins.pluginmanager - INFO - Loaded plugin repository data from https://plugins.octoprint.org/plugins.json
+2020-12-12 02:16:23,321 - octoprint.plugins.announcements - INFO - Loaded channel _releases from https://octoprint.org/feeds/releases.xml in 0.99s
+2020-12-12 02:16:24,025 - octoprint.plugins.pluginmanager - INFO - Loaded plugin notices data from https://plugins.octoprint.org/notices.json
+2020-12-12 02:16:24,563 - octoprint.plugins.announcements - INFO - Loaded channel _blog from https://octoprint.org/feeds/octoblog.xml in 1.1s
+2020-12-12 02:16:25,716 - octoprint.plugins.announcements - INFO - Loaded channel _plugins from https://plugins.octoprint.org/feed.xml in 0.78s
+2020-12-12 02:16:26,593 - octoprint.plugins.announcements - INFO - Loaded channel _octopi from https://octoprint.org/feeds/octopi.xml in 0.73s
+2020-12-12 02:16:55,341 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Lost communication with MCU 'mcu'
+| Last lines in terminal:
+| Recv: ok B:21.1 /0.0 T0:0.0 /0.0
+| Send: M105
+| Recv: ok B:21.1 /0.0 T0:0.0 /0.0
+| Send: M105
+| Recv: ok B:21.0 /0.0 T0:0.0 /0.0
+| Send: M105
+| Recv: ok B:21.1 /0.0 T0:0.0 /0.0
+| Send: M105
+| Recv: ok B:21.1 /0.0 T0:0.0 /0.0
+| Send: M105
+| Recv: ok B:21.1 /0.0 T0:0.0 /0.0
+| Send: M105
+| Recv: ok B:21.1 /0.0 T0:0.0 /0.0
+| Send: G91
+| Recv: // Lost communication with MCU 'mcu'
+| Recv: // Once the underlying issue is corrected, use the
+| Recv: // "FIRMWARE_RESTART" command to reset the firmware, reload the
+| Recv: // config, and restart the host software.
+| Recv: // Printer is shutdown
+| Recv: !! Lost communication with MCU 'mcu'
+2020-12-12 02:16:55,356 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Lost communication with MCU 'mcu'
+| Last lines in terminal:
+| Recv: ok B:21.1 /0.0 T0:0.0 /0.0
+| Send: M105
+| Recv: ok B:21.1 /0.0 T0:0.0 /0.0
+| Send: M105
+| Recv: ok B:21.1 /0.0 T0:0.0 /0.0
+| Send: G91
+| Recv: // Lost communication with MCU 'mcu'
+| Recv: // Once the underlying issue is corrected, use the
+| Recv: // "FIRMWARE_RESTART" command to reset the firmware, reload the
+| Recv: // config, and restart the host software.
+| Recv: // Printer is shutdown
+| Recv: !! Lost communication with MCU 'mcu'
+| Recv: ok
+| Send: G28 X0 Y0
+| Recv: // Lost communication with MCU 'mcu'
+| Recv: // Once the underlying issue is corrected, use the
+| Recv: // "FIRMWARE_RESTART" command to reset the firmware, reload the
+| Recv: // config, and restart the host software.
+| Recv: // Printer is shutdown
+| Recv: !! Lost communication with MCU 'mcu'
+2020-12-12 02:16:55,364 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Lost communication with MCU 'mcu'
+| Last lines in terminal:
+| Recv: // "FIRMWARE_RESTART" command to reset the firmware, reload the
+| Recv: // config, and restart the host software.
+| Recv: // Printer is shutdown
+| Recv: !! Lost communication with MCU 'mcu'
+| Recv: ok
+| Send: G28 X0 Y0
+| Recv: // Lost communication with MCU 'mcu'
+| Recv: // Once the underlying issue is corrected, use the
+| Recv: // "FIRMWARE_RESTART" command to reset the firmware, reload the
+| Recv: // config, and restart the host software.
+| Recv: // Printer is shutdown
+| Recv: !! Lost communication with MCU 'mcu'
+| Recv: ok
+| Send: G90
+| Recv: // Lost communication with MCU 'mcu'
+| Recv: // Once the underlying issue is corrected, use the
+| Recv: // "FIRMWARE_RESTART" command to reset the firmware, reload the
+| Recv: // config, and restart the host software.
+| Recv: // Printer is shutdown
+| Recv: !! Lost communication with MCU 'mcu'
+2020-12-12 02:17:04,148 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Lost communication with MCU 'mcu'
+| Last lines in terminal:
+| Recv: ok
+| Send: G90
+| Recv: // Lost communication with MCU 'mcu'
+| Recv: // Once the underlying issue is corrected, use the
+| Recv: // "FIRMWARE_RESTART" command to reset the firmware, reload the
+| Recv: // config, and restart the host software.
+| Recv: // Printer is shutdown
+| Recv: !! Lost communication with MCU 'mcu'
+| Recv: ok
+| Send: M105
+| Recv: ok B:21.0 /0.0 T0:0.0 /0.0
+| Send: M105
+| Recv: ok B:21.1 /0.0 T0:0.0 /0.0
+| Send: G91
+| Recv: // Lost communication with MCU 'mcu'
+| Recv: // Once the underlying issue is corrected, use the
+| Recv: // "FIRMWARE_RESTART" command to reset the firmware, reload the
+| Recv: // config, and restart the host software.
+| Recv: // Printer is shutdown
+| Recv: !! Lost communication with MCU 'mcu'
+2020-12-12 02:17:04,166 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Lost communication with MCU 'mcu'
+| Last lines in terminal:
+| Recv: ok
+| Send: M105
+| Recv: ok B:21.0 /0.0 T0:0.0 /0.0
+| Send: M105
+| Recv: ok B:21.1 /0.0 T0:0.0 /0.0
+| Send: G91
+| Recv: // Lost communication with MCU 'mcu'
+| Recv: // Once the underlying issue is corrected, use the
+| Recv: // "FIRMWARE_RESTART" command to reset the firmware, reload the
+| Recv: // config, and restart the host software.
+| Recv: // Printer is shutdown
+| Recv: !! Lost communication with MCU 'mcu'
+| Recv: ok
+| Send: G28 X0 Y0
+| Recv: // Lost communication with MCU 'mcu'
+| Recv: // Once the underlying issue is corrected, use the
+| Recv: // "FIRMWARE_RESTART" command to reset the firmware, reload the
+| Recv: // config, and restart the host software.
+| Recv: // Printer is shutdown
+| Recv: !! Lost communication with MCU 'mcu'
+2020-12-12 02:17:04,172 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Lost communication with MCU 'mcu'
+| Last lines in terminal:
+| Recv: // "FIRMWARE_RESTART" command to reset the firmware, reload the
+| Recv: // config, and restart the host software.
+| Recv: // Printer is shutdown
+| Recv: !! Lost communication with MCU 'mcu'
+| Recv: ok
+| Send: G28 X0 Y0
+| Recv: // Lost communication with MCU 'mcu'
+| Recv: // Once the underlying issue is corrected, use the
+| Recv: // "FIRMWARE_RESTART" command to reset the firmware, reload the
+| Recv: // config, and restart the host software.
+| Recv: // Printer is shutdown
+| Recv: !! Lost communication with MCU 'mcu'
+| Recv: ok
+| Send: G90
+| Recv: // Lost communication with MCU 'mcu'
+| Recv: // Once the underlying issue is corrected, use the
+| Recv: // "FIRMWARE_RESTART" command to reset the firmware, reload the
+| Recv: // config, and restart the host software.
+| Recv: // Printer is shutdown
+| Recv: !! Lost communication with MCU 'mcu'
+2020-12-12 02:18:01,434 - octoprint.startup - INFO - ******************************************************************************
+2020-12-12 02:18:01,437 - octoprint.startup - INFO - Starting OctoPrint 1.4.2
+2020-12-12 02:18:01,438 - octoprint.startup - INFO - ******************************************************************************
+2020-12-12 02:18:02,213 - octoprint.util.connectivity.connectivity_checker - INFO - Connectivity state is currently: offline
+2020-12-12 02:18:02,223 - octoprint.util.connectivity.connectivity_checker - INFO - Connecting to 8.8.8.8:53 is not working
+2020-12-12 02:18:02,225 - octoprint.util.connectivity.connectivity_checker - INFO - Resolving octoprint.org is not working
+2020-12-12 02:18:02,234 - octoprint.startup - INFO - We don't appear to be online, not fetching plugin blacklist
+2020-12-12 02:18:02,323 - octoprint.plugin.core - INFO - Loading plugins from /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins, /home/pi/.octoprint/plugins and installed plugin packages...
+2020-12-12 02:18:04,341 - octoprint.plugin.core - INFO - Found 18 plugin(s) providing 18 mixin implementations, 32 hook handlers
+2020-12-12 02:18:04,666 - octoprint.server.heartbeat - INFO - Starting server heartbeat, 900.0s interval
+2020-12-12 02:18:04,726 - octoprint.server - INFO - Intermediary server started
+2020-12-12 02:18:04,728 - octoprint.plugin.core - INFO - Loading plugins from /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins, /home/pi/.octoprint/plugins and installed plugin packages...
+2020-12-12 02:18:04,996 - octoprint.plugin.core - INFO - Found 18 plugin(s) providing 18 mixin implementations, 32 hook handlers
+2020-12-12 02:18:05,036 - octoprint.filemanager.storage - INFO - Initializing the file metadata for /home/pi/.octoprint/uploads...
+2020-12-12 02:18:05,039 - octoprint.filemanager.storage - INFO - ... file metadata for /home/pi/.octoprint/uploads initialized successfully.
+2020-12-12 02:18:05,044 - octoprint.server - INFO - Added new permission from plugin action_command_notification: PLUGIN_ACTION_COMMAND_NOTIFICATION_SHOW (needs: u"Need(method='role', value=u'plugin_action_command_notification_show')")
+2020-12-12 02:18:05,045 - octoprint.server - INFO - Added new permission from plugin action_command_notification: PLUGIN_ACTION_COMMAND_NOTIFICATION_CLEAR (needs: u"Need(method='role', value=u'plugin_action_command_notification_clear')")
+2020-12-12 02:18:05,047 - octoprint.server - INFO - Added new permission from plugin action_command_prompt: PLUGIN_ACTION_COMMAND_PROMPT_INTERACT (needs: u"Need(method='role', value=u'plugin_action_command_prompt_interact')")
+2020-12-12 02:18:05,050 - octoprint.server - INFO - Added new permission from plugin announcements: PLUGIN_ANNOUNCEMENTS_READ (needs: u"Need(method='role', value=u'plugin_announcements_read')")
+2020-12-12 02:18:05,052 - octoprint.server - INFO - Added new permission from plugin announcements: PLUGIN_ANNOUNCEMENTS_MANAGE (needs: u"Need(method='role', value=u'plugin_announcements_manage'), Need(method='role', value=u'plugin_announcements_read')")
+2020-12-12 02:18:05,054 - octoprint.server - INFO - Added new permission from plugin appkeys: PLUGIN_APPKEYS_ADMIN (needs: u"Need(method='role', value=u'plugin_appkeys_admin')")
+2020-12-12 02:18:05,056 - octoprint.server - INFO - Added new permission from plugin backup: PLUGIN_BACKUP_ACCESS (needs: u"Need(method='role', value=u'plugin_backup_access')")
+2020-12-12 02:18:05,058 - octoprint.server - INFO - Added new permission from plugin firmware_check: PLUGIN_FIRMWARE_CHECK_DISPLAY (needs: u"Need(method='role', value=u'plugin_firmware_check_display')")
+2020-12-12 02:18:05,060 - octoprint.server - INFO - Added new permission from plugin logging: PLUGIN_LOGGING_MANAGE (needs: u"Need(method='role', value=u'plugin_logging_manage')")
+2020-12-12 02:18:05,062 - octoprint.server - INFO - Added new permission from plugin pi_support: PLUGIN_PI_SUPPORT_STATUS (needs: u"Need(method='role', value=u'plugin_pi_support_check')")
+2020-12-12 02:18:05,064 - octoprint.server - INFO - Added new permission from plugin pluginmanager: PLUGIN_PLUGINMANAGER_MANAGE (needs: u"Need(method='role', value=u'plugin_pluginmanager_manage')")
+2020-12-12 02:18:05,067 - octoprint.server - INFO - Added new permission from plugin pluginmanager: PLUGIN_PLUGINMANAGER_INSTALL (needs: u"Need(method='role', value=u'plugin_pluginmanager_install'), Need(method='role', value=u'plugin_pluginmanager_manage')")
+2020-12-12 02:18:05,069 - octoprint.server - INFO - Added new permission from plugin softwareupdate: PLUGIN_SOFTWAREUPDATE_CHECK (needs: u"Need(method='role', value=u'plugin_softwareupdate_check')")
+2020-12-12 02:18:05,071 - octoprint.server - INFO - Added new permission from plugin softwareupdate: PLUGIN_SOFTWAREUPDATE_UPDATE (needs: u"Need(method='role', value=u'plugin_softwareupdate_update')")
+2020-12-12 02:18:05,162 - octoprint.plugins.softwareupdate - INFO - Loaded version cache from disk
+2020-12-12 02:18:06,702 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python2 -m pip" as command to invoke pip
+2020-12-12 02:18:07,456 - octoprint.util.pip - INFO - Version of pip is 19.3.1
+2020-12-12 02:18:07,457 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python2.7/site-packages (writable -> yes), --user flag needed -> no, virtual env -> yes
+2020-12-12 02:18:07,457 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2020-12-12 02:18:07,462 - octoprint.plugin.core - INFO - Initialized 18 plugin implementation(s)
+2020-12-12 02:18:07,470 - octoprint.plugin.core - INFO - 18 plugin(s) registered with the system:
+|  Action Command Notification Support (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/action_command_notification
+|  Action Command Prompt Support (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/action_command_prompt
+|  Announcement Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements
+|  Anonymous Usage Tracking (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/tracking
+|  Application Keys Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/appkeys
+|  Backup & Restore (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/backup
+|  Core Wizard (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/corewizard
+|  Discovery (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/discovery
+|  Error Tracking (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/errortracking
+|  File Check (2020.8.7) (bundled) = /home/pi/oprint/local/lib/python2.7/site-packages/octoprint_file_check
+|  Firmware Check (2020.9.23) (bundled) = /home/pi/oprint/local/lib/python2.7/site-packages/octoprint_firmware_check
+|  GCode Viewer (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/gcodeviewer
+|  Logging (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/logging
+|  Login UI (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/loginui
+|  Pi Support Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pi_support
+|  Plugin Manager (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pluginmanager
+|  Software Update (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/softwareupdate
+|  Virtual Printer (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/virtual_printer
+Prefix legend: ! = disabled, # = blacklisted, * = incompatible
+2020-12-12 02:18:07,481 - octoprint.environment - INFO - Detected environment is Python 2.7.16 under Linux (linux2). Details:
+|  hardware:
+|      cores: 4
+|      freq: 1500.0
+|      ram: 1903980544
+|  os:
+|      id: linux
+|      platform: linux2
+|  plugins:
+|      pi_support:
+|          model: Raspberry Pi 4 Model B Rev 1.1
+|          octopi_version: 0.17.0
+|  python:
+|      pip: 19.3.1
+|      version: 2.7.16
+|      virtualenv: /home/pi/oprint
+2020-12-12 02:18:07,487 - octoprint.server - INFO - Reset webasset folder /home/pi/.octoprint/generated/webassets...
+2020-12-12 02:18:07,504 - octoprint.server - INFO - Reset webasset folder /home/pi/.octoprint/generated/.webassets-cache...
+2020-12-12 02:18:08,053 - octoprint.server - INFO - Shutting down intermediary server...
+2020-12-12 02:18:08,233 - octoprint.server - INFO - Intermediary server shut down
+2020-12-12 02:18:08,234 - octoprint.events - INFO - Processing startup event, this is our first event
+2020-12-12 02:18:08,235 - octoprint.events - INFO - Adding 0 events to queue that were held back before startup event
+2020-12-12 02:18:08,237 - octoprint.server - INFO - Autoconnect on startup is configured, trying to connect to the printer...
+2020-12-12 02:18:08,237 - octoprint.filemanager - INFO - Adding backlog items from all storage types to analysis queue...
+2020-12-12 02:18:08,247 - octoprint.filemanager - INFO - Added 0 items from storage type "local" to analysis queue
+2020-12-12 02:18:08,266 - octoprint.server - INFO - Trying to connect to configured serial port None
+2020-12-12 02:18:08,291 - octoprint.util.comm - INFO - Changing monitoring state from "Offline" to "Detecting serial connection"
+2020-12-12 02:18:08,296 - octoprint.server.util.watchdog - INFO - Running initial scan on watched folder...
+2020-12-12 02:18:08,297 - octoprint.server.util.watchdog - INFO - ... initial scan done.
+2020-12-12 02:18:08,307 - octoprint.util.comm - INFO - Serial detection: Performing autodetection with 6 port/baudrate candidates: /dev/ttyACM1@115200, /dev/ttyACM1@250000, /dev/ttyACM0@115200, /dev/ttyACM0@250000, /tmp/printer@115200, /tmp/printer@250000
+2020-12-12 02:18:08,310 - octoprint.util.comm - INFO - Serial detection: Trying port /dev/ttyACM1, baudrate 115200
+2020-12-12 02:18:08,314 - octoprint.util.comm - INFO - Connecting to port /dev/ttyACM1, baudrate 115200
+2020-12-12 02:18:08,316 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance on voron' for _http._tcp
+2020-12-12 02:18:08,324 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance on voron' for _octoprint._tcp
+2020-12-12 02:18:08,341 - octoprint.util.comm - ERROR - Unexpected error while connecting to serial port /dev/ttyACM1, baudrate 115200 from hook default: SerialException: '[Errno 11] Could not exclusively lock port /dev/ttyACM1: [Errno 11] Resource temporarily unavailable' @ comm.py:_open_serial:2784
+Traceback (most recent call last):
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/octoprint/util/comm.py", line 2784, in _open_serial
+    settings().getFloat(["serial", "timeout", "connection"]))
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/octoprint/util/comm.py", line 2761, in default
+    serial_obj.open()
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/serial/serialposix.py", line 272, in open
+    self._reconfigure_port(force_update=True)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/serial/serialposix.py", line 312, in _reconfigure_port
+    raise SerialException(msg.errno, "Could not exclusively lock port {}: {}".format(self._port, msg))
+SerialException: [Errno 11] Could not exclusively lock port /dev/ttyACM1: [Errno 11] Resource temporarily unavailable
+2020-12-12 02:18:08,344 - octoprint.util.comm - INFO - Serial detection: Could not open port /dev/ttyACM1, baudrate 115200, skipping
+2020-12-12 02:18:08,346 - octoprint.util.comm - INFO - Serial detection: Trying port /dev/ttyACM1, baudrate 250000
+2020-12-12 02:18:08,348 - octoprint.util.comm - INFO - Connecting to port /dev/ttyACM1, baudrate 250000
+2020-12-12 02:18:08,351 - octoprint.plugins.pi_support - WARNING - This Raspberry Pi is reporting problems that might lead to bad performance or errors caused by overheating or insufficient power.
+!!! UNDERVOLTAGE REPORTED !!! Make sure that the power supply and power cable are capable of supplying enough voltage and current to your Pi.
+2020-12-12 02:18:08,357 - octoprint.util.comm - ERROR - Unexpected error while connecting to serial port /dev/ttyACM1, baudrate 250000 from hook default: SerialException: '[Errno 11] Could not exclusively lock port /dev/ttyACM1: [Errno 11] Resource temporarily unavailable' @ comm.py:_open_serial:2784
+Traceback (most recent call last):
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/octoprint/util/comm.py", line 2784, in _open_serial
+    settings().getFloat(["serial", "timeout", "connection"]))
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/octoprint/util/comm.py", line 2761, in default
+    serial_obj.open()
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/serial/serialposix.py", line 272, in open
+    self._reconfigure_port(force_update=True)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/serial/serialposix.py", line 312, in _reconfigure_port
+    raise SerialException(msg.errno, "Could not exclusively lock port {}: {}".format(self._port, msg))
+SerialException: [Errno 11] Could not exclusively lock port /dev/ttyACM1: [Errno 11] Resource temporarily unavailable
+2020-12-12 02:18:08,358 - octoprint.server - INFO - Listening on http://127.0.0.1:5000
+2020-12-12 02:18:08,359 - octoprint.util.comm - INFO - Serial detection: Could not open port /dev/ttyACM1, baudrate 250000, skipping
+2020-12-12 02:18:08,361 - octoprint.util.comm - INFO - Serial detection: Trying port /dev/ttyACM0, baudrate 115200
+2020-12-12 02:18:08,365 - octoprint.util.comm - INFO - Connecting to port /dev/ttyACM0, baudrate 115200
+2020-12-12 02:18:08,383 - octoprint.util.comm - ERROR - Unexpected error while connecting to serial port /dev/ttyACM0, baudrate 115200 from hook default: SerialException: '[Errno 11] Could not exclusively lock port /dev/ttyACM0: [Errno 11] Resource temporarily unavailable' @ comm.py:_open_serial:2784
+Traceback (most recent call last):
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/octoprint/util/comm.py", line 2784, in _open_serial
+    settings().getFloat(["serial", "timeout", "connection"]))
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/octoprint/util/comm.py", line 2761, in default
+    serial_obj.open()
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/serial/serialposix.py", line 272, in open
+    self._reconfigure_port(force_update=True)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/serial/serialposix.py", line 312, in _reconfigure_port
+    raise SerialException(msg.errno, "Could not exclusively lock port {}: {}".format(self._port, msg))
+SerialException: [Errno 11] Could not exclusively lock port /dev/ttyACM0: [Errno 11] Resource temporarily unavailable
+2020-12-12 02:18:08,414 - octoprint.util.comm - INFO - Serial detection: Could not open port /dev/ttyACM0, baudrate 115200, skipping
+2020-12-12 02:18:08,415 - octoprint.plugins.pluginmanager - INFO - Loaded plugin repository data from disk, was still valid
+2020-12-12 02:18:08,417 - octoprint.util.comm - INFO - Serial detection: Trying port /dev/ttyACM0, baudrate 250000
+2020-12-12 02:18:08,422 - octoprint.util.comm - INFO - Connecting to port /dev/ttyACM0, baudrate 250000
+2020-12-12 02:18:08,465 - octoprint.util.comm - ERROR - Unexpected error while connecting to serial port /dev/ttyACM0, baudrate 250000 from hook default: SerialException: '[Errno 11] Could not exclusively lock port /dev/ttyACM0: [Errno 11] Resource temporarily unavailable' @ comm.py:_open_serial:2784
+Traceback (most recent call last):
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/octoprint/util/comm.py", line 2784, in _open_serial
+    settings().getFloat(["serial", "timeout", "connection"]))
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/octoprint/util/comm.py", line 2761, in default
+    serial_obj.open()
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/serial/serialposix.py", line 272, in open
+    self._reconfigure_port(force_update=True)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/serial/serialposix.py", line 312, in _reconfigure_port
+    raise SerialException(msg.errno, "Could not exclusively lock port {}: {}".format(self._port, msg))
+SerialException: [Errno 11] Could not exclusively lock port /dev/ttyACM0: [Errno 11] Resource temporarily unavailable
+2020-12-12 02:18:08,482 - octoprint.util.comm - INFO - Serial detection: Could not open port /dev/ttyACM0, baudrate 250000, skipping
+2020-12-12 02:18:08,528 - octoprint.util.comm - INFO - Serial detection: Trying port /tmp/printer, baudrate 115200
+2020-12-12 02:18:08,570 - octoprint.util.comm - INFO - Connecting to port /tmp/printer, baudrate 115200
+2020-12-12 02:18:08,858 - octoprint.util.comm - INFO - Serial detection: Handshake attempt #1 with timeout 2.0s
+2020-12-12 02:18:09,113 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 02:18:09,179 - octoprint.util.comm - INFO - Changing monitoring state from "Detecting serial connection" to "Operational"
+2020-12-12 02:18:09,213 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 02:18:09,423 - octoprint.util.comm - INFO - Printer reports firmware name "Klipper"
+2020-12-12 02:18:09,424 - octoprint.util.comm - INFO - Detected Klipper firmware, enabling relevant features for issue free communication
+2020-12-12 02:18:09,461 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python2 -m pip" as command to invoke pip
+2020-12-12 02:18:09,465 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python2.7/site-packages (writable -> yes), --user flag needed -> no, virtual env -> yes
+2020-12-12 02:18:09,471 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2020-12-12 02:18:09,502 - octoprint.plugins.softwareupdate - INFO - Minimum free storage across all update relevant locations is 24.2GB. That is considered sufficient for updating.
+2020-12-12 02:18:09,661 - octoprint.util.connectivity.connectivity_checker - INFO - Connectivity changed from offline to online
+2020-12-12 02:18:09,890 - octoprint.plugins.pluginmanager - INFO - Loaded plugin repository data from disk, was still valid
+2020-12-12 02:18:11,799 - octoprint.plugins.tracking - INFO - Sent tracking event pong, payload: {'python': '2.7.16', 'ram': 1903980544, u'octopi_version': u'0.17.0', 'version': u'1.4.2', u'plugins': u'', 'pip': '19.3.1', 'cores': 4, 'freq': 1500.0, u'pi_model': u'Raspberry Pi 4 Model B Rev 1.1', 'os': 'linux'}
+2020-12-12 02:18:12,354 - octoprint.plugins.pluginmanager - INFO - Loaded notice data from disk, was still valid
+2020-12-12 02:18:13,046 - octoprint.plugins.tracking - INFO - Sent tracking event startup, payload: {'python': '2.7.16', 'ram': 1903980544, u'octopi_version': u'0.17.0', 'version': u'1.4.2', 'pip': '19.3.1', 'cores': 4, 'freq': 1500.0, u'pi_model': u'Raspberry Pi 4 Model B Rev 1.1', 'os': 'linux'}
+2020-12-12 02:18:13,625 - octoprint.plugins.pluginmanager - INFO - Loaded notice data from disk, was still valid
+2020-12-12 02:18:13,721 - octoprint.server.preemptive_cache - INFO - Preemptively caching / (ui _default) for {'query_string': 'l10n=en', 'path': '/', 'base_url': 'http://voron.local/'}
+2020-12-12 02:18:14,074 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 6}
+2020-12-12 02:18:22,725 - octoprint.server.preemptive_cache - INFO - ... done in 9.00s
+2020-12-12 02:21:11,307 - octoprint.server.util.sockjs - INFO - New connection from client: 2601:644:877f:f0f1:6079:73f9:134d:f320
+2020-12-12 02:21:11,387 - octoprint.server.util.flask - INFO - Passively logging in user _admin from 2601:644:877f:f0f1:6079:73f9:134d:f320
+2020-12-12 02:21:11,389 - octoprint.access.users - INFO - Logged in user: _admin
+2020-12-12 02:21:11,421 - octoprint.server.util.sockjs - INFO - User _admin logged in on the socket from client 2601:644:877f:f0f1:6079:73f9:134d:f320
+2020-12-12 02:21:23,446 - octoprint.server.util.sockjs - INFO - Client connection closed: 2601:644:877f:f0f1:6079:73f9:134d:f320
+2020-12-12 02:21:23,769 - octoprint.server.util.sockjs - INFO - New connection from client: 2601:644:877f:f0f1:6079:73f9:134d:f320
+2020-12-12 02:21:23,826 - octoprint.server.util.flask - INFO - Passively logging in user _admin from 2601:644:877f:f0f1:6079:73f9:134d:f320
+2020-12-12 02:21:23,828 - octoprint.access.users - INFO - Logged in user: _admin
+2020-12-12 02:21:26,307 - octoprint.server.util.sockjs - INFO - User _admin logged in on the socket from client 2601:644:877f:f0f1:6079:73f9:134d:f320
+2020-12-12 02:22:36,633 - octoprint.startup - INFO - ******************************************************************************
+2020-12-12 02:22:36,635 - octoprint.startup - INFO - Starting OctoPrint 1.4.2
+2020-12-12 02:22:36,637 - octoprint.startup - INFO - ******************************************************************************
+2020-12-12 02:22:37,468 - octoprint.util.connectivity.connectivity_checker - INFO - Connectivity state is currently: offline
+2020-12-12 02:22:37,477 - octoprint.util.connectivity.connectivity_checker - INFO - Connecting to 8.8.8.8:53 is not working
+2020-12-12 02:22:37,479 - octoprint.util.connectivity.connectivity_checker - INFO - Resolving octoprint.org is not working
+2020-12-12 02:22:37,486 - octoprint.startup - INFO - We don't appear to be online, not fetching plugin blacklist
+2020-12-12 02:22:37,568 - octoprint.plugin.core - INFO - Loading plugins from /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins, /home/pi/.octoprint/plugins and installed plugin packages...
+2020-12-12 02:22:39,752 - octoprint.plugin.core - INFO - Found 18 plugin(s) providing 18 mixin implementations, 32 hook handlers
+2020-12-12 02:22:40,061 - octoprint.server.heartbeat - INFO - Starting server heartbeat, 900.0s interval
+2020-12-12 02:22:40,114 - octoprint.server - INFO - Intermediary server started
+2020-12-12 02:22:40,115 - octoprint.plugin.core - INFO - Loading plugins from /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins, /home/pi/.octoprint/plugins and installed plugin packages...
+2020-12-12 02:22:40,364 - octoprint.plugin.core - INFO - Found 18 plugin(s) providing 18 mixin implementations, 32 hook handlers
+2020-12-12 02:22:40,404 - octoprint.filemanager.storage - INFO - Initializing the file metadata for /home/pi/.octoprint/uploads...
+2020-12-12 02:22:40,406 - octoprint.filemanager.storage - INFO - ... file metadata for /home/pi/.octoprint/uploads initialized successfully.
+2020-12-12 02:22:40,412 - octoprint.server - INFO - Added new permission from plugin action_command_notification: PLUGIN_ACTION_COMMAND_NOTIFICATION_SHOW (needs: u"Need(method='role', value=u'plugin_action_command_notification_show')")
+2020-12-12 02:22:40,414 - octoprint.server - INFO - Added new permission from plugin action_command_notification: PLUGIN_ACTION_COMMAND_NOTIFICATION_CLEAR (needs: u"Need(method='role', value=u'plugin_action_command_notification_clear')")
+2020-12-12 02:22:40,416 - octoprint.server - INFO - Added new permission from plugin action_command_prompt: PLUGIN_ACTION_COMMAND_PROMPT_INTERACT (needs: u"Need(method='role', value=u'plugin_action_command_prompt_interact')")
+2020-12-12 02:22:40,418 - octoprint.server - INFO - Added new permission from plugin announcements: PLUGIN_ANNOUNCEMENTS_READ (needs: u"Need(method='role', value=u'plugin_announcements_read')")
+2020-12-12 02:22:40,420 - octoprint.server - INFO - Added new permission from plugin announcements: PLUGIN_ANNOUNCEMENTS_MANAGE (needs: u"Need(method='role', value=u'plugin_announcements_manage'), Need(method='role', value=u'plugin_announcements_read')")
+2020-12-12 02:22:40,422 - octoprint.server - INFO - Added new permission from plugin appkeys: PLUGIN_APPKEYS_ADMIN (needs: u"Need(method='role', value=u'plugin_appkeys_admin')")
+2020-12-12 02:22:40,424 - octoprint.server - INFO - Added new permission from plugin backup: PLUGIN_BACKUP_ACCESS (needs: u"Need(method='role', value=u'plugin_backup_access')")
+2020-12-12 02:22:40,426 - octoprint.server - INFO - Added new permission from plugin firmware_check: PLUGIN_FIRMWARE_CHECK_DISPLAY (needs: u"Need(method='role', value=u'plugin_firmware_check_display')")
+2020-12-12 02:22:40,429 - octoprint.server - INFO - Added new permission from plugin logging: PLUGIN_LOGGING_MANAGE (needs: u"Need(method='role', value=u'plugin_logging_manage')")
+2020-12-12 02:22:40,431 - octoprint.server - INFO - Added new permission from plugin pi_support: PLUGIN_PI_SUPPORT_STATUS (needs: u"Need(method='role', value=u'plugin_pi_support_check')")
+2020-12-12 02:22:40,433 - octoprint.server - INFO - Added new permission from plugin pluginmanager: PLUGIN_PLUGINMANAGER_MANAGE (needs: u"Need(method='role', value=u'plugin_pluginmanager_manage')")
+2020-12-12 02:22:40,435 - octoprint.server - INFO - Added new permission from plugin pluginmanager: PLUGIN_PLUGINMANAGER_INSTALL (needs: u"Need(method='role', value=u'plugin_pluginmanager_install'), Need(method='role', value=u'plugin_pluginmanager_manage')")
+2020-12-12 02:22:40,437 - octoprint.server - INFO - Added new permission from plugin softwareupdate: PLUGIN_SOFTWAREUPDATE_CHECK (needs: u"Need(method='role', value=u'plugin_softwareupdate_check')")
+2020-12-12 02:22:40,439 - octoprint.server - INFO - Added new permission from plugin softwareupdate: PLUGIN_SOFTWAREUPDATE_UPDATE (needs: u"Need(method='role', value=u'plugin_softwareupdate_update')")
+2020-12-12 02:22:40,530 - octoprint.plugins.softwareupdate - INFO - Loaded version cache from disk
+2020-12-12 02:22:41,510 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python2 -m pip" as command to invoke pip
+2020-12-12 02:22:42,863 - octoprint.util.pip - INFO - Version of pip is 19.3.1
+2020-12-12 02:22:42,866 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python2.7/site-packages (writable -> yes), --user flag needed -> no, virtual env -> yes
+2020-12-12 02:22:42,867 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2020-12-12 02:22:42,878 - octoprint.plugin.core - INFO - Initialized 18 plugin implementation(s)
+2020-12-12 02:22:42,897 - octoprint.plugin.core - INFO - 18 plugin(s) registered with the system:
+|  Action Command Notification Support (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/action_command_notification
+|  Action Command Prompt Support (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/action_command_prompt
+|  Announcement Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements
+|  Anonymous Usage Tracking (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/tracking
+|  Application Keys Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/appkeys
+|  Backup & Restore (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/backup
+|  Core Wizard (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/corewizard
+|  Discovery (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/discovery
+|  Error Tracking (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/errortracking
+|  File Check (2020.8.7) (bundled) = /home/pi/oprint/local/lib/python2.7/site-packages/octoprint_file_check
+|  Firmware Check (2020.9.23) (bundled) = /home/pi/oprint/local/lib/python2.7/site-packages/octoprint_firmware_check
+|  GCode Viewer (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/gcodeviewer
+|  Logging (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/logging
+|  Login UI (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/loginui
+|  Pi Support Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pi_support
+|  Plugin Manager (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pluginmanager
+|  Software Update (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/softwareupdate
+|  Virtual Printer (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/virtual_printer
+Prefix legend: ! = disabled, # = blacklisted, * = incompatible
+2020-12-12 02:22:42,922 - octoprint.environment - INFO - Detected environment is Python 2.7.16 under Linux (linux2). Details:
+|  hardware:
+|      cores: 4
+|      freq: 1500.0
+|      ram: 1903980544
+|  os:
+|      id: linux
+|      platform: linux2
+|  plugins:
+|      pi_support:
+|          model: Raspberry Pi 4 Model B Rev 1.1
+|          octopi_version: 0.17.0
+|  python:
+|      pip: 19.3.1
+|      version: 2.7.16
+|      virtualenv: /home/pi/oprint
+2020-12-12 02:22:42,937 - octoprint.server - INFO - Reset webasset folder /home/pi/.octoprint/generated/webassets...
+2020-12-12 02:22:42,977 - octoprint.server - INFO - Reset webasset folder /home/pi/.octoprint/generated/.webassets-cache...
+2020-12-12 02:22:44,487 - octoprint.server - INFO - Shutting down intermediary server...
+2020-12-12 02:22:44,709 - octoprint.server - INFO - Intermediary server shut down
+2020-12-12 02:22:44,713 - octoprint.events - INFO - Processing startup event, this is our first event
+2020-12-12 02:22:44,715 - octoprint.events - INFO - Adding 0 events to queue that were held back before startup event
+2020-12-12 02:22:44,719 - octoprint.filemanager - INFO - Adding backlog items from all storage types to analysis queue...
+2020-12-12 02:22:44,720 - octoprint.server - INFO - Autoconnect on startup is configured, trying to connect to the printer...
+2020-12-12 02:22:44,725 - octoprint.filemanager - INFO - Added 0 items from storage type "local" to analysis queue
+2020-12-12 02:22:44,787 - octoprint.server - INFO - Trying to connect to configured serial port None
+2020-12-12 02:22:44,848 - octoprint.util.comm - INFO - Changing monitoring state from "Offline" to "Detecting serial connection"
+2020-12-12 02:22:44,857 - octoprint.server.util.watchdog - INFO - Running initial scan on watched folder...
+2020-12-12 02:22:44,859 - octoprint.server.util.watchdog - INFO - ... initial scan done.
+2020-12-12 02:22:44,894 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance on voron' for _http._tcp
+2020-12-12 02:22:44,914 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance on voron' for _octoprint._tcp
+2020-12-12 02:22:44,915 - octoprint.util.comm - INFO - Serial detection: Performing autodetection with 6 port/baudrate candidates: /dev/ttyACM2@115200, /dev/ttyACM2@250000, /dev/ttyACM1@115200, /dev/ttyACM1@250000, /tmp/printer@115200, /tmp/printer@250000
+2020-12-12 02:22:44,923 - octoprint.util.comm - INFO - Serial detection: Trying port /dev/ttyACM2, baudrate 115200
+2020-12-12 02:22:44,927 - octoprint.plugins.discovery - INFO - Registered OctoPrint instance on voron for SSDP
+2020-12-12 02:22:44,951 - octoprint.util.comm - INFO - Connecting to port /dev/ttyACM2, baudrate 115200
+2020-12-12 02:22:44,973 - octoprint.plugins.pi_support - WARNING - This Raspberry Pi is reporting problems that might lead to bad performance or errors caused by overheating or insufficient power.
+!!! UNDERVOLTAGE REPORTED !!! Make sure that the power supply and power cable are capable of supplying enough voltage and current to your Pi.
+2020-12-12 02:22:44,988 - octoprint.server - INFO - Listening on http://127.0.0.1:5000
+2020-12-12 02:22:44,996 - octoprint.util.comm - INFO - Serial detection: Handshake attempt #1 with timeout 2.0s
+2020-12-12 02:22:45,004 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 02:22:45,170 - octoprint.plugins.pluginmanager - INFO - Loaded plugin repository data from disk, was still valid
+2020-12-12 02:22:46,657 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python2 -m pip" as command to invoke pip
+2020-12-12 02:22:46,670 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python2.7/site-packages (writable -> yes), --user flag needed -> no, virtual env -> yes
+2020-12-12 02:22:46,672 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2020-12-12 02:22:46,703 - octoprint.plugins.softwareupdate - INFO - Minimum free storage across all update relevant locations is 24.2GB. That is considered sufficient for updating.
+2020-12-12 02:22:46,902 - octoprint.util.connectivity.connectivity_checker - INFO - Connectivity changed from offline to online
+2020-12-12 02:22:47,024 - octoprint.util.comm - INFO - Serial detection: Handshake attempt #2 with timeout 2.0s
+2020-12-12 02:22:47,039 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 02:22:47,124 - octoprint.plugins.pluginmanager - INFO - Loaded plugin repository data from disk, was still valid
+2020-12-12 02:22:49,004 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 8}
+2020-12-12 02:22:49,040 - octoprint.plugins.pluginmanager - INFO - Loaded notice data from disk, was still valid
+2020-12-12 02:22:50,250 - octoprint.plugins.tracking - INFO - Sent tracking event startup, payload: {'python': '2.7.16', 'ram': 1903980544, u'octopi_version': u'0.17.0', 'version': u'1.4.2', 'pip': '19.3.1', 'cores': 4, 'freq': 1500.0, u'pi_model': u'Raspberry Pi 4 Model B Rev 1.1', 'os': 'linux'}
+2020-12-12 02:22:50,666 - octoprint.plugins.pluginmanager - INFO - Loaded notice data from disk, was still valid
+2020-12-12 02:22:50,757 - octoprint.server.preemptive_cache - INFO - Preemptively caching / (ui _default) for {'query_string': 'l10n=en', 'path': '/', 'base_url': 'http://voron.local/'}
+2020-12-12 02:22:50,935 - octoprint.util.comm - INFO - Serial detection: Handshake attempt #3 with timeout 2.0s
+2020-12-12 02:22:50,940 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 02:22:51,353 - octoprint.plugins.tracking - INFO - Sent tracking event pong, payload: {'python': '2.7.16', 'ram': 1903980544, u'octopi_version': u'0.17.0', 'version': u'1.4.2', u'plugins': u'', 'pip': '19.3.1', 'cores': 4, 'freq': 1500.0, u'pi_model': u'Raspberry Pi 4 Model B Rev 1.1', 'os': 'linux'}
+2020-12-12 02:22:52,229 - octoprint.server.util.sockjs - INFO - New connection from client: 2601:644:877f:f0f1:6079:73f9:134d:f320
+2020-12-12 02:22:52,431 - octoprint.server.util.flask - INFO - Passively logging in user _admin from 2601:644:877f:f0f1:6079:73f9:134d:f320
+2020-12-12 02:22:52,442 - octoprint.access.users - INFO - Logged in user: _admin
+2020-12-12 02:22:52,505 - octoprint.server.util.sockjs - INFO - User _admin logged in on the socket from client 2601:644:877f:f0f1:6079:73f9:134d:f320
+2020-12-12 02:22:52,944 - octoprint.util.comm - INFO - Serial detection: Trying port /dev/ttyACM2, baudrate 250000
+2020-12-12 02:22:52,955 - octoprint.util.comm - INFO - Serial detection: Handshake attempt #1 with timeout 2.0s
+2020-12-12 02:22:52,960 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 02:22:55,915 - octoprint.util.comm - INFO - Serial detection: Handshake attempt #2 with timeout 2.0s
+2020-12-12 02:22:55,926 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 02:22:57,928 - octoprint.util.comm - INFO - Serial detection: Handshake attempt #3 with timeout 2.0s
+2020-12-12 02:22:57,937 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 02:23:00,878 - octoprint.util.comm - INFO - Serial detection: Trying port /dev/ttyACM1, baudrate 115200
+2020-12-12 02:23:00,886 - octoprint.util.comm - INFO - Connecting to port /dev/ttyACM1, baudrate 115200
+2020-12-12 02:23:00,919 - octoprint.util.comm - ERROR - Unexpected error while connecting to serial port /dev/ttyACM1, baudrate 115200 from hook default: SerialException: '[Errno 11] Could not exclusively lock port /dev/ttyACM1: [Errno 11] Resource temporarily unavailable' @ comm.py:_open_serial:2784
+Traceback (most recent call last):
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/octoprint/util/comm.py", line 2784, in _open_serial
+    settings().getFloat(["serial", "timeout", "connection"]))
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/octoprint/util/comm.py", line 2761, in default
+    serial_obj.open()
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/serial/serialposix.py", line 272, in open
+    self._reconfigure_port(force_update=True)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/serial/serialposix.py", line 312, in _reconfigure_port
+    raise SerialException(msg.errno, "Could not exclusively lock port {}: {}".format(self._port, msg))
+SerialException: [Errno 11] Could not exclusively lock port /dev/ttyACM1: [Errno 11] Resource temporarily unavailable
+2020-12-12 02:23:00,921 - octoprint.util.comm - INFO - Serial detection: Could not open port /dev/ttyACM1, baudrate 115200, skipping
+2020-12-12 02:23:00,922 - octoprint.util.comm - INFO - Serial detection: Trying port /dev/ttyACM1, baudrate 250000
+2020-12-12 02:23:00,927 - octoprint.util.comm - INFO - Connecting to port /dev/ttyACM1, baudrate 250000
+2020-12-12 02:23:00,933 - octoprint.util.comm - ERROR - Unexpected error while connecting to serial port /dev/ttyACM1, baudrate 250000 from hook default: SerialException: '[Errno 11] Could not exclusively lock port /dev/ttyACM1: [Errno 11] Resource temporarily unavailable' @ comm.py:_open_serial:2784
+Traceback (most recent call last):
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/octoprint/util/comm.py", line 2784, in _open_serial
+    settings().getFloat(["serial", "timeout", "connection"]))
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/octoprint/util/comm.py", line 2761, in default
+    serial_obj.open()
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/serial/serialposix.py", line 272, in open
+    self._reconfigure_port(force_update=True)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/serial/serialposix.py", line 312, in _reconfigure_port
+    raise SerialException(msg.errno, "Could not exclusively lock port {}: {}".format(self._port, msg))
+SerialException: [Errno 11] Could not exclusively lock port /dev/ttyACM1: [Errno 11] Resource temporarily unavailable
+2020-12-12 02:23:00,936 - octoprint.util.comm - INFO - Serial detection: Could not open port /dev/ttyACM1, baudrate 250000, skipping
+2020-12-12 02:23:00,937 - octoprint.util.comm - INFO - Serial detection: Trying port /tmp/printer, baudrate 115200
+2020-12-12 02:23:00,941 - octoprint.util.comm - INFO - Connecting to port /tmp/printer, baudrate 115200
+2020-12-12 02:23:00,951 - octoprint.util.comm - INFO - Serial detection: Handshake attempt #1 with timeout 2.0s
+2020-12-12 02:23:00,956 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 02:23:00,975 - octoprint.util.comm - INFO - Changing monitoring state from "Detecting serial connection" to "Operational"
+2020-12-12 02:23:00,996 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 02:23:00,998 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Lost communication with MCU 'z'
+| Last lines in terminal:
+| Send: N0 M110 N0*125
+| Trying port /dev/ttyACM1, baudrate 115200
+| Connecting to port /dev/ttyACM1, baudrate 115200
+| Unexpected error while connecting to serial port /dev/ttyACM1, baudrate 115200 from hook default: SerialException: '[Errno 11] Could not exclusively lock port /dev/ttyACM1: [Errno 11] Resource temporarily unavailable' @ comm.py:_open_serial:2784
+| Could not open port /dev/ttyACM1, baudrate 115200, skipping
+| Trying port /dev/ttyACM1, baudrate 250000
+| Connecting to port /dev/ttyACM1, baudrate 250000
+| Unexpected error while connecting to serial port /dev/ttyACM1, baudrate 250000 from hook default: SerialException: '[Errno 11] Could not exclusively lock port /dev/ttyACM1: [Errno 11] Resource temporarily unavailable' @ comm.py:_open_serial:2784
+| Could not open port /dev/ttyACM1, baudrate 250000, skipping
+| Trying port /tmp/printer, baudrate 115200
+| Connecting to port /tmp/printer, baudrate 115200
+| Handshake attempt #1 with timeout 2.0s
+| Recv: // Lost communication with MCU 'z'
+| Send: N0 M110 N0*125
+| Recv: // Once the underlying issue is corrected, use the
+| Recv: // "FIRMWARE_RESTART" command to reset the firmware, reload the
+| Recv: // config, and restart the host software.
+| Changing monitoring state from "Detecting serial connection" to "Operational"
+| Recv: // Printer is shutdown
+| Recv: !! Lost communication with MCU 'z'
+2020-12-12 02:23:01,040 - octoprint.util.comm - INFO - Printer reports firmware name "Klipper"
+2020-12-12 02:23:01,046 - octoprint.util.comm - INFO - Detected Klipper firmware, enabling relevant features for issue free communication
+2020-12-12 02:25:16,738 - octoprint.plugins.tracking - INFO - Sent tracking event printer_connected, payload: {u'printer_baudrate': 0, u'printer_port': None, 'firmware_name': u'Klipper'}
+2020-12-12 02:25:23,301 - octoprint.server.preemptive_cache - INFO - ... done in 17.90s
+2020-12-12 02:25:46,848 - octoprint.plugins.tracking - INFO - Sent tracking event system_unthrottled, payload: {'throttled_mask': 327680, 'throttled_voltage_now': False, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': False, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-12 02:29:54,609 - octoprint.server.util.sockjs - INFO - Client connection closed: 2601:644:877f:f0f1:6079:73f9:134d:f320
+2020-12-12 02:29:55,181 - octoprint.server.util.sockjs - INFO - New connection from client: 2601:644:877f:f0f1:6079:73f9:134d:f320
+2020-12-12 02:29:55,231 - octoprint.server.util.flask - INFO - Passively logging in user _admin from 2601:644:877f:f0f1:6079:73f9:134d:f320
+2020-12-12 02:29:55,234 - octoprint.access.users - INFO - Logged in user: _admin
+2020-12-12 02:29:57,490 - octoprint.server.util.sockjs - INFO - User _admin logged in on the socket from client 2601:644:877f:f0f1:6079:73f9:134d:f320
+2020-12-12 02:30:08,474 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Lost communication with MCU 'z'
+| Last lines in terminal:
+| Send: M105
+| Recv: ok B:0.0 /0.0 T0:19.9 /0.0
+| Send: M105
+| Recv: ok B:0.0 /0.0 T0:19.9 /0.0
+| Send: M105
+| Recv: ok B:0.0 /0.0 T0:19.9 /0.0
+| Send: M105
+| Recv: ok B:0.0 /0.0 T0:19.9 /0.0
+| Send: M105
+| Recv: ok B:0.0 /0.0 T0:19.9 /0.0
+| Send: M105
+| Recv: ok B:0.0 /0.0 T0:19.9 /0.0
+| Send: status
+| Recv: // Lost communication with MCU 'z'
+| Recv: // Once the underlying issue is corrected, use the
+| Recv: // "FIRMWARE_RESTART" command to reset the firmware, reload the
+| Recv: // config, and restart the host software.
+| Recv: // Printer is shutdown
+| Recv: // Klipper state: Not ready
+| Recv: !! Lost communication with MCU 'z'
+2020-12-12 02:33:16,187 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Can not update MCU 'mcu' config as it is shutdown
+| Last lines in terminal:
+| Recv: ok B:0.0 /0.0 T0:0.0 /0.0
+| Send: FIRMWARE_RESTART
+| Recv: ok
+| Recv: // Klipper state: Disconnect
+| Send: M105
+| Recv: ok T:0
+| Send: M105
+| Recv: ok T:0
+| Send: M105
+| Recv: ok T:0
+| Send: M105
+| Recv: ok T:0
+| Send: status
+| Recv: // Can not update MCU 'mcu' config as it is shutdown
+| Recv: // Once the underlying issue is corrected, use the
+| Recv: // "FIRMWARE_RESTART" command to reset the firmware, reload the
+| Recv: // config, and restart the host software.
+| Recv: // Error configuring printer
+| Recv: // Klipper state: Not ready
+| Recv: !! Can not update MCU 'mcu' config as it is shutdown
+2020-12-12 02:33:45,470 - octoprint.util.comm - INFO - Changing monitoring state from "Operational" to "Offline"
+2020-12-12 02:33:45,486 - octoprint.plugins.action_command_notification - INFO - Notifications cleared
+2020-12-12 02:34:05,377 - octoprint.util.comm - INFO - Changing monitoring state from "Offline" to "Opening serial connection"
+2020-12-12 02:34:05,396 - octoprint.util.comm - INFO - Connecting to port /tmp/printer, baudrate 115200
+2020-12-12 02:34:05,413 - octoprint.util.comm - INFO - Changing monitoring state from "Opening serial connection" to "Connecting"
+2020-12-12 02:34:05,422 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 02:34:05,429 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 02:34:05,449 - octoprint.util.comm - INFO - Changing monitoring state from "Connecting" to "Operational"
+2020-12-12 02:34:05,458 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 02:34:05,478 - octoprint.util.comm - INFO - Printer reports firmware name "Klipper"
+2020-12-12 02:34:05,496 - octoprint.util.comm - INFO - Detected Klipper firmware, enabling relevant features for issue free communication
+2020-12-12 02:34:06,178 - octoprint.plugins.tracking - INFO - Sent tracking event printer_connected, payload: {u'printer_baudrate': 115200, u'printer_port': u'/tmp/printer', 'firmware_name': u'Klipper'}
+2020-12-12 02:34:11,528 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Can not update MCU 'mcu' config as it is shutdown
+| Last lines in terminal:
+| Send: N0 M110 N0*125
+| Recv: ok
+| Changing monitoring state from "Connecting" to "Operational"
+| Send: N0 M110 N0*125
+| Recv: ok
+| Recv: ok
+| Send: N1 M115*39
+| Recv: ok FIRMWARE_VERSION:v0.9.1-24-ge0842e0e FIRMWARE_NAME:Klipper
+| Send: N2 M21*18
+| Recv: ok
+| Send: M105
+| Recv: ok T:0
+| Send: status
+| Recv: // Can not update MCU 'mcu' config as it is shutdown
+| Recv: // Once the underlying issue is corrected, use the
+| Recv: // "FIRMWARE_RESTART" command to reset the firmware, reload the
+| Recv: // config, and restart the host software.
+| Recv: // Error configuring printer
+| Recv: // Klipper state: Not ready
+| Recv: !! Can not update MCU 'mcu' config as it is shutdown
+2020-12-12 02:33:21,508 - octoprint.startup - INFO - ******************************************************************************
+2020-12-12 02:33:21,511 - octoprint.startup - INFO - Starting OctoPrint 1.4.2
+2020-12-12 02:33:21,513 - octoprint.startup - INFO - ******************************************************************************
+2020-12-12 02:33:22,380 - octoprint.util.connectivity.connectivity_checker - INFO - Connectivity state is currently: offline
+2020-12-12 02:33:22,383 - octoprint.util.connectivity.connectivity_checker - INFO - Connecting to 8.8.8.8:53 is not working
+2020-12-12 02:33:22,385 - octoprint.util.connectivity.connectivity_checker - INFO - Resolving octoprint.org is not working
+2020-12-12 02:33:22,394 - octoprint.startup - INFO - We don't appear to be online, not fetching plugin blacklist
+2020-12-12 02:33:22,496 - octoprint.plugin.core - INFO - Loading plugins from /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins, /home/pi/.octoprint/plugins and installed plugin packages...
+2020-12-12 02:33:24,561 - octoprint.plugin.core - INFO - Found 18 plugin(s) providing 18 mixin implementations, 32 hook handlers
+2020-12-12 02:33:24,885 - octoprint.server.heartbeat - INFO - Starting server heartbeat, 900.0s interval
+2020-12-12 02:33:24,955 - octoprint.server - INFO - Intermediary server started
+2020-12-12 02:33:24,957 - octoprint.plugin.core - INFO - Loading plugins from /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins, /home/pi/.octoprint/plugins and installed plugin packages...
+2020-12-12 02:33:25,206 - octoprint.plugin.core - INFO - Found 18 plugin(s) providing 18 mixin implementations, 32 hook handlers
+2020-12-12 02:33:25,247 - octoprint.filemanager.storage - INFO - Initializing the file metadata for /home/pi/.octoprint/uploads...
+2020-12-12 02:33:25,249 - octoprint.filemanager.storage - INFO - ... file metadata for /home/pi/.octoprint/uploads initialized successfully.
+2020-12-12 02:33:25,255 - octoprint.server - INFO - Added new permission from plugin action_command_notification: PLUGIN_ACTION_COMMAND_NOTIFICATION_SHOW (needs: u"Need(method='role', value=u'plugin_action_command_notification_show')")
+2020-12-12 02:33:25,257 - octoprint.server - INFO - Added new permission from plugin action_command_notification: PLUGIN_ACTION_COMMAND_NOTIFICATION_CLEAR (needs: u"Need(method='role', value=u'plugin_action_command_notification_clear')")
+2020-12-12 02:33:25,259 - octoprint.server - INFO - Added new permission from plugin action_command_prompt: PLUGIN_ACTION_COMMAND_PROMPT_INTERACT (needs: u"Need(method='role', value=u'plugin_action_command_prompt_interact')")
+2020-12-12 02:33:25,261 - octoprint.server - INFO - Added new permission from plugin announcements: PLUGIN_ANNOUNCEMENTS_READ (needs: u"Need(method='role', value=u'plugin_announcements_read')")
+2020-12-12 02:33:25,263 - octoprint.server - INFO - Added new permission from plugin announcements: PLUGIN_ANNOUNCEMENTS_MANAGE (needs: u"Need(method='role', value=u'plugin_announcements_manage'), Need(method='role', value=u'plugin_announcements_read')")
+2020-12-12 02:33:25,265 - octoprint.server - INFO - Added new permission from plugin appkeys: PLUGIN_APPKEYS_ADMIN (needs: u"Need(method='role', value=u'plugin_appkeys_admin')")
+2020-12-12 02:33:25,267 - octoprint.server - INFO - Added new permission from plugin backup: PLUGIN_BACKUP_ACCESS (needs: u"Need(method='role', value=u'plugin_backup_access')")
+2020-12-12 02:33:25,269 - octoprint.server - INFO - Added new permission from plugin firmware_check: PLUGIN_FIRMWARE_CHECK_DISPLAY (needs: u"Need(method='role', value=u'plugin_firmware_check_display')")
+2020-12-12 02:33:25,271 - octoprint.server - INFO - Added new permission from plugin logging: PLUGIN_LOGGING_MANAGE (needs: u"Need(method='role', value=u'plugin_logging_manage')")
+2020-12-12 02:33:25,274 - octoprint.server - INFO - Added new permission from plugin pi_support: PLUGIN_PI_SUPPORT_STATUS (needs: u"Need(method='role', value=u'plugin_pi_support_check')")
+2020-12-12 02:33:25,276 - octoprint.server - INFO - Added new permission from plugin pluginmanager: PLUGIN_PLUGINMANAGER_MANAGE (needs: u"Need(method='role', value=u'plugin_pluginmanager_manage')")
+2020-12-12 02:33:25,279 - octoprint.server - INFO - Added new permission from plugin pluginmanager: PLUGIN_PLUGINMANAGER_INSTALL (needs: u"Need(method='role', value=u'plugin_pluginmanager_install'), Need(method='role', value=u'plugin_pluginmanager_manage')")
+2020-12-12 02:33:25,281 - octoprint.server - INFO - Added new permission from plugin softwareupdate: PLUGIN_SOFTWAREUPDATE_CHECK (needs: u"Need(method='role', value=u'plugin_softwareupdate_check')")
+2020-12-12 02:33:25,283 - octoprint.server - INFO - Added new permission from plugin softwareupdate: PLUGIN_SOFTWAREUPDATE_UPDATE (needs: u"Need(method='role', value=u'plugin_softwareupdate_update')")
+2020-12-12 02:33:25,376 - octoprint.plugins.softwareupdate - INFO - Loaded version cache from disk
+2020-12-12 02:33:26,926 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python2 -m pip" as command to invoke pip
+2020-12-12 02:33:28,030 - octoprint.util.pip - INFO - Version of pip is 19.3.1
+2020-12-12 02:33:28,031 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python2.7/site-packages (writable -> yes), --user flag needed -> no, virtual env -> yes
+2020-12-12 02:33:28,031 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2020-12-12 02:33:28,036 - octoprint.plugin.core - INFO - Initialized 18 plugin implementation(s)
+2020-12-12 02:33:28,044 - octoprint.plugin.core - INFO - 18 plugin(s) registered with the system:
+|  Action Command Notification Support (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/action_command_notification
+|  Action Command Prompt Support (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/action_command_prompt
+|  Announcement Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements
+|  Anonymous Usage Tracking (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/tracking
+|  Application Keys Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/appkeys
+|  Backup & Restore (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/backup
+|  Core Wizard (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/corewizard
+|  Discovery (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/discovery
+|  Error Tracking (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/errortracking
+|  File Check (2020.8.7) (bundled) = /home/pi/oprint/local/lib/python2.7/site-packages/octoprint_file_check
+|  Firmware Check (2020.9.23) (bundled) = /home/pi/oprint/local/lib/python2.7/site-packages/octoprint_firmware_check
+|  GCode Viewer (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/gcodeviewer
+|  Logging (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/logging
+|  Login UI (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/loginui
+|  Pi Support Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pi_support
+|  Plugin Manager (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pluginmanager
+|  Software Update (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/softwareupdate
+|  Virtual Printer (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/virtual_printer
+Prefix legend: ! = disabled, # = blacklisted, * = incompatible
+2020-12-12 02:33:28,055 - octoprint.environment - INFO - Detected environment is Python 2.7.16 under Linux (linux2). Details:
+|  hardware:
+|      cores: 4
+|      freq: 1500.0
+|      ram: 1903980544
+|  os:
+|      id: linux
+|      platform: linux2
+|  plugins:
+|      pi_support:
+|          model: Raspberry Pi 4 Model B Rev 1.1
+|          octopi_version: 0.17.0
+|  python:
+|      pip: 19.3.1
+|      version: 2.7.16
+|      virtualenv: /home/pi/oprint
+2020-12-12 02:33:28,062 - octoprint.server - INFO - Reset webasset folder /home/pi/.octoprint/generated/webassets...
+2020-12-12 02:33:28,078 - octoprint.server - INFO - Reset webasset folder /home/pi/.octoprint/generated/.webassets-cache...
+2020-12-12 02:33:28,625 - octoprint.server - INFO - Shutting down intermediary server...
+2020-12-12 02:33:28,961 - octoprint.server - INFO - Intermediary server shut down
+2020-12-12 02:33:28,966 - octoprint.events - INFO - Processing startup event, this is our first event
+2020-12-12 02:33:28,967 - octoprint.events - INFO - Adding 0 events to queue that were held back before startup event
+2020-12-12 02:33:28,972 - octoprint.server - INFO - Autoconnect on startup is configured, trying to connect to the printer...
+2020-12-12 02:33:28,972 - octoprint.filemanager - INFO - Adding backlog items from all storage types to analysis queue...
+2020-12-12 02:33:28,978 - octoprint.filemanager - INFO - Added 0 items from storage type "local" to analysis queue
+2020-12-12 02:33:29,043 - octoprint.server - INFO - Trying to connect to configured serial port /tmp/printer
+2020-12-12 02:33:29,106 - octoprint.util.comm - INFO - Changing monitoring state from "Offline" to "Opening serial connection"
+2020-12-12 02:33:29,112 - octoprint.util.comm - INFO - Connecting to port /tmp/printer, baudrate 115200
+2020-12-12 02:33:29,119 - octoprint.server.util.watchdog - INFO - Running initial scan on watched folder...
+2020-12-12 02:33:29,126 - octoprint.server.util.watchdog - INFO - ... initial scan done.
+2020-12-12 02:33:29,130 - octoprint.util.comm - INFO - Changing monitoring state from "Opening serial connection" to "Connecting"
+2020-12-12 02:33:29,151 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance on voron' for _http._tcp
+2020-12-12 02:33:29,152 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 02:33:29,167 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 02:33:29,170 - octoprint.util.comm - INFO - Changing monitoring state from "Connecting" to "Operational"
+2020-12-12 02:33:29,173 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance on voron' for _octoprint._tcp
+2020-12-12 02:33:29,214 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 02:33:29,242 - octoprint.util.comm - INFO - Printer reports firmware name "Klipper"
+2020-12-12 02:33:29,243 - octoprint.util.comm - INFO - Detected Klipper firmware, enabling relevant features for issue free communication
+2020-12-12 02:33:29,257 - octoprint.plugins.pi_support - WARNING - This Raspberry Pi is reporting problems that might lead to bad performance or errors caused by overheating or insufficient power.
+!!! UNDERVOLTAGE REPORTED !!! Make sure that the power supply and power cable are capable of supplying enough voltage and current to your Pi.
+2020-12-12 02:33:29,278 - octoprint.server - INFO - Listening on http://127.0.0.1:5000
+2020-12-12 02:33:29,817 - octoprint.plugins.pluginmanager - INFO - Loaded plugin repository data from disk, was still valid
+2020-12-12 02:33:30,964 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python2 -m pip" as command to invoke pip
+2020-12-12 02:33:30,968 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python2.7/site-packages (writable -> yes), --user flag needed -> no, virtual env -> yes
+2020-12-12 02:33:30,970 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2020-12-12 02:33:31,061 - octoprint.plugins.softwareupdate - INFO - Minimum free storage across all update relevant locations is 24.2GB. That is considered sufficient for updating.
+2020-12-12 02:33:31,216 - octoprint.util.connectivity.connectivity_checker - INFO - Connectivity changed from offline to online
+2020-12-12 02:33:31,435 - octoprint.plugins.pluginmanager - INFO - Loaded plugin repository data from disk, was still valid
+2020-12-12 02:33:33,155 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 8}
+2020-12-12 02:33:34,716 - octoprint.plugins.tracking - INFO - Sent tracking event startup, payload: {'python': '2.7.16', 'ram': 1903980544, u'octopi_version': u'0.17.0', 'version': u'1.4.2', 'pip': '19.3.1', 'cores': 4, 'freq': 1500.0, u'pi_model': u'Raspberry Pi 4 Model B Rev 1.1', 'os': 'linux'}
+2020-12-12 02:33:35,167 - octoprint.plugins.pluginmanager - INFO - Loaded notice data from disk, was still valid
+2020-12-12 02:33:35,504 - octoprint.plugins.pluginmanager - INFO - Loaded notice data from disk, was still valid
+2020-12-12 02:33:35,620 - octoprint.server.preemptive_cache - INFO - Preemptively caching / (ui _default) for {'query_string': 'l10n=en', 'path': '/', 'base_url': 'http://voron.local/'}
+2020-12-12 02:33:35,771 - octoprint.plugins.tracking - INFO - Sent tracking event pong, payload: {'python': '2.7.16', 'ram': 1903980544, u'octopi_version': u'0.17.0', 'version': u'1.4.2', u'plugins': u'', 'pip': '19.3.1', 'cores': 4, 'freq': 1500.0, u'pi_model': u'Raspberry Pi 4 Model B Rev 1.1', 'os': 'linux'}
+2020-12-12 02:36:10,179 - octoprint.server.preemptive_cache - INFO - ... done in 14.62s
+2020-12-12 02:36:10,645 - octoprint.server.util.sockjs - INFO - New connection from client: 2601:644:877f:f0f1:6079:73f9:134d:f320
+2020-12-12 02:36:10,736 - octoprint.server.util.flask - INFO - Passively logging in user _admin from 2601:644:877f:f0f1:6079:73f9:134d:f320
+2020-12-12 02:36:10,739 - octoprint.access.users - INFO - Logged in user: _admin
+2020-12-12 02:36:12,485 - octoprint.server.util.sockjs - INFO - User _admin logged in on the socket from client 2601:644:877f:f0f1:6079:73f9:134d:f320
+2020-12-12 02:36:38,088 - octoprint.plugins.tracking - INFO - Sent tracking event system_unthrottled, payload: {'throttled_mask': 327680, 'throttled_voltage_now': False, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': False, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-12 02:48:24,889 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-12 02:48:32,453 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 768}
+2020-12-12 03:03:24,893 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-12 03:03:32,467 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 1668}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2020-12-12 02:52:44,934 - octoprint.startup - INFO - ******************************************************************************
+2020-12-12 02:52:44,938 - octoprint.startup - INFO - Starting OctoPrint 1.4.2
+2020-12-12 02:52:44,939 - octoprint.startup - INFO - ******************************************************************************
+2020-12-12 02:52:45,877 - octoprint.util.connectivity.connectivity_checker - INFO - Connectivity state is currently: offline
+2020-12-12 02:52:45,879 - octoprint.util.connectivity.connectivity_checker - INFO - Connecting to 8.8.8.8:53 is not working
+2020-12-12 02:52:45,882 - octoprint.util.connectivity.connectivity_checker - INFO - Resolving octoprint.org is not working
+2020-12-12 02:52:45,889 - octoprint.startup - INFO - We don't appear to be online, not fetching plugin blacklist
+2020-12-12 02:52:45,978 - octoprint.plugin.core - INFO - Loading plugins from /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins, /home/pi/.octoprint/plugins and installed plugin packages...
+2020-12-12 02:52:48,027 - octoprint.plugin.core - INFO - Found 18 plugin(s) providing 18 mixin implementations, 32 hook handlers
+2020-12-12 02:52:48,352 - octoprint.server.heartbeat - INFO - Starting server heartbeat, 900.0s interval
+2020-12-12 02:52:48,413 - octoprint.server - INFO - Intermediary server started
+2020-12-12 02:52:48,415 - octoprint.plugin.core - INFO - Loading plugins from /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins, /home/pi/.octoprint/plugins and installed plugin packages...
+2020-12-12 02:52:48,669 - octoprint.plugin.core - INFO - Found 18 plugin(s) providing 18 mixin implementations, 32 hook handlers
+2020-12-12 02:52:48,710 - octoprint.filemanager.storage - INFO - Initializing the file metadata for /home/pi/.octoprint/uploads...
+2020-12-12 02:52:48,713 - octoprint.filemanager.storage - INFO - ... file metadata for /home/pi/.octoprint/uploads initialized successfully.
+2020-12-12 02:52:48,718 - octoprint.server - INFO - Added new permission from plugin action_command_notification: PLUGIN_ACTION_COMMAND_NOTIFICATION_SHOW (needs: u"Need(method='role', value=u'plugin_action_command_notification_show')")
+2020-12-12 02:52:48,720 - octoprint.server - INFO - Added new permission from plugin action_command_notification: PLUGIN_ACTION_COMMAND_NOTIFICATION_CLEAR (needs: u"Need(method='role', value=u'plugin_action_command_notification_clear')")
+2020-12-12 02:52:48,723 - octoprint.server - INFO - Added new permission from plugin action_command_prompt: PLUGIN_ACTION_COMMAND_PROMPT_INTERACT (needs: u"Need(method='role', value=u'plugin_action_command_prompt_interact')")
+2020-12-12 02:52:48,725 - octoprint.server - INFO - Added new permission from plugin announcements: PLUGIN_ANNOUNCEMENTS_READ (needs: u"Need(method='role', value=u'plugin_announcements_read')")
+2020-12-12 02:52:48,727 - octoprint.server - INFO - Added new permission from plugin announcements: PLUGIN_ANNOUNCEMENTS_MANAGE (needs: u"Need(method='role', value=u'plugin_announcements_manage'), Need(method='role', value=u'plugin_announcements_read')")
+2020-12-12 02:52:48,730 - octoprint.server - INFO - Added new permission from plugin appkeys: PLUGIN_APPKEYS_ADMIN (needs: u"Need(method='role', value=u'plugin_appkeys_admin')")
+2020-12-12 02:52:48,732 - octoprint.server - INFO - Added new permission from plugin backup: PLUGIN_BACKUP_ACCESS (needs: u"Need(method='role', value=u'plugin_backup_access')")
+2020-12-12 02:52:48,734 - octoprint.server - INFO - Added new permission from plugin firmware_check: PLUGIN_FIRMWARE_CHECK_DISPLAY (needs: u"Need(method='role', value=u'plugin_firmware_check_display')")
+2020-12-12 02:52:48,736 - octoprint.server - INFO - Added new permission from plugin logging: PLUGIN_LOGGING_MANAGE (needs: u"Need(method='role', value=u'plugin_logging_manage')")
+2020-12-12 02:52:48,738 - octoprint.server - INFO - Added new permission from plugin pi_support: PLUGIN_PI_SUPPORT_STATUS (needs: u"Need(method='role', value=u'plugin_pi_support_check')")
+2020-12-12 02:52:48,740 - octoprint.server - INFO - Added new permission from plugin pluginmanager: PLUGIN_PLUGINMANAGER_MANAGE (needs: u"Need(method='role', value=u'plugin_pluginmanager_manage')")
+2020-12-12 02:52:48,742 - octoprint.server - INFO - Added new permission from plugin pluginmanager: PLUGIN_PLUGINMANAGER_INSTALL (needs: u"Need(method='role', value=u'plugin_pluginmanager_install'), Need(method='role', value=u'plugin_pluginmanager_manage')")
+2020-12-12 02:52:48,745 - octoprint.server - INFO - Added new permission from plugin softwareupdate: PLUGIN_SOFTWAREUPDATE_CHECK (needs: u"Need(method='role', value=u'plugin_softwareupdate_check')")
+2020-12-12 02:52:48,747 - octoprint.server - INFO - Added new permission from plugin softwareupdate: PLUGIN_SOFTWAREUPDATE_UPDATE (needs: u"Need(method='role', value=u'plugin_softwareupdate_update')")
+2020-12-12 02:52:48,838 - octoprint.plugins.softwareupdate - INFO - Loaded version cache from disk
+2020-12-12 02:52:50,372 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python2 -m pip" as command to invoke pip
+2020-12-12 02:52:51,060 - octoprint.util.pip - INFO - Version of pip is 19.3.1
+2020-12-12 02:52:51,062 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python2.7/site-packages (writable -> yes), --user flag needed -> no, virtual env -> yes
+2020-12-12 02:52:51,063 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2020-12-12 02:52:51,068 - octoprint.plugin.core - INFO - Initialized 18 plugin implementation(s)
+2020-12-12 02:52:51,076 - octoprint.plugin.core - INFO - 18 plugin(s) registered with the system:
+|  Action Command Notification Support (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/action_command_notification
+|  Action Command Prompt Support (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/action_command_prompt
+|  Announcement Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements
+|  Anonymous Usage Tracking (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/tracking
+|  Application Keys Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/appkeys
+|  Backup & Restore (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/backup
+|  Core Wizard (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/corewizard
+|  Discovery (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/discovery
+|  Error Tracking (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/errortracking
+|  File Check (2020.8.7) (bundled) = /home/pi/oprint/local/lib/python2.7/site-packages/octoprint_file_check
+|  Firmware Check (2020.9.23) (bundled) = /home/pi/oprint/local/lib/python2.7/site-packages/octoprint_firmware_check
+|  GCode Viewer (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/gcodeviewer
+|  Logging (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/logging
+|  Login UI (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/loginui
+|  Pi Support Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pi_support
+|  Plugin Manager (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pluginmanager
+|  Software Update (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/softwareupdate
+|  Virtual Printer (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/virtual_printer
+Prefix legend: ! = disabled, # = blacklisted, * = incompatible
+2020-12-12 02:52:51,086 - octoprint.environment - INFO - Detected environment is Python 2.7.16 under Linux (linux2). Details:
+|  hardware:
+|      cores: 4
+|      freq: 1500.0
+|      ram: 1903980544
+|  os:
+|      id: linux
+|      platform: linux2
+|  plugins:
+|      pi_support:
+|          model: Raspberry Pi 4 Model B Rev 1.1
+|          octopi_version: 0.17.0
+|  python:
+|      pip: 19.3.1
+|      version: 2.7.16
+|      virtualenv: /home/pi/oprint
+2020-12-12 02:52:51,093 - octoprint.server - INFO - Reset webasset folder /home/pi/.octoprint/generated/webassets...
+2020-12-12 02:52:51,109 - octoprint.server - INFO - Reset webasset folder /home/pi/.octoprint/generated/.webassets-cache...
+2020-12-12 02:52:51,664 - octoprint.server - INFO - Shutting down intermediary server...
+2020-12-12 02:52:51,918 - octoprint.server - INFO - Intermediary server shut down
+2020-12-12 02:52:51,922 - octoprint.events - INFO - Processing startup event, this is our first event
+2020-12-12 02:52:51,924 - octoprint.events - INFO - Adding 0 events to queue that were held back before startup event
+2020-12-12 02:52:51,929 - octoprint.filemanager - INFO - Adding backlog items from all storage types to analysis queue...
+2020-12-12 02:52:51,930 - octoprint.server - INFO - Autoconnect on startup is configured, trying to connect to the printer...
+2020-12-12 02:52:51,932 - octoprint.filemanager - INFO - Added 0 items from storage type "local" to analysis queue
+2020-12-12 02:52:52,001 - octoprint.server - INFO - Trying to connect to configured serial port /tmp/printer
+2020-12-12 02:52:52,026 - octoprint.util.comm - INFO - Changing monitoring state from "Offline" to "Opening serial connection"
+2020-12-12 02:52:52,029 - octoprint.util.comm - INFO - Connecting to port /tmp/printer, baudrate 115200
+2020-12-12 02:52:52,032 - octoprint.server.util.watchdog - INFO - Running initial scan on watched folder...
+2020-12-12 02:52:52,036 - octoprint.util.comm - INFO - Changing monitoring state from "Opening serial connection" to "Connecting"
+2020-12-12 02:52:52,038 - octoprint.server.util.watchdog - INFO - ... initial scan done.
+2020-12-12 02:52:52,044 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 02:52:52,047 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance on voron' for _http._tcp
+2020-12-12 02:52:52,052 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 02:52:52,054 - octoprint.util.comm - INFO - Changing monitoring state from "Connecting" to "Operational"
+2020-12-12 02:52:52,058 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance on voron' for _octoprint._tcp
+2020-12-12 02:52:52,066 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 02:52:52,085 - octoprint.util.comm - INFO - Printer reports firmware name "Klipper"
+2020-12-12 02:52:52,090 - octoprint.util.comm - INFO - Detected Klipper firmware, enabling relevant features for issue free communication
+2020-12-12 02:52:52,094 - octoprint.plugins.pi_support - WARNING - This Raspberry Pi is reporting problems that might lead to bad performance or errors caused by overheating or insufficient power.
+!!! UNDERVOLTAGE REPORTED !!! Make sure that the power supply and power cable are capable of supplying enough voltage and current to your Pi.
+2020-12-12 02:52:52,099 - octoprint.server - INFO - Listening on http://127.0.0.1:5000
+2020-12-12 02:52:52,250 - octoprint.plugins.pluginmanager - INFO - Loaded plugin repository data from disk, was still valid
+2020-12-12 02:52:53,657 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python2 -m pip" as command to invoke pip
+2020-12-12 02:52:53,775 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python2.7/site-packages (writable -> yes), --user flag needed -> no, virtual env -> yes
+2020-12-12 02:52:53,781 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2020-12-12 02:52:53,818 - octoprint.plugins.softwareupdate - INFO - Minimum free storage across all update relevant locations is 24.2GB. That is considered sufficient for updating.
+2020-12-12 02:52:54,010 - octoprint.util.connectivity.connectivity_checker - INFO - Connectivity changed from offline to online
+2020-12-12 02:52:54,161 - octoprint.plugins.pluginmanager - INFO - Loaded plugin repository data from disk, was still valid
+2020-12-12 02:52:56,083 - octoprint.plugins.pluginmanager - INFO - Loaded notice data from disk, was still valid
+2020-12-12 02:52:56,121 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 7}
+2020-12-12 02:52:57,593 - octoprint.plugins.tracking - INFO - Sent tracking event startup, payload: {'python': '2.7.16', 'ram': 1903980544, u'octopi_version': u'0.17.0', 'version': u'1.4.2', 'pip': '19.3.1', 'cores': 4, 'freq': 1500.0, u'pi_model': u'Raspberry Pi 4 Model B Rev 1.1', 'os': 'linux'}
+2020-12-12 02:52:57,686 - octoprint.plugins.pluginmanager - INFO - Loaded notice data from disk, was still valid
+2020-12-12 02:52:57,790 - octoprint.server.preemptive_cache - INFO - Preemptively caching / (ui _default) for {'query_string': 'l10n=en', 'path': '/', 'base_url': 'http://voron.local/'}
+2020-12-12 02:52:58,384 - octoprint.plugins.tracking - INFO - Sent tracking event pong, payload: {'python': '2.7.16', 'ram': 1903980544, u'octopi_version': u'0.17.0', 'version': u'1.4.2', u'plugins': u'', 'pip': '19.3.1', 'cores': 4, 'freq': 1500.0, u'pi_model': u'Raspberry Pi 4 Model B Rev 1.1', 'os': 'linux'}
+2020-12-12 02:53:06,011 - octoprint.server.util.sockjs - INFO - New connection from client: 2601:644:877f:f0f1:6079:73f9:134d:f320
+2020-12-12 02:53:06,102 - octoprint.server.util.flask - INFO - Passively logging in user _admin from 2601:644:877f:f0f1:6079:73f9:134d:f320
+2020-12-12 02:53:06,105 - octoprint.access.users - INFO - Logged in user: _admin
+2020-12-12 02:53:06,164 - octoprint.server.util.sockjs - INFO - User _admin logged in on the socket from client 2601:644:877f:f0f1:6079:73f9:134d:f320
+2020-12-12 02:53:10,481 - octoprint.server.preemptive_cache - INFO - ... done in 12.69s
+2020-12-12 03:05:51,258 - octoprint.plugins.tracking - INFO - Sent tracking event system_throttled, payload: {'throttled_mask': 327685, 'throttled_voltage_now': True, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': True, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-12 03:06:00,075 - octoprint.server.util.sockjs - INFO - Client connection closed: 2601:644:877f:f0f1:6079:73f9:134d:f320
+2020-12-12 03:06:00,417 - octoprint.server.util.sockjs - INFO - New connection from client: 2601:644:877f:f0f1:6079:73f9:134d:f320
+2020-12-12 03:06:00,469 - octoprint.server.util.flask - INFO - Passively logging in user _admin from 2601:644:877f:f0f1:6079:73f9:134d:f320
+2020-12-12 03:06:00,471 - octoprint.access.users - INFO - Logged in user: _admin
+2020-12-12 03:06:02,216 - octoprint.server.util.sockjs - INFO - User _admin logged in on the socket from client 2601:644:877f:f0f1:6079:73f9:134d:f320
+2020-12-12 03:06:21,287 - octoprint.plugins.tracking - INFO - Sent tracking event system_unthrottled, payload: {'throttled_mask': 327680, 'throttled_voltage_now': False, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': False, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-12 03:07:48,356 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-12 03:07:55,072 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 147}
+2020-12-12 03:14:39,375 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Endstop x still triggered after retract
+| Last lines in terminal:
+| Send: STEPPER_BUZZ STEPPER=stepper_x
+| Recv: ok
+| Send: M105
+| Recv: ok B:21.4 /0.0 T0:21.7 /0.0
+| Send: M105
+| Recv: ok B:21.4 /0.0 T0:21.8 /0.0
+| Send: M105
+| Recv: ok B:21.4 /0.0 T0:21.7 /0.0
+| Send: M105
+| Recv: ok B:21.4 /0.0 T0:21.7 /0.0
+| Send: M105
+| Recv: ok B:21.4 /0.0 T0:21.7 /0.0
+| Send: M105
+| Recv: ok B:21.4 /0.0 T0:21.7 /0.0
+| Send: M105
+| Recv: ok B:21.4 /0.0 T0:21.7 /0.0
+| Send: G91
+| Recv: ok
+| Send: G28 X0 Y0
+| Recv: !! Endstop x still triggered after retract
+2020-12-12 03:15:28,281 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Endstop x still triggered after retract
+| Last lines in terminal:
+| Send: M105
+| Recv: ok B:21.5 /0.0 T0:21.7 /0.0
+| Send: M105
+| Recv: ok B:21.4 /0.0 T0:21.7 /0.0
+| Send: M105
+| Recv: ok B:21.5 /0.0 T0:21.7 /0.0
+| Send: M105
+| Recv: ok B:21.5 /0.0 T0:21.7 /0.0
+| Send: M105
+| Recv: ok B:21.5 /0.0 T0:21.7 /0.0
+| Send: M105
+| Recv: ok B:21.5 /0.0 T0:21.7 /0.0
+| Send: M105
+| Recv: ok B:21.5 /0.0 T0:21.7 /0.0
+| Send: M105
+| Recv: ok B:21.5 /0.0 T0:21.7 /0.0
+| Send: G91
+| Recv: ok
+| Send: G28 X0 Y0
+| Recv: !! Endstop x still triggered after retract
+2020-12-12 03:17:00,406 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Endstop x still triggered after retract
+| Last lines in terminal:
+| Send: M105
+| Recv: ok B:21.6 /0.0 T0:21.7 /0.0
+| Send: M105
+| Recv: ok B:21.6 /0.0 T0:21.7 /0.0
+| Send: M105
+| Recv: ok B:21.6 /0.0 T0:21.7 /0.0
+| Send: M105
+| Recv: ok B:21.6 /0.0 T0:21.7 /0.0
+| Send: M105
+| Recv: ok B:21.6 /0.0 T0:21.7 /0.0
+| Send: M105
+| Recv: ok B:21.6 /0.0 T0:21.7 /0.0
+| Send: M105
+| Recv: ok B:21.6 /0.0 T0:21.7 /0.0
+| Send: M105
+| Recv: ok B:21.5 /0.0 T0:21.7 /0.0
+| Send: G91
+| Recv: ok
+| Send: G28 X0 Y0
+| Recv: !! Endstop x still triggered after retract
+2020-12-12 03:17:43,498 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Endstop x still triggered after retract
+| Last lines in terminal:
+| Send: G28 X0 Y0
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: M105
+| Recv: ok B:21.5 /0.0 T0:21.7 /0.0
+| Send: M105
+| Recv: ok B:21.5 /0.0 T0:21.7 /0.0
+| Send: M105
+| Recv: ok B:21.5 /0.0 T0:21.7 /0.0
+| Send: M105
+| Recv: ok B:21.6 /0.0 T0:21.7 /0.0
+| Send: M105
+| Recv: ok B:21.6 /0.0 T0:21.7 /0.0
+| Send: M105
+| Recv: ok B:21.6 /0.0 T0:21.7 /0.0
+| Send: G91
+| Recv: ok
+| Send: G28 X0 Y0
+| Recv: !! Endstop x still triggered after retract
+2020-12-12 03:20:40,410 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Printer is not ready
+| Last lines in terminal:
+| Send: M105
+| Recv: ok B:21.7 /0.0 T0:21.7 /0.0
+| Send: M105
+| Recv: ok B:21.7 /0.0 T0:21.7 /0.0
+| Send: firmware_resart
+| Recv: // Unknown command:"FIRMWARE_RESART"
+| Recv: ok
+| Send: M105
+| Recv: ok B:21.7 /0.0 T0:21.7 /0.0
+| Send: firmware_restart
+| Recv: ok
+| Recv: // Klipper state: Disconnect
+| Send: M105
+| Recv: ok T:0
+| Send: status
+| Recv: // Printer is not ready
+| Recv: // The klippy host software is attempting to connect.  Please
+| Recv: // retry in a few moments.
+| Recv: // Klipper state: Not ready
+| Recv: !! Printer is not ready
+2020-12-12 03:20:51,594 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Endstop x still triggered after retract
+| Last lines in terminal:
+| Send: M105
+| Recv: ok T:0
+| Send: status
+| Recv: // Printer is not ready
+| Recv: // The klippy host software is attempting to connect.  Please
+| Recv: // retry in a few moments.
+| Recv: // Klipper state: Not ready
+| Recv: !! Printer is not ready
+| Recv: ok
+| Send: M105
+| Recv: ok T:0
+| Recv: // Klipper state: Ready
+| Send: M105
+| Recv: ok B:21.7 /0.0 T0:21.7 /0.0
+| Send: M105
+| Recv: ok B:21.7 /0.0 T0:21.7 /0.0
+| Send: G91
+| Recv: ok
+| Send: G28 X0 Y0
+| Recv: !! Endstop x still triggered after retract
+2020-12-12 03:22:48,358 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-12 03:22:54,994 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 1047}
+2020-12-12 03:37:48,360 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-12 03:37:54,973 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 1947}
+2020-12-12 03:47:58,131 - octoprint.server.util.sockjs - INFO - Client connection closed: 2601:644:877f:f0f1:6079:73f9:134d:f320
+2020-12-12 03:48:30,105 - octoprint.server - INFO - Shutting down...
+2020-12-12 03:48:30,231 - octoprint.server - INFO - Calling on_shutdown on plugins
+2020-12-12 03:48:30,231 - octoprint.events - INFO - Processing shutdown event, this will be our last event
+2020-12-12 03:48:30,234 - octoprint.events - INFO - Event loop shut down
+2020-12-12 03:48:30,846 - octoprint.plugins.tracking - INFO - Sent tracking event shutdown, payload: {}
+2020-12-12 03:48:30,858 - octoprint.server - INFO - Goodbye!
+2020-12-12 03:48:33,452 - octoprint.startup - INFO - ******************************************************************************
+2020-12-12 03:48:33,453 - octoprint.startup - INFO - Starting OctoPrint 1.4.2
+2020-12-12 03:48:33,454 - octoprint.startup - INFO - ******************************************************************************
+2020-12-12 03:48:33,788 - octoprint.util.connectivity.connectivity_checker - INFO - Connectivity changed from offline to online
+2020-12-12 03:48:33,839 - octoprint.util.connectivity.connectivity_checker - INFO - Connectivity state is currently: online
+2020-12-12 03:48:33,839 - octoprint.util.connectivity.connectivity_checker - INFO - Connecting to 8.8.8.8:53 is working
+2020-12-12 03:48:33,840 - octoprint.util.connectivity.connectivity_checker - INFO - Resolving octoprint.org is working
+2020-12-12 03:48:34,767 - octoprint.startup - INFO - Blacklist processing done, adding 10 blacklisted plugin versions: roomtemp (any), GcodeEditor (0.1.1), GcodeEditor (0.2.0), GcodeEditor (0.2.1), GcodeEditor (0.2.2), GcodeEditor (0.2.3), GcodeEditor (0.2.4), GcodeEditor (0.2.5), GcodeEditor (0.2.6), GcodeEditor (0.2.8)
+2020-12-12 03:48:34,817 - octoprint.plugin.core - INFO - Loading plugins from /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins, /home/pi/.octoprint/plugins and installed plugin packages...
+2020-12-12 03:48:36,413 - octoprint.plugin.core - INFO - Found 18 plugin(s) providing 18 mixin implementations, 32 hook handlers
+2020-12-12 03:48:36,748 - octoprint.server.heartbeat - INFO - Starting server heartbeat, 900.0s interval
+2020-12-12 03:48:36,770 - octoprint.server - INFO - Intermediary server started
+2020-12-12 03:48:36,771 - octoprint.plugin.core - INFO - Loading plugins from /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins, /home/pi/.octoprint/plugins and installed plugin packages...
+2020-12-12 03:48:36,838 - octoprint.plugin.core - INFO - Found 18 plugin(s) providing 18 mixin implementations, 32 hook handlers
+2020-12-12 03:48:36,854 - octoprint.filemanager.storage - INFO - Initializing the file metadata for /home/pi/.octoprint/uploads...
+2020-12-12 03:48:36,856 - octoprint.filemanager.storage - INFO - ... file metadata for /home/pi/.octoprint/uploads initialized successfully.
+2020-12-12 03:48:36,858 - octoprint.server - INFO - Added new permission from plugin action_command_notification: PLUGIN_ACTION_COMMAND_NOTIFICATION_SHOW (needs: u"Need(method='role', value=u'plugin_action_command_notification_show')")
+2020-12-12 03:48:36,859 - octoprint.server - INFO - Added new permission from plugin action_command_notification: PLUGIN_ACTION_COMMAND_NOTIFICATION_CLEAR (needs: u"Need(method='role', value=u'plugin_action_command_notification_clear')")
+2020-12-12 03:48:36,859 - octoprint.server - INFO - Added new permission from plugin action_command_prompt: PLUGIN_ACTION_COMMAND_PROMPT_INTERACT (needs: u"Need(method='role', value=u'plugin_action_command_prompt_interact')")
+2020-12-12 03:48:36,860 - octoprint.server - INFO - Added new permission from plugin announcements: PLUGIN_ANNOUNCEMENTS_READ (needs: u"Need(method='role', value=u'plugin_announcements_read')")
+2020-12-12 03:48:36,861 - octoprint.server - INFO - Added new permission from plugin announcements: PLUGIN_ANNOUNCEMENTS_MANAGE (needs: u"Need(method='role', value=u'plugin_announcements_manage'), Need(method='role', value=u'plugin_announcements_read')")
+2020-12-12 03:48:36,862 - octoprint.server - INFO - Added new permission from plugin appkeys: PLUGIN_APPKEYS_ADMIN (needs: u"Need(method='role', value=u'plugin_appkeys_admin')")
+2020-12-12 03:48:36,863 - octoprint.server - INFO - Added new permission from plugin backup: PLUGIN_BACKUP_ACCESS (needs: u"Need(method='role', value=u'plugin_backup_access')")
+2020-12-12 03:48:36,863 - octoprint.server - INFO - Added new permission from plugin firmware_check: PLUGIN_FIRMWARE_CHECK_DISPLAY (needs: u"Need(method='role', value=u'plugin_firmware_check_display')")
+2020-12-12 03:48:36,865 - octoprint.server - INFO - Added new permission from plugin logging: PLUGIN_LOGGING_MANAGE (needs: u"Need(method='role', value=u'plugin_logging_manage')")
+2020-12-12 03:48:36,866 - octoprint.server - INFO - Added new permission from plugin pi_support: PLUGIN_PI_SUPPORT_STATUS (needs: u"Need(method='role', value=u'plugin_pi_support_check')")
+2020-12-12 03:48:36,866 - octoprint.server - INFO - Added new permission from plugin pluginmanager: PLUGIN_PLUGINMANAGER_MANAGE (needs: u"Need(method='role', value=u'plugin_pluginmanager_manage')")
+2020-12-12 03:48:36,867 - octoprint.server - INFO - Added new permission from plugin pluginmanager: PLUGIN_PLUGINMANAGER_INSTALL (needs: u"Need(method='role', value=u'plugin_pluginmanager_install'), Need(method='role', value=u'plugin_pluginmanager_manage')")
+2020-12-12 03:48:36,868 - octoprint.server - INFO - Added new permission from plugin softwareupdate: PLUGIN_SOFTWAREUPDATE_CHECK (needs: u"Need(method='role', value=u'plugin_softwareupdate_check')")
+2020-12-12 03:48:36,869 - octoprint.server - INFO - Added new permission from plugin softwareupdate: PLUGIN_SOFTWAREUPDATE_UPDATE (needs: u"Need(method='role', value=u'plugin_softwareupdate_update')")
+2020-12-12 03:48:36,907 - octoprint.plugins.softwareupdate - INFO - Loaded version cache from disk
+2020-12-12 03:48:38,191 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python2 -m pip" as command to invoke pip
+2020-12-12 03:48:39,547 - octoprint.util.pip - INFO - Version of pip is 19.3.1
+2020-12-12 03:48:39,549 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python2.7/site-packages (writable -> yes), --user flag needed -> no, virtual env -> yes
+2020-12-12 03:48:39,551 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2020-12-12 03:48:39,562 - octoprint.plugin.core - INFO - Initialized 18 plugin implementation(s)
+2020-12-12 03:48:39,583 - octoprint.plugin.core - INFO - 18 plugin(s) registered with the system:
+|  Action Command Notification Support (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/action_command_notification
+|  Action Command Prompt Support (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/action_command_prompt
+|  Announcement Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements
+|  Anonymous Usage Tracking (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/tracking
+|  Application Keys Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/appkeys
+|  Backup & Restore (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/backup
+|  Core Wizard (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/corewizard
+|  Discovery (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/discovery
+|  Error Tracking (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/errortracking
+|  File Check (2020.8.7) (bundled) = /home/pi/oprint/local/lib/python2.7/site-packages/octoprint_file_check
+|  Firmware Check (2020.9.23) (bundled) = /home/pi/oprint/local/lib/python2.7/site-packages/octoprint_firmware_check
+|  GCode Viewer (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/gcodeviewer
+|  Logging (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/logging
+|  Login UI (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/loginui
+|  Pi Support Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pi_support
+|  Plugin Manager (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pluginmanager
+|  Software Update (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/softwareupdate
+|  Virtual Printer (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/virtual_printer
+Prefix legend: ! = disabled, # = blacklisted, * = incompatible
+2020-12-12 03:48:39,606 - octoprint.environment - INFO - Detected environment is Python 2.7.16 under Linux (linux2). Details:
+|  hardware:
+|      cores: 4
+|      freq: 1500.0
+|      ram: 1903980544
+|  os:
+|      id: linux
+|      platform: linux2
+|  plugins:
+|      pi_support:
+|          model: Raspberry Pi 4 Model B Rev 1.1
+|          octopi_version: 0.17.0
+|  python:
+|      pip: 19.3.1
+|      version: 2.7.16
+|      virtualenv: /home/pi/oprint
+2020-12-12 03:48:39,625 - octoprint.server - INFO - Reset webasset folder /home/pi/.octoprint/generated/webassets...
+2020-12-12 03:48:39,671 - octoprint.server - INFO - Reset webasset folder /home/pi/.octoprint/generated/.webassets-cache...
+2020-12-12 03:48:40,515 - octoprint.server - INFO - Shutting down intermediary server...
+2020-12-12 03:48:40,779 - octoprint.server - INFO - Intermediary server shut down
+2020-12-12 03:48:40,783 - octoprint.events - INFO - Processing startup event, this is our first event
+2020-12-12 03:48:40,783 - octoprint.events - INFO - Adding 1 events to queue that were held back before startup event
+2020-12-12 03:48:40,790 - octoprint.server - INFO - Autoconnect on startup is configured, trying to connect to the printer...
+2020-12-12 03:48:40,789 - octoprint.filemanager - INFO - Adding backlog items from all storage types to analysis queue...
+2020-12-12 03:48:40,848 - octoprint.filemanager - INFO - Added 0 items from storage type "local" to analysis queue
+2020-12-12 03:48:40,990 - octoprint.plugins.pluginmanager - INFO - Loaded plugin repository data from disk, was still valid
+2020-12-12 03:48:43,465 - octoprint.plugins.pluginmanager - INFO - Loaded notice data from disk, was still valid
+2020-12-12 03:48:43,500 - octoprint.server - INFO - Trying to connect to configured serial port /tmp/printer
+2020-12-12 03:48:43,562 - octoprint.util.comm - INFO - Changing monitoring state from "Offline" to "Opening serial connection"
+2020-12-12 03:48:43,569 - octoprint.util.comm - INFO - Connecting to port /tmp/printer, baudrate 115200
+2020-12-12 03:48:43,575 - octoprint.server.util.watchdog - INFO - Running initial scan on watched folder...
+2020-12-12 03:48:43,580 - octoprint.server.util.watchdog - INFO - ... initial scan done.
+2020-12-12 03:48:43,585 - octoprint.util.comm - INFO - Changing monitoring state from "Opening serial connection" to "Connecting"
+2020-12-12 03:48:43,594 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 03:48:43,604 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 03:48:43,613 - octoprint.util.comm - INFO - Changing monitoring state from "Connecting" to "Operational"
+2020-12-12 03:48:43,615 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance on voron' for _http._tcp
+2020-12-12 03:48:43,627 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 03:48:43,640 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance on voron' for _octoprint._tcp
+2020-12-12 03:48:43,651 - octoprint.util.comm - INFO - Printer reports firmware name "Klipper"
+2020-12-12 03:48:43,656 - octoprint.plugins.discovery - INFO - Registered OctoPrint instance on voron for SSDP
+2020-12-12 03:48:43,657 - octoprint.util.comm - INFO - Detected Klipper firmware, enabling relevant features for issue free communication
+2020-12-12 03:48:43,728 - octoprint.plugins.pi_support - WARNING - This Raspberry Pi is reporting problems that might lead to bad performance or errors caused by overheating or insufficient power.
+!!! UNDERVOLTAGE REPORTED !!! Make sure that the power supply and power cable are capable of supplying enough voltage and current to your Pi.
+2020-12-12 03:48:43,740 - octoprint.server - INFO - Listening on http://127.0.0.1:5000
+2020-12-12 03:48:43,968 - octoprint.plugins.pluginmanager - INFO - Loaded plugin repository data from disk, was still valid
+2020-12-12 03:48:44,613 - octoprint.plugins.tracking - INFO - Sent tracking event printer_connected, payload: {u'printer_baudrate': 115200, u'printer_port': '/tmp/printer', 'firmware_name': u'Klipper'}
+2020-12-12 03:48:45,445 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python2 -m pip" as command to invoke pip
+2020-12-12 03:48:45,541 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python2.7/site-packages (writable -> yes), --user flag needed -> no, virtual env -> yes
+2020-12-12 03:48:45,622 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2020-12-12 03:48:45,748 - octoprint.plugins.softwareupdate - INFO - Minimum free storage across all update relevant locations is 24.2GB. That is considered sufficient for updating.
+2020-12-12 03:48:45,907 - octoprint.plugins.tracking - INFO - Sent tracking event system_throttled, payload: {'throttled_mask': 327685, 'throttled_voltage_now': True, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': True, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-12 03:48:46,621 - octoprint.plugins.pluginmanager - INFO - Loaded notice data from disk, was still valid
+2020-12-12 03:48:46,843 - octoprint.server.preemptive_cache - INFO - Preemptively caching / (ui _default) for {'query_string': 'l10n=en', 'path': '/', 'base_url': 'http://voron.local/'}
+2020-12-12 03:48:47,294 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 10}
+2020-12-12 03:48:47,992 - octoprint.plugins.tracking - INFO - Sent tracking event startup, payload: {'python': '2.7.16', 'ram': 1903980544, u'octopi_version': u'0.17.0', 'version': u'1.4.2', 'pip': '19.3.1', 'cores': 4, 'freq': 1500.0, u'pi_model': u'Raspberry Pi 4 Model B Rev 1.1', 'os': 'linux'}
+2020-12-12 03:48:48,284 - octoprint.server.util.flask.PreemptiveCache - INFO - Adding entry for / and {'query_string': u'l10n=en', 'path': u'/', u'_count': 1, u'_timestamp': 1607744928.284561, 'base_url': u'http://192.168.2.59/'}
+2020-12-12 03:48:48,726 - octoprint.plugins.tracking - INFO - Sent tracking event pong, payload: {'python': '2.7.16', 'ram': 1903980544, u'octopi_version': u'0.17.0', 'version': u'1.4.2', u'plugins': u'', 'pip': '19.3.1', 'cores': 4, 'freq': 1500.0, u'pi_model': u'Raspberry Pi 4 Model B Rev 1.1', 'os': 'linux'}
+2020-12-12 03:49:05,572 - octoprint.server.preemptive_cache - INFO - ... done in 18.73s
+2020-12-12 03:49:05,998 - octoprint.server.util.sockjs - INFO - New connection from client: ::ffff:192.168.2.66
+2020-12-12 03:49:06,082 - octoprint.server.util.flask - INFO - Passively logging in user _admin from ::ffff:192.168.2.66
+2020-12-12 03:49:06,085 - octoprint.access.users - INFO - Logged in user: _admin
+2020-12-12 03:49:08,638 - octoprint.server.util.sockjs - INFO - User _admin logged in on the socket from client ::ffff:192.168.2.66
+2020-12-12 03:49:14,393 - octoprint.plugins.tracking - INFO - Sent tracking event system_unthrottled, payload: {'throttled_mask': 327680, 'throttled_voltage_now': False, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': False, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-12 03:39:33,053 - octoprint.startup - INFO - ******************************************************************************
+2020-12-12 03:39:33,056 - octoprint.startup - INFO - Starting OctoPrint 1.4.2
+2020-12-12 03:39:33,059 - octoprint.startup - INFO - ******************************************************************************
+2020-12-12 03:39:33,947 - octoprint.util.connectivity.connectivity_checker - INFO - Connectivity state is currently: offline
+2020-12-12 03:39:33,948 - octoprint.util.connectivity.connectivity_checker - INFO - Connecting to 8.8.8.8:53 is not working
+2020-12-12 03:39:33,950 - octoprint.util.connectivity.connectivity_checker - INFO - Resolving octoprint.org is not working
+2020-12-12 03:39:33,958 - octoprint.startup - INFO - We don't appear to be online, not fetching plugin blacklist
+2020-12-12 03:39:34,041 - octoprint.plugin.core - INFO - Loading plugins from /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins, /home/pi/.octoprint/plugins and installed plugin packages...
+2020-12-12 03:39:36,128 - octoprint.plugin.core - INFO - Found 18 plugin(s) providing 18 mixin implementations, 32 hook handlers
+2020-12-12 03:39:36,398 - octoprint.server.heartbeat - INFO - Starting server heartbeat, 900.0s interval
+2020-12-12 03:39:36,455 - octoprint.server - INFO - Intermediary server started
+2020-12-12 03:39:36,457 - octoprint.plugin.core - INFO - Loading plugins from /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins, /home/pi/.octoprint/plugins and installed plugin packages...
+2020-12-12 03:39:36,711 - octoprint.plugin.core - INFO - Found 18 plugin(s) providing 18 mixin implementations, 32 hook handlers
+2020-12-12 03:39:36,752 - octoprint.filemanager.storage - INFO - Initializing the file metadata for /home/pi/.octoprint/uploads...
+2020-12-12 03:39:36,755 - octoprint.filemanager.storage - INFO - ... file metadata for /home/pi/.octoprint/uploads initialized successfully.
+2020-12-12 03:39:36,760 - octoprint.server - INFO - Added new permission from plugin action_command_notification: PLUGIN_ACTION_COMMAND_NOTIFICATION_SHOW (needs: u"Need(method='role', value=u'plugin_action_command_notification_show')")
+2020-12-12 03:39:36,762 - octoprint.server - INFO - Added new permission from plugin action_command_notification: PLUGIN_ACTION_COMMAND_NOTIFICATION_CLEAR (needs: u"Need(method='role', value=u'plugin_action_command_notification_clear')")
+2020-12-12 03:39:36,764 - octoprint.server - INFO - Added new permission from plugin action_command_prompt: PLUGIN_ACTION_COMMAND_PROMPT_INTERACT (needs: u"Need(method='role', value=u'plugin_action_command_prompt_interact')")
+2020-12-12 03:39:36,766 - octoprint.server - INFO - Added new permission from plugin announcements: PLUGIN_ANNOUNCEMENTS_READ (needs: u"Need(method='role', value=u'plugin_announcements_read')")
+2020-12-12 03:39:36,767 - octoprint.server - INFO - Added new permission from plugin announcements: PLUGIN_ANNOUNCEMENTS_MANAGE (needs: u"Need(method='role', value=u'plugin_announcements_manage'), Need(method='role', value=u'plugin_announcements_read')")
+2020-12-12 03:39:36,769 - octoprint.server - INFO - Added new permission from plugin appkeys: PLUGIN_APPKEYS_ADMIN (needs: u"Need(method='role', value=u'plugin_appkeys_admin')")
+2020-12-12 03:39:36,771 - octoprint.server - INFO - Added new permission from plugin backup: PLUGIN_BACKUP_ACCESS (needs: u"Need(method='role', value=u'plugin_backup_access')")
+2020-12-12 03:39:36,772 - octoprint.server - INFO - Added new permission from plugin firmware_check: PLUGIN_FIRMWARE_CHECK_DISPLAY (needs: u"Need(method='role', value=u'plugin_firmware_check_display')")
+2020-12-12 03:39:36,775 - octoprint.server - INFO - Added new permission from plugin logging: PLUGIN_LOGGING_MANAGE (needs: u"Need(method='role', value=u'plugin_logging_manage')")
+2020-12-12 03:39:36,777 - octoprint.server - INFO - Added new permission from plugin pi_support: PLUGIN_PI_SUPPORT_STATUS (needs: u"Need(method='role', value=u'plugin_pi_support_check')")
+2020-12-12 03:39:36,779 - octoprint.server - INFO - Added new permission from plugin pluginmanager: PLUGIN_PLUGINMANAGER_MANAGE (needs: u"Need(method='role', value=u'plugin_pluginmanager_manage')")
+2020-12-12 03:39:36,780 - octoprint.server - INFO - Added new permission from plugin pluginmanager: PLUGIN_PLUGINMANAGER_INSTALL (needs: u"Need(method='role', value=u'plugin_pluginmanager_install'), Need(method='role', value=u'plugin_pluginmanager_manage')")
+2020-12-12 03:39:36,783 - octoprint.server - INFO - Added new permission from plugin softwareupdate: PLUGIN_SOFTWAREUPDATE_CHECK (needs: u"Need(method='role', value=u'plugin_softwareupdate_check')")
+2020-12-12 03:39:36,785 - octoprint.server - INFO - Added new permission from plugin softwareupdate: PLUGIN_SOFTWAREUPDATE_UPDATE (needs: u"Need(method='role', value=u'plugin_softwareupdate_update')")
+2020-12-12 03:39:36,879 - octoprint.plugins.softwareupdate - INFO - Loaded version cache from disk
+2020-12-12 03:39:38,189 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python2 -m pip" as command to invoke pip
+2020-12-12 03:39:38,757 - octoprint.util.pip - INFO - Version of pip is 19.3.1
+2020-12-12 03:39:38,759 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python2.7/site-packages (writable -> yes), --user flag needed -> no, virtual env -> yes
+2020-12-12 03:39:38,759 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2020-12-12 03:39:38,764 - octoprint.plugin.core - INFO - Initialized 18 plugin implementation(s)
+2020-12-12 03:39:38,772 - octoprint.plugin.core - INFO - 18 plugin(s) registered with the system:
+|  Action Command Notification Support (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/action_command_notification
+|  Action Command Prompt Support (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/action_command_prompt
+|  Announcement Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements
+|  Anonymous Usage Tracking (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/tracking
+|  Application Keys Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/appkeys
+|  Backup & Restore (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/backup
+|  Core Wizard (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/corewizard
+|  Discovery (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/discovery
+|  Error Tracking (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/errortracking
+|  File Check (2020.8.7) (bundled) = /home/pi/oprint/local/lib/python2.7/site-packages/octoprint_file_check
+|  Firmware Check (2020.9.23) (bundled) = /home/pi/oprint/local/lib/python2.7/site-packages/octoprint_firmware_check
+|  GCode Viewer (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/gcodeviewer
+|  Logging (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/logging
+|  Login UI (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/loginui
+|  Pi Support Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pi_support
+|  Plugin Manager (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pluginmanager
+|  Software Update (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/softwareupdate
+|  Virtual Printer (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/virtual_printer
+Prefix legend: ! = disabled, # = blacklisted, * = incompatible
+2020-12-12 03:39:38,783 - octoprint.environment - INFO - Detected environment is Python 2.7.16 under Linux (linux2). Details:
+|  hardware:
+|      cores: 4
+|      freq: 1500.0
+|      ram: 1903980544
+|  os:
+|      id: linux
+|      platform: linux2
+|  plugins:
+|      pi_support:
+|          model: Raspberry Pi 4 Model B Rev 1.1
+|          octopi_version: 0.17.0
+|  python:
+|      pip: 19.3.1
+|      version: 2.7.16
+|      virtualenv: /home/pi/oprint
+2020-12-12 03:39:38,790 - octoprint.server - INFO - Reset webasset folder /home/pi/.octoprint/generated/webassets...
+2020-12-12 03:39:38,807 - octoprint.server - INFO - Reset webasset folder /home/pi/.octoprint/generated/.webassets-cache...
+2020-12-12 03:39:39,411 - octoprint.server - INFO - Shutting down intermediary server...
+2020-12-12 03:39:39,461 - octoprint.server - INFO - Intermediary server shut down
+2020-12-12 03:39:39,465 - octoprint.events - INFO - Processing startup event, this is our first event
+2020-12-12 03:39:39,466 - octoprint.events - INFO - Adding 0 events to queue that were held back before startup event
+2020-12-12 03:39:39,471 - octoprint.server - INFO - Autoconnect on startup is configured, trying to connect to the printer...
+2020-12-12 03:39:39,472 - octoprint.filemanager - INFO - Adding backlog items from all storage types to analysis queue...
+2020-12-12 03:39:39,481 - octoprint.filemanager - INFO - Added 0 items from storage type "local" to analysis queue
+2020-12-12 03:39:39,542 - octoprint.server - INFO - Trying to connect to configured serial port /tmp/printer
+2020-12-12 03:39:39,603 - octoprint.util.comm - INFO - Changing monitoring state from "Offline" to "Opening serial connection"
+2020-12-12 03:39:39,616 - octoprint.util.comm - INFO - Connecting to port /tmp/printer, baudrate 115200
+2020-12-12 03:39:39,617 - octoprint.server.util.watchdog - INFO - Running initial scan on watched folder...
+2020-12-12 03:39:39,623 - octoprint.server.util.watchdog - INFO - ... initial scan done.
+2020-12-12 03:39:39,624 - octoprint.util.comm - INFO - Changing monitoring state from "Opening serial connection" to "Connecting"
+2020-12-12 03:39:39,643 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 03:39:39,651 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 03:39:39,654 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance on voron' for _http._tcp
+2020-12-12 03:39:39,657 - octoprint.util.comm - INFO - Changing monitoring state from "Connecting" to "Operational"
+2020-12-12 03:39:39,677 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance on voron' for _octoprint._tcp
+2020-12-12 03:39:39,678 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 03:39:39,721 - octoprint.util.comm - INFO - Printer reports firmware name "Klipper"
+2020-12-12 03:39:39,735 - octoprint.util.comm - INFO - Detected Klipper firmware, enabling relevant features for issue free communication
+2020-12-12 03:39:39,743 - octoprint.plugins.pi_support - WARNING - This Raspberry Pi is reporting problems that might lead to bad performance or errors caused by overheating or insufficient power.
+!!! UNDERVOLTAGE REPORTED !!! Make sure that the power supply and power cable are capable of supplying enough voltage and current to your Pi.
+2020-12-12 03:39:39,755 - octoprint.server - INFO - Listening on http://127.0.0.1:5000
+2020-12-12 03:39:39,954 - octoprint.plugins.pluginmanager - INFO - Loaded plugin repository data from disk, was still valid
+2020-12-12 03:39:41,466 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python2 -m pip" as command to invoke pip
+2020-12-12 03:39:41,503 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python2.7/site-packages (writable -> yes), --user flag needed -> no, virtual env -> yes
+2020-12-12 03:39:41,574 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2020-12-12 03:39:41,714 - octoprint.plugins.softwareupdate - INFO - Minimum free storage across all update relevant locations is 24.2GB. That is considered sufficient for updating.
+2020-12-12 03:39:41,787 - octoprint.util.connectivity.connectivity_checker - INFO - Connectivity changed from offline to online
+2020-12-12 03:39:42,067 - octoprint.plugins.pluginmanager - INFO - Loaded plugin repository data from disk, was still valid
+2020-12-12 03:39:43,719 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 6}
+2020-12-12 03:39:44,641 - octoprint.plugins.pluginmanager - INFO - Loaded notice data from disk, was still valid
+2020-12-12 03:39:45,018 - octoprint.plugins.tracking - INFO - Sent tracking event startup, payload: {'python': '2.7.16', 'ram': 1903980544, u'octopi_version': u'0.17.0', 'version': u'1.4.2', 'pip': '19.3.1', 'cores': 4, 'freq': 1500.0, u'pi_model': u'Raspberry Pi 4 Model B Rev 1.1', 'os': 'linux'}
+2020-12-12 03:39:45,093 - octoprint.plugins.pluginmanager - INFO - Loaded notice data from disk, was still valid
+2020-12-12 03:39:45,223 - octoprint.server.preemptive_cache - INFO - Preemptively caching / (ui _default) for {'query_string': 'l10n=en', 'path': '/', 'base_url': 'http://voron.local/'}
+2020-12-12 03:39:45,750 - octoprint.plugins.tracking - INFO - Sent tracking event pong, payload: {'python': '2.7.16', 'ram': 1903980544, u'octopi_version': u'0.17.0', 'version': u'1.4.2', u'plugins': u'', 'pip': '19.3.1', 'cores': 4, 'freq': 1500.0, u'pi_model': u'Raspberry Pi 4 Model B Rev 1.1', 'os': 'linux'}
+2020-12-12 03:39:54,603 - octoprint.server.preemptive_cache - INFO - ... done in 9.38s
+2020-12-12 03:39:54,604 - octoprint.server.preemptive_cache - INFO - Preemptively caching / (ui _default) for {'query_string': 'l10n=en', 'path': '/', 'base_url': 'http://192.168.2.59/'}
+2020-12-12 03:39:54,814 - octoprint.server.preemptive_cache - INFO - ... done in 0.21s
+2020-12-12 03:52:45,590 - octoprint.plugins.tracking - INFO - Sent tracking event system_unthrottled, payload: {'throttled_mask': 327680, 'throttled_voltage_now': False, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': False, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-12 03:53:07,827 - octoprint.server.util.sockjs - INFO - New connection from client: ::ffff:192.168.2.66
+2020-12-12 03:53:07,889 - octoprint.server.util.flask - INFO - Passively logging in user _admin from ::ffff:192.168.2.66
+2020-12-12 03:53:07,890 - octoprint.access.users - INFO - Logged in user: _admin
+2020-12-12 03:53:07,914 - octoprint.server.util.sockjs - INFO - User _admin logged in on the socket from client ::ffff:192.168.2.66
+2020-12-12 03:54:36,403 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-12 03:54:42,749 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 139}
+2020-12-12 03:57:56,141 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Printer is not ready
+| Last lines in terminal:
+| Recv: // Unknown command:"FIRMWARE_RESET"
+| Recv: ok
+| Send: M105
+| Recv: ok B:22.2 /0.0 T0:21.9 /0.0
+| Send: reset_firmware
+| Recv: // Unknown command:"RESET_FIRMWARE"
+| Recv: ok
+| Send: M105
+| Recv: ok B:22.2 /0.0 T0:21.9 /0.0
+| Send: FIRMWARE_RESTART
+| Recv: ok
+| Recv: // Klipper state: Disconnect
+| Send: M105
+| Recv: ok T:0
+| Send: STATUS
+| Recv: // Printer is not ready
+| Recv: // The klippy host software is attempting to connect.  Please
+| Recv: // retry in a few moments.
+| Recv: // Klipper state: Not ready
+| Recv: !! Printer is not ready
+2020-12-12 04:09:36,404 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-12 04:09:42,736 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 1039}
+2020-12-12 04:24:36,408 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-12 04:24:42,738 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 1939}
+2020-12-12 04:39:36,411 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-12 04:39:42,740 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 2839}
+2020-12-12 04:54:36,413 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-12 04:54:42,786 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 3739}
+2020-12-12 05:09:36,416 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-12 05:09:42,761 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 4639}
+2020-12-12 05:24:36,418 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-12 05:24:42,761 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 5539}
+2020-12-12 05:39:36,420 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-12 05:39:42,755 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 6439}
+2020-12-12 05:54:36,423 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-12 05:54:42,791 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 7339}
+2020-12-12 06:09:36,425 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-12 06:09:42,795 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 8239}
+2020-12-12 06:24:36,427 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-12 06:24:42,788 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 9139}
+2020-12-12 06:39:36,429 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-12 06:39:42,784 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 10039}
+2020-12-12 06:54:36,431 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-12 06:54:42,804 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 10939}
+2020-12-12 07:09:36,433 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-12 07:09:42,800 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 11839}
+2020-12-12 07:24:36,435 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-12 07:24:42,781 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 12739}
+2020-12-12 07:39:36,437 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-12 07:39:42,825 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 13639}
+2020-12-12 07:39:50,425 - octoprint.server.util.sockjs - INFO - Client connection closed: ::ffff:192.168.2.66
+2020-12-12 07:39:50,748 - octoprint.server.util.sockjs - INFO - New connection from client: ::ffff:192.168.2.66
+2020-12-12 07:39:50,861 - octoprint.server.util.flask - INFO - Passively logging in user _admin from ::ffff:192.168.2.66
+2020-12-12 07:39:50,864 - octoprint.access.users - INFO - Logged in user: _admin
+2020-12-12 07:39:52,610 - octoprint.server.util.sockjs - INFO - User _admin logged in on the socket from client ::ffff:192.168.2.66
+2020-12-12 07:41:29,235 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Printer is not ready
+| Last lines in terminal:
+| Send: restart_firmware
+| Recv: // Unknown command:"RESTART_FIRMWARE"
+| Recv: ok
+| Send: M105
+| Recv: ok B:22.6 /0.0 T0:22.0 /0.0
+| Send: M105
+| Recv: ok B:22.6 /0.0 T0:22.0 /0.0
+| Send: FIRMWARE_RESTART
+| Recv: ok
+| Recv: // Klipper state: Disconnect
+| Send: M105
+| Recv: ok T:0
+| Send: M105
+| Recv: ok T:0
+| Send: status
+| Recv: // Printer is not ready
+| Recv: // The klippy host software is attempting to connect.  Please
+| Recv: // retry in a few moments.
+| Recv: // Klipper state: Not ready
+| Recv: !! Printer is not ready
+2020-12-12 07:43:37,994 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Invalid pin description 'z:!P1.24'
+| Last lines in terminal:
+| Recv: ok B:22.7 /0.0 T0:22.0 /0.0
+| Send: M105
+| Recv: ok B:22.7 /0.0 T0:22.0 /0.0
+| Send: M105
+| Recv: ok B:22.7 /0.0 T0:21.9 /0.0
+| Send: M105
+| Recv: ok B:22.7 /0.0 T0:22.0 /0.0
+| Send: FIRMWARE_RESTART
+| Recv: ok
+| Recv: // Klipper state: Disconnect
+| Send: M105
+| Recv: ok T:0
+| Send: status
+| Recv: // Invalid pin description 'z:!P1.24'
+| Recv: // Format is: [^~] [!] [chip_name:] pin_name
+| Recv: // Once the underlying issue is corrected, use the "RESTART"
+| Recv: // command to reload the config and restart the host software.
+| Recv: // Printer is halted
+| Recv: // Klipper state: Not ready
+| Recv: !! Invalid pin description 'z:!P1.24'
+2020-12-12 07:45:37,358 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Move out of range: 175.000 175.000 -6.000 [0.000]
+| Last lines in terminal:
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z-1 F200
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: M105
+| Recv: ok B:22.6 /0.0 T0:21.9 /0.0
+| Send: M105
+| Recv: ok B:22.6 /0.0 T0:22.0 /0.0
+| Send: query_probe
+| Recv: // probe: open
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z-1 F200
+| Recv: !! Move out of range: 175.000 175.000 -6.000 [0.000]
+2020-12-12 07:45:42,440 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Move out of range: 175.000 175.000 -6.000 [0.000]
+| Last lines in terminal:
+| Send: M105
+| Recv: ok B:22.6 /0.0 T0:21.9 /0.0
+| Send: M105
+| Recv: ok B:22.6 /0.0 T0:22.0 /0.0
+| Send: query_probe
+| Recv: // probe: open
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z-1 F200
+| Recv: !! Move out of range: 175.000 175.000 -6.000 [0.000]
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: M105
+| Recv: ok B:22.6 /0.0 T0:22.0 /0.0
+| Send: G91
+| Recv: ok
+| Send: G1 Z-1 F200
+| Recv: !! Move out of range: 175.000 175.000 -6.000 [0.000]
+2020-12-12 07:45:45,404 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Move out of range: 175.000 175.000 -6.000 [0.000]
+| Last lines in terminal:
+| Send: G1 Z-1 F200
+| Recv: !! Move out of range: 175.000 175.000 -6.000 [0.000]
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: M105
+| Recv: ok B:22.6 /0.0 T0:22.0 /0.0
+| Send: G91
+| Recv: ok
+| Send: G1 Z-1 F200
+| Recv: !! Move out of range: 175.000 175.000 -6.000 [0.000]
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: M105
+| Recv: ok B:22.6 /0.0 T0:21.9 /0.0
+| Send: G91
+| Recv: ok
+| Send: G1 Z-1 F200
+| Recv: !! Move out of range: 175.000 175.000 -6.000 [0.000]
+2020-12-12 07:45:46,738 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Move out of range: 175.000 175.000 -6.000 [0.000]
+| Last lines in terminal:
+| Send: G91
+| Recv: ok
+| Send: G1 Z-1 F200
+| Recv: !! Move out of range: 175.000 175.000 -6.000 [0.000]
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: M105
+| Recv: ok B:22.6 /0.0 T0:21.9 /0.0
+| Send: G91
+| Recv: ok
+| Send: G1 Z-1 F200
+| Recv: !! Move out of range: 175.000 175.000 -6.000 [0.000]
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z-1 F200
+| Recv: !! Move out of range: 175.000 175.000 -6.000 [0.000]
+2020-12-12 07:45:48,163 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Move out of range: 175.000 175.000 -6.000 [0.000]
+| Last lines in terminal:
+| Send: M105
+| Recv: ok B:22.6 /0.0 T0:21.9 /0.0
+| Send: G91
+| Recv: ok
+| Send: G1 Z-1 F200
+| Recv: !! Move out of range: 175.000 175.000 -6.000 [0.000]
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z-1 F200
+| Recv: !! Move out of range: 175.000 175.000 -6.000 [0.000]
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z-1 F200
+| Recv: !! Move out of range: 175.000 175.000 -6.000 [0.000]
+2020-12-12 07:45:49,351 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Move out of range: 175.000 175.000 -6.000 [0.000]
+| Last lines in terminal:
+| Send: G91
+| Recv: ok
+| Send: G1 Z-1 F200
+| Recv: !! Move out of range: 175.000 175.000 -6.000 [0.000]
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z-1 F200
+| Recv: !! Move out of range: 175.000 175.000 -6.000 [0.000]
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: M105
+| Recv: ok B:22.7 /0.0 T0:21.9 /0.0
+| Send: G91
+| Recv: ok
+| Send: G1 Z-1 F200
+| Recv: !! Move out of range: 175.000 175.000 -6.000 [0.000]
+2020-12-12 07:45:53,964 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Move out of range: 175.000 175.000 -6.000 [0.000]
+| Last lines in terminal:
+| Recv: !! Move out of range: 175.000 175.000 -6.000 [0.000]
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z1 F200
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z-1 F200
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z-1 F200
+| Recv: !! Move out of range: 175.000 175.000 -6.000 [0.000]
+2020-12-12 07:45:55,595 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Move out of range: 175.000 175.000 -5.100 [0.000]
+| Last lines in terminal:
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z-1 F200
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z-1 F200
+| Recv: !! Move out of range: 175.000 175.000 -6.000 [0.000]
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: M105
+| Recv: ok B:22.6 /0.0 T0:22.0 /0.0
+| Send: G91
+| Recv: ok
+| Send: G1 Z-0.1 F200
+| Recv: !! Move out of range: 175.000 175.000 -5.100 [0.000]
+2020-12-12 07:45:56,440 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Move out of range: 175.000 175.000 -5.100 [0.000]
+| Last lines in terminal:
+| Send: G91
+| Recv: ok
+| Send: G1 Z-1 F200
+| Recv: !! Move out of range: 175.000 175.000 -6.000 [0.000]
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: M105
+| Recv: ok B:22.6 /0.0 T0:22.0 /0.0
+| Send: G91
+| Recv: ok
+| Send: G1 Z-0.1 F200
+| Recv: !! Move out of range: 175.000 175.000 -5.100 [0.000]
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z-0.1 F200
+| Recv: !! Move out of range: 175.000 175.000 -5.100 [0.000]
+2020-12-12 07:45:56,738 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Move out of range: 175.000 175.000 -5.100 [0.000]
+| Last lines in terminal:
+| Send: M105
+| Recv: ok B:22.6 /0.0 T0:22.0 /0.0
+| Send: G91
+| Recv: ok
+| Send: G1 Z-0.1 F200
+| Recv: !! Move out of range: 175.000 175.000 -5.100 [0.000]
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z-0.1 F200
+| Recv: !! Move out of range: 175.000 175.000 -5.100 [0.000]
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z-0.1 F200
+| Recv: !! Move out of range: 175.000 175.000 -5.100 [0.000]
+2020-12-12 07:45:56,896 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Move out of range: 175.000 175.000 -5.100 [0.000]
+| Last lines in terminal:
+| Send: G90
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z-0.1 F200
+| Recv: !! Move out of range: 175.000 175.000 -5.100 [0.000]
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z-0.1 F200
+| Recv: !! Move out of range: 175.000 175.000 -5.100 [0.000]
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z-0.1 F200
+| Recv: !! Move out of range: 175.000 175.000 -5.100 [0.000]
+2020-12-12 07:45:57,104 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Move out of range: 175.000 175.000 -5.100 [0.000]
+| Last lines in terminal:
+| Send: G90
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z-0.1 F200
+| Recv: !! Move out of range: 175.000 175.000 -5.100 [0.000]
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z-0.1 F200
+| Recv: !! Move out of range: 175.000 175.000 -5.100 [0.000]
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z-0.1 F200
+| Recv: !! Move out of range: 175.000 175.000 -5.100 [0.000]
+2020-12-12 07:45:57,294 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Move out of range: 175.000 175.000 -5.100 [0.000]
+| Last lines in terminal:
+| Send: G90
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z-0.1 F200
+| Recv: !! Move out of range: 175.000 175.000 -5.100 [0.000]
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z-0.1 F200
+| Recv: !! Move out of range: 175.000 175.000 -5.100 [0.000]
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z-0.1 F200
+| Recv: !! Move out of range: 175.000 175.000 -5.100 [0.000]
+2020-12-12 07:45:57,482 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Move out of range: 175.000 175.000 -5.100 [0.000]
+| Last lines in terminal:
+| Send: G90
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z-0.1 F200
+| Recv: !! Move out of range: 175.000 175.000 -5.100 [0.000]
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z-0.1 F200
+| Recv: !! Move out of range: 175.000 175.000 -5.100 [0.000]
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z-0.1 F200
+| Recv: !! Move out of range: 175.000 175.000 -5.100 [0.000]
+2020-12-12 07:45:57,718 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Move out of range: 175.000 175.000 -5.100 [0.000]
+| Last lines in terminal:
+| Send: G90
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z-0.1 F200
+| Recv: !! Move out of range: 175.000 175.000 -5.100 [0.000]
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z-0.1 F200
+| Recv: !! Move out of range: 175.000 175.000 -5.100 [0.000]
+| Recv: ok
+| Send: G90
+| Recv: ok
+| Send: G91
+| Recv: ok
+| Send: G1 Z-0.1 F200
+| Recv: !! Move out of range: 175.000 175.000 -5.100 [0.000]
+2020-12-12 07:50:57,534 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Move out of range: 175.000 175.000 -5.000 [0.000]
+| Last lines in terminal:
+| Send: M105
+| Recv: ok B:22.6 /0.0 T0:22.0 /0.0
+| Send: M105
+| Recv: ok B:22.6 /0.0 T0:22.0 /0.0
+| Send: TESTZ z=-1
+| Recv: // Z position: ?????? --> 29.000 <-- 30.000
+| Recv: ok
+| Send: M105
+| Recv: ok B:22.6 /0.0 T0:22.0 /0.0
+| Send: TESTZ z=-29
+| Recv: // Z position: ?????? --> -0.000 <-- 29.000
+| Recv: ok
+| Send: M105
+| Recv: ok B:22.6 /0.0 T0:22.0 /0.0
+| Send: M105
+| Recv: ok B:22.6 /0.0 T0:22.0 /0.0
+| Send: M105
+| Recv: ok B:22.6 /0.0 T0:22.0 /0.0
+| Send: TESTZ z=-5
+| Recv: !! Move out of range: 175.000 175.000 -5.000 [0.000]
+2020-12-12 07:54:36,440 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-12 07:54:42,806 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 14539}
+2020-12-12 08:05:30,845 - octoprint.server.util.sockjs - INFO - New connection from client: ::ffff:192.168.2.66
+2020-12-12 08:05:30,959 - octoprint.server.util.flask - INFO - Passively logging in user _admin from ::ffff:192.168.2.66
+2020-12-12 08:05:30,961 - octoprint.access.users - INFO - Logged in user: _admin
+2020-12-12 08:05:32,866 - octoprint.server.util.sockjs - INFO - User _admin logged in on the socket from client ::ffff:192.168.2.66
+2020-12-12 08:07:48,287 - octoprint.plugins.tracking - INFO - Sent tracking event system_throttled, payload: {'throttled_mask': 327685, 'throttled_voltage_now': True, 'throttled_voltage_past': True, 'throttled_overheat_now': False, 'throttled_now': True, 'throttled_past': True, 'throttled_overheat_past': False}
+2020-12-12 08:09:36,443 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-12 08:09:42,817 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 15440}
+2020-12-12 08:16:47,311 - octoprint.server.util.sockjs - INFO - Client connection closed: ::ffff:192.168.2.66
+2020-12-12 08:24:36,445 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-12 08:24:42,904 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 16340}
+2020-12-12 08:29:40,402 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Move out of range: 175.000 175.000 -6.000 [0.000]
+| Last lines in terminal:
+| Send: M105
+| Recv: ok B:23.2 /0.0 T0:22.3 /0.0
+| Send: M105
+| Recv: ok B:23.2 /0.0 T0:22.3 /0.0
+| Send: G1 Z-.5
+| Recv: ok
+| Send: M105
+| Recv: ok B:23.2 /0.0 T0:22.3 /0.0
+| Send: G1 Z-1
+| Recv: ok
+| Send: M105
+| Recv: ok B:23.2 /0.0 T0:22.3 /0.0
+| Send: G1 Z-5
+| Recv: ok
+| Send: M105
+| Recv: ok B:23.2 /0.0 T0:22.3 /0.0
+| Send: M105
+| Recv: ok B:23.2 /0.0 T0:22.3 /0.0
+| Send: G1 Z-6
+| Recv: !! Move out of range: 175.000 175.000 -6.000 [0.000]
+2020-12-12 08:30:29,035 - octoprint.util.comm - WARNING - Received an error from the printer's firmware: Printer is not ready
+| Last lines in terminal:
+| Send: query_probe
+| Recv: // probe: open
+| Recv: ok
+| Send: M105
+| Recv: ok B:23.2 /0.0 T0:22.3 /0.0
+| Send: M105
+| Recv: ok B:23.2 /0.0 T0:22.3 /0.0
+| Send: M105
+| Recv: ok B:23.2 /0.0 T0:22.3 /0.0
+| Send: firmware_restart
+| Recv: ok
+| Recv: // Klipper state: Disconnect
+| Send: M105
+| Recv: ok T:0
+| Send: status
+| Recv: // Printer is not ready
+| Recv: // The klippy host software is attempting to connect.  Please
+| Recv: // retry in a few moments.
+| Recv: // Klipper state: Not ready
+| Recv: !! Printer is not ready
+2020-12-12 08:39:36,448 - octoprint.server.heartbeat - INFO - Server heartbeat <3
+2020-12-12 08:39:42,869 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 17240}
+2020-12-12 08:17:09,104 - octoprint.startup - INFO - ******************************************************************************
+2020-12-12 08:17:09,107 - octoprint.startup - INFO - Starting OctoPrint 1.4.2
+2020-12-12 08:17:09,109 - octoprint.startup - INFO - ******************************************************************************
+2020-12-12 08:17:10,003 - octoprint.util.connectivity.connectivity_checker - INFO - Connectivity state is currently: offline
+2020-12-12 08:17:10,005 - octoprint.util.connectivity.connectivity_checker - INFO - Connecting to 8.8.8.8:53 is not working
+2020-12-12 08:17:10,007 - octoprint.util.connectivity.connectivity_checker - INFO - Resolving octoprint.org is not working
+2020-12-12 08:17:10,014 - octoprint.startup - INFO - We don't appear to be online, not fetching plugin blacklist
+2020-12-12 08:17:10,098 - octoprint.plugin.core - INFO - Loading plugins from /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins, /home/pi/.octoprint/plugins and installed plugin packages...
+2020-12-12 08:17:12,153 - octoprint.plugin.core - INFO - Found 18 plugin(s) providing 18 mixin implementations, 32 hook handlers
+2020-12-12 08:17:12,460 - octoprint.server.heartbeat - INFO - Starting server heartbeat, 900.0s interval
+2020-12-12 08:17:12,518 - octoprint.server - INFO - Intermediary server started
+2020-12-12 08:17:12,519 - octoprint.plugin.core - INFO - Loading plugins from /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins, /home/pi/.octoprint/plugins and installed plugin packages...
+2020-12-12 08:17:12,770 - octoprint.plugin.core - INFO - Found 18 plugin(s) providing 18 mixin implementations, 32 hook handlers
+2020-12-12 08:17:12,810 - octoprint.filemanager.storage - INFO - Initializing the file metadata for /home/pi/.octoprint/uploads...
+2020-12-12 08:17:12,813 - octoprint.filemanager.storage - INFO - ... file metadata for /home/pi/.octoprint/uploads initialized successfully.
+2020-12-12 08:17:12,818 - octoprint.server - INFO - Added new permission from plugin action_command_notification: PLUGIN_ACTION_COMMAND_NOTIFICATION_SHOW (needs: u"Need(method='role', value=u'plugin_action_command_notification_show')")
+2020-12-12 08:17:12,820 - octoprint.server - INFO - Added new permission from plugin action_command_notification: PLUGIN_ACTION_COMMAND_NOTIFICATION_CLEAR (needs: u"Need(method='role', value=u'plugin_action_command_notification_clear')")
+2020-12-12 08:17:12,822 - octoprint.server - INFO - Added new permission from plugin action_command_prompt: PLUGIN_ACTION_COMMAND_PROMPT_INTERACT (needs: u"Need(method='role', value=u'plugin_action_command_prompt_interact')")
+2020-12-12 08:17:12,825 - octoprint.server - INFO - Added new permission from plugin announcements: PLUGIN_ANNOUNCEMENTS_READ (needs: u"Need(method='role', value=u'plugin_announcements_read')")
+2020-12-12 08:17:12,827 - octoprint.server - INFO - Added new permission from plugin announcements: PLUGIN_ANNOUNCEMENTS_MANAGE (needs: u"Need(method='role', value=u'plugin_announcements_manage'), Need(method='role', value=u'plugin_announcements_read')")
+2020-12-12 08:17:12,829 - octoprint.server - INFO - Added new permission from plugin appkeys: PLUGIN_APPKEYS_ADMIN (needs: u"Need(method='role', value=u'plugin_appkeys_admin')")
+2020-12-12 08:17:12,831 - octoprint.server - INFO - Added new permission from plugin backup: PLUGIN_BACKUP_ACCESS (needs: u"Need(method='role', value=u'plugin_backup_access')")
+2020-12-12 08:17:12,833 - octoprint.server - INFO - Added new permission from plugin firmware_check: PLUGIN_FIRMWARE_CHECK_DISPLAY (needs: u"Need(method='role', value=u'plugin_firmware_check_display')")
+2020-12-12 08:17:12,835 - octoprint.server - INFO - Added new permission from plugin logging: PLUGIN_LOGGING_MANAGE (needs: u"Need(method='role', value=u'plugin_logging_manage')")
+2020-12-12 08:17:12,837 - octoprint.server - INFO - Added new permission from plugin pi_support: PLUGIN_PI_SUPPORT_STATUS (needs: u"Need(method='role', value=u'plugin_pi_support_check')")
+2020-12-12 08:17:12,839 - octoprint.server - INFO - Added new permission from plugin pluginmanager: PLUGIN_PLUGINMANAGER_MANAGE (needs: u"Need(method='role', value=u'plugin_pluginmanager_manage')")
+2020-12-12 08:17:12,841 - octoprint.server - INFO - Added new permission from plugin pluginmanager: PLUGIN_PLUGINMANAGER_INSTALL (needs: u"Need(method='role', value=u'plugin_pluginmanager_install'), Need(method='role', value=u'plugin_pluginmanager_manage')")
+2020-12-12 08:17:12,843 - octoprint.server - INFO - Added new permission from plugin softwareupdate: PLUGIN_SOFTWAREUPDATE_CHECK (needs: u"Need(method='role', value=u'plugin_softwareupdate_check')")
+2020-12-12 08:17:12,845 - octoprint.server - INFO - Added new permission from plugin softwareupdate: PLUGIN_SOFTWAREUPDATE_UPDATE (needs: u"Need(method='role', value=u'plugin_softwareupdate_update')")
+2020-12-12 08:17:12,937 - octoprint.plugins.softwareupdate - INFO - Loaded version cache from disk
+2020-12-12 08:17:14,435 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python2 -m pip" as command to invoke pip
+2020-12-12 08:17:15,797 - octoprint.util.pip - INFO - Version of pip is 19.3.1
+2020-12-12 08:17:15,801 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python2.7/site-packages (writable -> yes), --user flag needed -> no, virtual env -> yes
+2020-12-12 08:17:15,802 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2020-12-12 08:17:15,813 - octoprint.plugin.core - INFO - Initialized 18 plugin implementation(s)
+2020-12-12 08:17:15,832 - octoprint.plugin.core - INFO - 18 plugin(s) registered with the system:
+|  Action Command Notification Support (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/action_command_notification
+|  Action Command Prompt Support (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/action_command_prompt
+|  Announcement Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements
+|  Anonymous Usage Tracking (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/tracking
+|  Application Keys Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/appkeys
+|  Backup & Restore (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/backup
+|  Core Wizard (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/corewizard
+|  Discovery (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/discovery
+|  Error Tracking (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/errortracking
+|  File Check (2020.8.7) (bundled) = /home/pi/oprint/local/lib/python2.7/site-packages/octoprint_file_check
+|  Firmware Check (2020.9.23) (bundled) = /home/pi/oprint/local/lib/python2.7/site-packages/octoprint_firmware_check
+|  GCode Viewer (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/gcodeviewer
+|  Logging (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/logging
+|  Login UI (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/loginui
+|  Pi Support Plugin (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pi_support
+|  Plugin Manager (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pluginmanager
+|  Software Update (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/softwareupdate
+|  Virtual Printer (bundled) = /home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/virtual_printer
+Prefix legend: ! = disabled, # = blacklisted, * = incompatible
+2020-12-12 08:17:15,856 - octoprint.environment - INFO - Detected environment is Python 2.7.16 under Linux (linux2). Details:
+|  hardware:
+|      cores: 4
+|      freq: 1500.0
+|      ram: 1903980544
+|  os:
+|      id: linux
+|      platform: linux2
+|  plugins:
+|      pi_support:
+|          model: Raspberry Pi 4 Model B Rev 1.1
+|          octopi_version: 0.17.0
+|  python:
+|      pip: 19.3.1
+|      version: 2.7.16
+|      virtualenv: /home/pi/oprint
+2020-12-12 08:17:15,873 - octoprint.server - INFO - Reset webasset folder /home/pi/.octoprint/generated/webassets...
+2020-12-12 08:17:15,915 - octoprint.server - INFO - Reset webasset folder /home/pi/.octoprint/generated/.webassets-cache...
+2020-12-12 08:17:17,246 - octoprint.server - INFO - Shutting down intermediary server...
+2020-12-12 08:17:17,538 - octoprint.server - INFO - Intermediary server shut down
+2020-12-12 08:17:17,542 - octoprint.events - INFO - Processing startup event, this is our first event
+2020-12-12 08:17:17,546 - octoprint.events - INFO - Adding 0 events to queue that were held back before startup event
+2020-12-12 08:17:17,548 - octoprint.filemanager - INFO - Adding backlog items from all storage types to analysis queue...
+2020-12-12 08:17:17,549 - octoprint.server - INFO - Autoconnect on startup is configured, trying to connect to the printer...
+2020-12-12 08:17:17,552 - octoprint.filemanager - INFO - Added 0 items from storage type "local" to analysis queue
+2020-12-12 08:17:17,616 - octoprint.server - INFO - Trying to connect to configured serial port /tmp/printer
+2020-12-12 08:17:17,677 - octoprint.util.comm - INFO - Changing monitoring state from "Offline" to "Opening serial connection"
+2020-12-12 08:17:17,682 - octoprint.util.comm - INFO - Connecting to port /tmp/printer, baudrate 115200
+2020-12-12 08:17:17,691 - octoprint.server.util.watchdog - INFO - Running initial scan on watched folder...
+2020-12-12 08:17:17,696 - octoprint.server.util.watchdog - INFO - ... initial scan done.
+2020-12-12 08:17:17,699 - octoprint.util.comm - INFO - Changing monitoring state from "Opening serial connection" to "Connecting"
+2020-12-12 08:17:17,708 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 08:17:17,732 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance on voron' for _http._tcp
+2020-12-12 08:17:17,733 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 08:17:17,747 - octoprint.util.comm - INFO - Changing monitoring state from "Connecting" to "Operational"
+2020-12-12 08:17:17,766 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance on voron' for _octoprint._tcp
+2020-12-12 08:17:17,806 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2020-12-12 08:17:17,811 - octoprint.plugins.discovery - INFO - Registered OctoPrint instance on voron for SSDP
+2020-12-12 08:17:17,847 - octoprint.plugins.pi_support - WARNING - This Raspberry Pi is reporting problems that might lead to bad performance or errors caused by overheating or insufficient power.
+!!! UNDERVOLTAGE REPORTED !!! Make sure that the power supply and power cable are capable of supplying enough voltage and current to your Pi.
+2020-12-12 08:17:17,860 - octoprint.util.comm - INFO - Printer reports firmware name "Klipper"
+2020-12-12 08:17:17,869 - octoprint.util.comm - INFO - Detected Klipper firmware, enabling relevant features for issue free communication
+2020-12-12 08:17:17,880 - octoprint.server - INFO - Listening on http://127.0.0.1:5000
+2020-12-12 08:17:17,989 - octoprint.plugins.pluginmanager - INFO - Loaded plugin repository data from disk, was still valid
+2020-12-12 08:17:17,991 - octoprint.plugins.announcements - INFO - Looks like we are offline, can't fetch announcements for channel _important from network
+2020-12-12 08:17:18,127 - octoprint.plugins.announcements - INFO - Looks like we are offline, can't fetch announcements for channel _releases from network
+2020-12-12 08:17:18,187 - octoprint.plugins.announcements - INFO - Looks like we are offline, can't fetch announcements for channel _blog from network
+2020-12-12 08:17:18,279 - octoprint.plugins.announcements - INFO - Looks like we are offline, can't fetch announcements for channel _plugins from network
+2020-12-12 08:17:18,306 - octoprint.plugins.announcements - INFO - Looks like we are offline, can't fetch announcements for channel _octopi from network
+2020-12-12 08:17:20,014 - octoprint.util.pip - INFO - Using "/home/pi/oprint/bin/python2 -m pip" as command to invoke pip
+2020-12-12 08:17:20,106 - octoprint.util.pip - INFO - pip installs to /home/pi/oprint/lib/python2.7/site-packages (writable -> yes), --user flag needed -> no, virtual env -> yes
+2020-12-12 08:17:20,139 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2020-12-12 08:17:20,251 - octoprint.plugins.softwareupdate - INFO - Minimum free storage across all update relevant locations is 24.2GB. That is considered sufficient for updating.
+2020-12-12 08:17:20,351 - octoprint.util.connectivity.connectivity_checker - INFO - Connectivity changed from offline to online
+2020-12-12 08:17:20,611 - octoprint.plugins.pluginmanager - INFO - Loaded plugin repository data from disk, was still valid
+2020-12-12 08:17:21,695 - octoprint.plugins.announcements - ERROR - Could not fetch channel _important from https://octoprint.org/feeds/important.xml
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements/__init__.py", line 384, in _get_channel_data_from_network
+    r = requests.get(url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+SSLError: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/important.xml (Caused by SSLError(SSLError(1, u'[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:727)'),))
+2020-12-12 08:17:22,594 - octoprint.plugins.pluginmanager - ERROR - Could not fetch notices from https://plugins.octoprint.org/notices.json: HTTPSConnectionPool(host='plugins.octoprint.org', port=443): Max retries exceeded with url: /notices.json (Caused by SSLError(SSLError(1, u'[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:727)'),))
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pluginmanager/__init__.py", line 1179, in _fetch_notices_from_url
+    r = requests.get(notices_url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+SSLError: HTTPSConnectionPool(host='plugins.octoprint.org', port=443): Max retries exceeded with url: /notices.json (Caused by SSLError(SSLError(1, u'[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:727)'),))
+2020-12-12 08:17:22,859 - octoprint.plugins.announcements - ERROR - Could not fetch channel _releases from https://octoprint.org/feeds/releases.xml
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements/__init__.py", line 384, in _get_channel_data_from_network
+    r = requests.get(url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+SSLError: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/releases.xml (Caused by SSLError(SSLError(1, u'[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:727)'),))
+2020-12-12 08:17:23,603 - octoprint.server.preemptive_cache - INFO - Preemptively caching / (ui _default) for {'query_string': 'l10n=en', 'path': '/', 'base_url': 'http://voron.local/'}
+2020-12-12 08:17:23,779 - octoprint.plugins.announcements - ERROR - Could not fetch channel _blog from https://octoprint.org/feeds/octoblog.xml
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements/__init__.py", line 384, in _get_channel_data_from_network
+    r = requests.get(url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+SSLError: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/octoblog.xml (Caused by SSLError(SSLError(1, u'[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:727)'),))
+2020-12-12 08:17:23,984 - octoprint.plugins.pluginmanager - ERROR - Could not fetch notices from https://plugins.octoprint.org/notices.json: HTTPSConnectionPool(host='plugins.octoprint.org', port=443): Max retries exceeded with url: /notices.json (Caused by SSLError(SSLError(1, u'[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:727)'),))
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/pluginmanager/__init__.py", line 1179, in _fetch_notices_from_url
+    r = requests.get(notices_url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+SSLError: HTTPSConnectionPool(host='plugins.octoprint.org', port=443): Max retries exceeded with url: /notices.json (Caused by SSLError(SSLError(1, u'[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:727)'),))
+2020-12-12 08:17:24,230 - octoprint.plugins.announcements - ERROR - Could not fetch channel _plugins from https://plugins.octoprint.org/feed.xml
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements/__init__.py", line 384, in _get_channel_data_from_network
+    r = requests.get(url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+SSLError: HTTPSConnectionPool(host='plugins.octoprint.org', port=443): Max retries exceeded with url: /feed.xml (Caused by SSLError(SSLError(1, u'[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:727)'),))
+2020-12-12 08:17:24,823 - octoprint.plugins.announcements - ERROR - Could not fetch channel _octopi from https://octoprint.org/feeds/octopi.xml
+Traceback (most recent call last):
+  File "/home/pi/oprint/lib/python2.7/site-packages/octoprint/plugins/announcements/__init__.py", line 384, in _get_channel_data_from_network
+    r = requests.get(url, timeout=30)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/oprint/local/lib/python2.7/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+SSLError: HTTPSConnectionPool(host='octoprint.org', port=443): Max retries exceeded with url: /feeds/octopi.xml (Caused by SSLError(SSLError(1, u'[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:727)'),))
